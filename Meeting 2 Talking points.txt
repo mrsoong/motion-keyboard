@@ -1,0 +1,38 @@
+Q1: What are you planning to build?
+
+Q2: Who are your target users?
+
+Q3: Why would your users choose your product? What are they using today to solve their problem/need?
+
+Highlights
+
+
+Process
+
+	Roles & responsibilities
+
+	Events
+
+	Artifacts
+
+Product
+
+	Goals and tasks
+
+	Artifacts
+
+
+Minimum Viable Product
+	keyboard ui
+	gyroscope control
+	spell checker https://developer.android.com/guide/topics/text/spell-checker-framework.html
+
+Backlog
+	Bluetooth control
+	more gyroscope (tilting to scroll)
+	autocomplete, haven't been able to find free API, 2 month trial https://cloud.google.com/prediction/docs/developer-guide
+
+
+Artifacts
+	UI sketch
+	To Do list
