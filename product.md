@@ -24,7 +24,8 @@ The keyboard can be used in any Android application that uses a keyboard.
 #### Q2: Who are your target users?
 
 The target group for our product is anyone who, for some reason, cannot use a touch keyboard. This may be due to reasons such as missing limbs, nerve damage or Parkinson's disease.
-*TODO: add personas*
+
+**TODO: add personas**
 
  * Short (1 - 2 min' read max)
  * Be specific (e.g. )
