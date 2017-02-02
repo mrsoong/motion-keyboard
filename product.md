@@ -5,7 +5,9 @@
 
 #### Q1: What are you planning to build?
 
-YOUR ANSWER GOES HERE ...
+The product that we are building is an Android keyboard controlled with the phone's gyroscope. This allows the user to write text by tilting their phone.
+This keyboard will function as an alternative for those who have trouble using a keyboard with touch input. It also serves as an alternative to text-to-speech for enviroments where speaking isn't possible.
+The keyboard can be used in any Android application that uses a keyboard.
 
  * Short (1 - 2 min' read)
  * Start with a single sentence, high-level description of the product.
@@ -21,7 +23,8 @@ YOUR ANSWER GOES HERE ...
 
 #### Q2: Who are your target users?
 
-YOUR ANSWER GOES HERE ...
+The target group for our product is anyone who, for some reason, cannot use a touch keyboard. This may be due to reasons such as missing limbs, nerve damage or Parkinson's disease.
+*TODO: add personas*
 
  * Short (1 - 2 min' read max)
  * Be specific (e.g. )
@@ -30,7 +33,8 @@ YOUR ANSWER GOES HERE ...
 
 #### Q3: Why would your users choose your product? What are they using today to solve their problem/need?
 
-YOUR ANSWER GOES HERE ...
+Our product would help our target group to become more independent in their everyday use of their mobile phones. Today they might refrain from typing longer texts on their phones due to the difficulty of getting it correct.
+They may also use other options, such as text-to-speech, and our product would work as complement to this. While text-to-speech is very developed and efficient today, there are many enviroments where it cannot be used. For example in public or open office spaces.
 
  * Short (1 - 2 min' read max)
  * We want you to "connect the dots" for us - Why does your product (as described in your answer to Q1) fits the needs of your users (as described in your answer to Q2)?
