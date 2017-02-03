@@ -35,14 +35,14 @@ We decided that our product should be a suite of accessibility tools that will a
 
 #### Goals and tasks
  Goals
- Our goal for this iteration is for everyone to install the Android development kit, to familiarise themselves with the Android Development Environment and to inspect existing code on how a simple keyboard application works. This will allow them to understand what needs to be done in order to take the idea of a keyboard and build upon it to create something new and useful to a different segment of the population.
+- Our goal for this iteration is for everyone to install the Android development kit, to familiarise themselves with the Android Development Environment and to inspect existing code on how a simple keyboard application works. This will allow them to understand what needs to be done in order to take the idea of a keyboard and build upon it to create something new and useful to a different segment of the population.
 
  Tasks
  - Do research on how exactly Android Development works
  - Watch video on how a simple keyboard app with no extra features works
  - Download and install Android Development Kit
 
- Goals Ordered by Importance
+Goals Ordered by Importance
  - Install Android
  - Get familiarised with android development environment and android design principles
  - Understand how basic keyboard application works
