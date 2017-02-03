@@ -49,7 +49,20 @@ They may also use other options, such as text-to-speech, and our product would w
 
 ### Highlights
 
-YOUR ANSWER GOES HERE ...
+During our first meeting as a group (where every group member was present), a lot of ideas for a product were brought up and debated. 
+Eventhough we had to decide on the building an Android keyboard for our final project, the group discussion still offered important insights that helped to better understand each group members individual skills and interests.
+In addition, through various discussions we were able to reach a consensus on the type of products that were most suited to being our final product. 
+
+All in all the group members had voiced at least 3 different ideas for the product, but near the end of our meeting only two ideas were considered for the project:
+1) An Android keyboard operated with a phone's build-in gyroscope
+2) A calendar app for Android designed for students. The app would help the user divide up their free time to work on projects (using scheduling algorithms), and to notify the user of any assignments/projects/tests that had to be completed in the near future.
+After talking amongst ourselves and speaking with our TA, we decided that an Android keyboard would be a better fit for our project. 
+Eventhough the calendar app would have a lot of uses in the real world, various members of the team believed that the app was not something that would be suited for a 2-month long project. As building the calendar app
+would probably involve building a calendar, with a scheduling algorithm that can be used to manage the user's schedule, it would have been hard to build such an app for our project. On the other hand, the Android keyboard operated
+with a gyroscope would have interesting practical uses (e.g for disabled people have can't effectively use the default keyboard found in most phones). In addition, some group members suggested that extra features
+could be added to the keyboard while working the project.
+
+
 
 Specify 3 - 5 key decisions and/or insights that came up during your meetings
 and/or collaborative process.
