@@ -1,37 +1,28 @@
-# YOUR PRODUCT/TEAM NAME
-
- > _Note:_ This document is meant to evolve throughout the planning phase of your project.
- > That is, it makes sense for you commit regularly to this file while working on the project (especially edits/additions/deletions to the _Highlights_ section).
-
+# MOTIONKEY ANDROID KEYBOARD
+<br />
 #### Q1: What are you planning to build?
 
-The product that we are building is an Android keyboard controlled with the phone's gyroscope. This allows the user to write text by tilting their phone.
-This keyboard will function as an alternative for those who have trouble using a keyboard with touch input. It also serves as an alternative to text-to-speech for enviroments where speaking isn't possible.
-The keyboard can be used in any Android application that uses a keyboard.
+Motionkey is an Android keyboard application that lets users type by tilting their phone and using motion gestures. It can be used in any phone application where the default keyboard would pop up for text input.
 
- >* Short (1 - 2 min' read)
- >* Start with a single sentence, high-level description of the product.
- >* Be clear - Describe the problem you are solving in simple terms.
- >* Be concrete. For example:
- >   * What are you planning to build? Is it a website, mobile app,
- >  browser extension, command-line app, etc.?
- >   * When describing the problem/need, give concrete examples of common use cases.
- >* Focus on *what* your product does, and avoid discussing *how* you're going to implement it.
- >  For example: This is not the time or the place to talk about which programming language and/or framework you are planning to use.
- >* **Feel free (and very much encouraged) to include useful diagrams, mock-ups and/or links**.
+Motionkey serves users who have trouble using a keyboard with touch input or don't simply want to use a touch-based keyboard while typing. It also serves as an alternative to text-to-speech for enviroments or situations where speech input isn't ideal or possible.
 
+An example that illustrates its use as an assitive technology is as follows: Amy is a student without the use of her fingers. Currently she uses voice recognition but during meetings or class, it's not ideal. Motionkey allows Amy to type her messages with the same speed and precision as with a touch keyboard all while providing privacy and ease of use.
 
+>![Phone Tilt](./artifacts/deliverable_1/images/phone_tilt_animation.gif  "Phone Tilt")<br />
+>Tilting the phone in the direction of keyboard text to type a message.<br />
+>Image courtesy of http://droidfreak1.blogspot.ca/2015/01/best-option-to-samsung-smart-scroll.html
+
+<br />
 #### Q2: Who are your target users?
 
-The target group for our product is anyone who, for some reason, cannot use a touch keyboard. This may be due to reasons such as missing limbs, nerve damage or Parkinson's disease.
+Our target users include those who are unable to use touch based input, whether it be from a disability or medical issue, and those who simply choose not to use it. Disabilities may include loss of hand digits or limbs, nerve damage, and cases where it is hard to use voice recognition as an alternative.
 
-**TODO: add personas**
+The target group must have the ability to provide a tilting motion of some type. Some examples include placing the phone on their hand, arm, foot, or another surface that can be manipulated with tilt and gesture motions.
 
- >* Short (1 - 2 min' read max)
- >* Be specific (e.g. )
- >* Feel free (but not obligated) to use personas.
- >  You can create your personas as part of this Markdown file, or add a link to an external site (for example, [Xtensio](https://xtensio.com/user-persona/)).
+A detailed example using personas is provided here:
+[Target User Personas](./artifacts/deliverable_1/target_user_personas.md)
 
+<br />
 #### Q3: Why would your users choose your product? What are they using today to solve their problem/need?
 
 Our product would help our target group to become more independent in their everyday use of their mobile phones. Today they might refrain from typing longer texts on their phones due to the difficulty of getting it correct.
@@ -49,20 +40,19 @@ They may also use other options, such as text-to-speech, and our product would w
 
 ### Highlights
 
-During our first meeting as a group (where every group member was present), a lot of ideas for a product were brought up and debated. 
-Eventhough we had to decide on the building an Android keyboard for our final project, the group discussion still offered important insights that helped to better understand each group members individual skills and interests.
+During our first meeting as a group (where every group member was present), a lot of ideas for a product were brought up and debated.  Eventhough we had to decide on the building an Android keyboard for our final project, the group discussion still offered important insights that helped to better understand each group members individual skills and interests.
 Through various discussions we were able to reach a consensus on the type of products that we wanted for final project. 
 
 All in all the group members had voiced at least 3 different ideas for the product, but near the end of our meeting only two ideas were considered for the project:
-1) An Android keyboard operated with a phone's build-in gyroscope
-2) A calendar app for Android designed for students. The app would help the user divide up their free time to work on projects (using scheduling algorithms), and to notify the user of any assignments/projects/tests that had to be completed in the near future.
-After talking amongst ourselves we decided that an Android keyboard would be a better fit for our project. 
-Eventhough the calendar app would have a lot of uses in the real world, various members of the team believed that the calendar was not something that would be suited for a 2-month long project. As building the app
-would probably involve building a calendar with a scheduling algorithm that can be used to manage the user's schedule, it would have been hard to justify building such an app for our project. On the other hand, the Android keyboard operated
-with a gyroscope would have more interesting (and practical) uses (e.g for disabled people have can't effectively use the default keyboard found in most phones).
 
-While discussing our options for a product, we also decided that it would be best to avoid getting too much into details early on. 
-As the project was still in the planning phase, we felt that the product was likely going to evolve over the course of the project. 
+1. An Android keyboard operated with a phone's build-in gyroscope
+2.  A calendar app for Android designed for students. The app would help the user divide up their free time to work on projects (using scheduling algorithms), and to notify the user of any assignments/projects/tests that had to be completed in the near future.
+
+After talking amongst ourselves we decided that an Android keyboard would be a better fit for our project.  Eventhough the calendar app would have a lot of uses in the real world, various members of the team believed that the calendar was not something that would be suited for a 2-month long project. As building the app would probably involve building a calendar with a scheduling algorithm that can be used to manage the user's schedule, it would have been hard to justify building such an app for our project.
+
+On the other hand, the Android keyboard operated with the phone's sensors would have more interesting (and practical) uses (e.g for disabled people have can't effectively use the default keyboard found in most phones).
+
+While discussing our options for a product, we also decided that it would be best to avoid getting too much into details early on.  As the project was still in the planning phase, we felt that the product was likely going to evolve over the course of the project. 
 We therefore decided on a Minimum Viable Product (an Android keyboard controlled with a phone's gyroscope), and began thinking about various features (e.g voice recognition) that could be added once the MVP was complete.
 
 >Specify 3 - 5 key decisions and/or insights that came up during your meetings
