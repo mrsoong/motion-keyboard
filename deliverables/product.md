@@ -12,6 +12,7 @@ An example that illustrates its use as an assitive technology is as follows: Amy
 >![Phone Tilt](./artifacts/deliverable_1/images/phone_tilt_animation.gif  "Phone Tilt")
 
 >Tilting the phone in the direction of keyboard text to type a message.
+
 >Image courtesy of http://droidfreak1.blogspot.ca/2015/01/best-option-to-samsung-smart-scroll.html
 
 <br />
