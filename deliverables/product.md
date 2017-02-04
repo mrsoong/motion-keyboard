@@ -9,10 +9,8 @@ Motionkey serves users who have trouble using a keyboard with touch input or don
 
 An example that illustrates its use as an assitive technology is as follows: Amy is a student without the use of her fingers. Currently she uses voice recognition but during meetings or class, it's not ideal. Motionkey allows Amy to type her messages with the same speed and precision as with a touch keyboard all while providing privacy and ease of use.
 
->![Phone Tilt](./artifacts/deliverable_1/images/phone_tilt_animation.gif  "Phone Tilt")
-
->Tilting the phone in the direction of keyboard text to type a message.
-
+>![Phone Tilt](./artifacts/deliverable_1/images/phone_tilt_animation.gif  "Phone Tilt")<br />
+>Tilting the phone in the direction of keyboard text to type a message.<br />
 >Image courtesy of http://droidfreak1.blogspot.ca/2015/01/best-option-to-samsung-smart-scroll.html
 
 <br />
