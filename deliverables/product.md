@@ -21,10 +21,14 @@ An example that illustrates its use as an assitive technology is as follows: Amy
 Our target users include those who are unable to use touch based input, whether it be from a disability or medical issue, and those who simply choose not to use it. Disabilities may include loss of hand digits or limbs, nerve damage, and cases where it is hard to use voice recognition as an alternative.
 
 >![Phone Tilt](./artifacts/deliverable_1/images/web-worksafe-cut_frame_2.jpg  "Amputee")<br />
->An Example of our Target Users.<br />
+>An Example of the Target User for this product.<br />
 >Image courtesy of http://www.cbc.ca/news/canada/british-columbia/worksafebc-reviews-home-care-after-double-amputee-s-aid-scaled-back-1.3186595
 
 The target group must have the ability to provide a tilting motion of some type. Some examples include placing the phone on their hand, arm, foot, or another surface that can be manipulated with tilt and gesture motions.
+
+>![Phone Tilt](./artifacts/deliverable_1/images/wriststrap.png  "Wrist Strap")<br />
+>One method of using our product is by strapping phone to arm, which is possible even if hand is amputated.<br />
+>Image courtesy of http://www.instructables.com/id/convert-smartphone-to-a-smartwatch-for-under-10-ea/
 
 A detailed example using personas is provided here:
 [Target User Personas](./artifacts/deliverable_1/target_user_personas.md)
