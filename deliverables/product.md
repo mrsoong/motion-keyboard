@@ -26,7 +26,7 @@ Our target users include those who are unable to use touch based input, whether 
 
 The target group must have the ability to provide a tilting motion of some type. Some examples include placing the phone on their hand, arm, foot, or another surface that can be manipulated with tilt and gesture motions.
 
->![Phone Tilt](./artifacts/deliverable_1/images/wriststrap.png  "Wrist Strap")<br />
+>![Phone Tilt](./artifacts/deliverable_1/images/wriststrap.jpg  "Wrist Strap")<br />
 >One method of using our product is by strapping phone to arm, which is possible even if hand is amputated.<br />
 >Image courtesy of http://www.instructables.com/id/convert-smartphone-to-a-smartwatch-for-under-10-ea/
 
