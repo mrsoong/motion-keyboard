@@ -4,6 +4,9 @@
 
 Motionkey is an Android keyboard application that lets users type by tilting their phone and using motion gestures. It can be used in any phone application where the default keyboard would pop up for text input.
 
+>![Phone Tilt](./artifacts/deliverable_1/images/mockup.png  "Keyboard UI")<br />
+>An Example of the Android UI with regular keyboard replaced with Motionkey.<br />
+
 Motionkey serves users who have trouble using a keyboard with touch input or don't simply want to use a touch-based keyboard while typing. It also serves as an alternative to text-to-speech for enviroments or situations where speech input isn't ideal or possible.
 
 An example that illustrates its use as an assitive technology is as follows: Amy is a student without the use of her fingers. Currently she uses voice recognition but during meetings or class, it's not ideal. Motionkey allows Amy to type her messages with the same speed and precision as with a touch keyboard all while providing privacy and ease of use.
@@ -40,17 +43,17 @@ They may also use other options, such as text-to-speech, and our product would w
 
 ### Highlights
 
-During our first meeting as a group (where every group member was present), a lot of ideas for a product were brought up and debated.  Eventhough we had to decide on the building an Android keyboard for our final project, the group discussion still offered important insights that helped to better understand each group members individual skills and interests.
-Through various discussions we were able to reach a consensus on the type of products that we wanted for final project. 
+During our first meeting as a group (where every group member was present), a lot of ideas for a product were brought up and debated.  Even though we had to decide on the building an Android keyboard for our final project, the group discussion still offered important insights that helped to better understand each group members' individual skills and interests.
+Through various discussions we were able to reach a consensus on the type of product that we wanted for the final project. 
 
-All in all the group members had voiced at least 3 different ideas for the product, but near the end of our meeting only two ideas were considered for the project:
+All-in-all, the group members had voiced at least 3 different ideas for the product, but near the end of our meeting only two ideas were considered for the project:
 
-1. An Android keyboard operated with a phone's build-in gyroscope
-2.  A calendar app for Android designed for students. The app would help the user divide up their free time to work on projects (using scheduling algorithms), and to notify the user of any assignments/projects/tests that had to be completed in the near future.
+1. An Android keyboard operated with the phone's built-in gyroscope
+2. A calendar app for Android designed for students. The app would help the user divide up their free time to work on projects (using scheduling algorithms), and to notify the user of any assignments/projects/tests that had to be completed in the near future.
 
-After talking amongst ourselves we decided that an Android keyboard would be a better fit for our project.  Eventhough the calendar app would have a lot of uses in the real world, various members of the team believed that the calendar was not something that would be suited for a 2-month long project. As building the app would probably involve building a calendar with a scheduling algorithm that can be used to manage the user's schedule, it would have been hard to justify building such an app for our project.
+After talking amongst ourselves we decided that an Android keyboard would be a better fit for our project. Even though the calendar app would have a lot of uses in the real world, various members of the team believed that the calendar was not something that would be suitable for a 2-month long project. As building the app would only just involve building a calendar with a scheduling algorithm that can be used to manage the user's schedule, it would have been hard to justify building such an app for our project.
 
-On the other hand, the Android keyboard operated with the phone's sensors would have more interesting (and practical) uses (e.g for disabled people have can't effectively use the default keyboard found in most phones).
+On the other hand, the Android keyboard operated with the phone's sensors would have more interesting (and practical) uses (e.g for disabled people can't effectively use the default keyboard found in most phones).
 
 While discussing our options for a product, we also decided that it would be best to avoid getting too much into details early on.  As the project was still in the planning phase, we felt that the product was likely going to evolve over the course of the project. 
 We therefore decided on a Minimum Viable Product (an Android keyboard controlled with a phone's gyroscope), and began thinking about various features (e.g voice recognition) that could be added once the MVP was complete.
