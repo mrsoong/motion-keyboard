@@ -33,7 +33,7 @@ We are prioritizing the task of developing the software first and putting less e
 <br />
 ## Product
 
-We decided that our product should be a suite of accessibility tools that will allow people with disabilities to more effective use android phones. Our MVP is a keyboard with keys laid out in a circle that functions with the gyroscope, thus allowing anyone who is missing fingers to type on android. Our stretch goal is to add more tools to the suite, such as a way to control the UI with voice.
+We decided that our product should be a suite of accessibility tools that will allow people with disabilities to more effectively use android phones. Our MVP is a keyboard with keys laid out in a circle that functions with the gyroscope, thus allowing anyone who is missing fingers to type on android. Our stretch goal is to add more tools to the suite, such as a way to control the UI with voice.
 
 <br />
 #### Goals and tasks
