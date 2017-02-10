@@ -14,10 +14,6 @@ The team conducted a meeting to go over potential ideas that anyone may have had
 <br />
 #### Roles & responsibilities
 
-User Interface Designers: Since our product is meant to augment the UI for disabled individuals, we require software designers who have an understanding of how UI works, what paradigms are useful for UI design and some understanding of current trends in HCI so that our product can be visually pleasing and functional for the end user.
-
-Android Developers: Our product is initially going to be developed for Android devices. Our team will require software engineers to develop out application on the Android platform. 
-
 | Role | Description | Name |
 | --- | --- | --- |
 | Android Developer | Responsible for developing the Android Keyboard | Mark |
@@ -126,3 +122,27 @@ We decided that our product should be a suite of accessibility tools that will a
 
 			Split the team into two groups to work on product.md and iteration-01.plan.md
 			Meet near February 11th, 2017 to work on iteration-01.review.md 
+
+ - Todo list
+
+		TO DO:
+
+		General:
+		- [x]  Decide on Team name
+
+		Product.md
+		- [x] Add personas
+		- [x] Diagrams and Mockups
+
+		iteration-01.plan.md
+
+		iteration-01.review.md
+		- [x] Review when/where
+		- [x] Process Reflection
+			- [x] Decisions that turned out well
+			- [x] did not turn out well
+			- [x] planned changes
+		- [x] Product Review
+			- [x] Goals completed
+			- [x] not completed
+		- [x] Meeting highlights
