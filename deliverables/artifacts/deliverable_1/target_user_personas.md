@@ -1,5 +1,7 @@
 # User personas
+
 <br />
+
 | Name | Age | Personality Traits | Medical Conditions (If any) | Goals |
 | --- | --- | --- | :---: | --- | --- |
 | John | 19 | Social, Energetic, Open | Neuropathy | John is a college student who likes to hang out with his friends and reads books in his spare time. However, due to a condition known as neuropathy, he is unable to use his phone with a great degree of control, making it difficult for him to use applications that require text input. John wants to find an app that will make it easier for him to use applications that have been made inaccessible due to his condition. |
