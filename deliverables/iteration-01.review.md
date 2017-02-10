@@ -14,6 +14,9 @@ As this was our last meeting before submitting the first deliverable, the main p
 #### Decisions that turned out well
  
 - #####Slack - Online Team Messaging
+>![Slack](./artifacts/deliverable_1/images/slack-desktop.jpg  "Slack")<br />
+>A screenshot of a group on Slack.<br />
+>Image courtesy of http://www.theverge.com/2014/8/12/5991005/slack-is-killing-email-yes-really
 	- We decided to use an online tool called "Slack" for daily communication. This turned out to be a very successful decision because it allowed the entire group to pass information to each other. These are some of the benefits that using slack provided us with:
 		- Continued discussion of possible product ideas over the weekend of February 4th, 2017
 		- Ability for members to inform the group when they were unable to attend meetings
