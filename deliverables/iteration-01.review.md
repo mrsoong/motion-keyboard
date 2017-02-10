@@ -45,7 +45,7 @@ As this was our last meeting before submitting the first deliverable, the main p
 #### Planned changes
  
 - ##### Assigning Roles to Each Member
-	- In the coming weeks, we will create new roles for each team member. Examples of possible roles could be those which are more managerial in nature: Meeting Notetaker, Meeting Leader, and Meeting Scheduler. Engineering related roles would include: UI Designer, Android Developer, Sensor Specialist and Tester.
+	- In the coming weeks, we will create new roles and interchange them from time to time for each team member. Examples of possible roles could be those which are more managerial in nature: Meeting Notetaker, Meeting Leader, and Meeting Scheduler. Engineering related roles would include: UI Designer, Android Developer, Sensor Specialist and Tester.
 
 - ##### Git Branch Modeling
 	- Another change we are planning on making is with regard to Git branch modeling. As of this review we have not reached a consensus as to how to model our branching. Our current thoughts are to split the initial development into three branches: UI, Gyroscope control, and Language Input Processing.
