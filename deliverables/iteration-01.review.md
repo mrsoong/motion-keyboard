@@ -12,11 +12,6 @@ As this was our last meeting before submitting the first deliverable, the main p
 
 <br />
 #### Decisions that turned out well
-
- [comment]: <> (* 2 - 4 decisions.)
- [comment]: <> ( * Ordered from most to least important.)
- [comment]: <> (* Explain why (i.e. give a supporting argument) you consider a decision to be successful.)
- [comment]: <> (* Feel free to refer/link to process artifact(s).)
  
 - #####Slack - Online Team Messaging
 	- We decided to use an online tool called "Slack" for daily communication. This turned out to be a very successful decision because it allowed the entire group to pass information to each other. Some key benifits it provided us with:
@@ -32,10 +27,6 @@ As this was our last meeting before submitting the first deliverable, the main p
 
 <br />
 #### Decisions that did not turn out as well as we hoped
-
- [comment]: <> (* 2 - 4 decisions.)
- [comment]: <> (* Ordered from most to least important.)
- [comment]: <> (* Feel free to refer/link to process artifact(s).)
    
 - #####Designation of Tasks
 	- Although our last meeting ended with us creating roles that would be assigned to each member, designating on what they are responsible for, it would have helped to have these roles early on. Meeting minutes and discussions although written by a couple of members, were not explicitly tasked to anyone. Pre-planning of the meetings would have also helped us stay on track to a greater extent.
@@ -49,9 +40,6 @@ As this was our last meeting before submitting the first deliverable, the main p
 
 <br />
 #### Planned changes
-
- [comment]: <> (* Ordered from most to least important.)
- [comment]: <> (* Explain why you are making a change.)
  
 - ##### Assigning Roles to Each Member
 	- In the coming weeks we will create new roles for each team member. Examples of possible roles could be those more managerial in nature: Meeting Minutes Taker, Meeting Leader, and Meetings Scheduler. Engineering related roles would include: UI Design, Android Development, and Sensor Translation. 
@@ -64,28 +52,14 @@ As this was our last meeting before submitting the first deliverable, the main p
 
 #### Goals and/or tasks that were met/completed:
 
-  [comment]: <> (* * From most to least important.)
-  [comment]: <> (* * Refer/link to artifact(s) that show that a goal/task was met/completed.)
-  [comment]: <> (* * If a goal/task was not part of the original iteration plan, please mention it.)
-
 - ##### Decided on Product and Name
  
 
 #### Goals and/or tasks that were planned but not met/completed:
 
-  [comment]: <> (** From most to least important.)
-  [comment]: <> (** For each goal/task, explain why it was not met/completed.)
-  [comment]: <> (*e.g. Did you change your mind, or did you just not get to it yet?)
-
 ## Meeting Highlights
 
 Going into the next iteration, our main insights are:
-
-[comment]: <> (* 2 - 4 items)
-[comment]: <> (* Short (no more than one short paragraph per item)
-[comment]: <> (* High-level concepts that should guide your work for the next iteration.)
-[comment]: <> (* These concepts should help you decide on where to focus your efforts.)
-[comment]: <> (* Can be related to product and/or process.)
 
 - #####Learning Android development
 	- As of now the group, as a whole, has very little experience with android development. In order to proceed, the the group needs to spend time learning android development.
