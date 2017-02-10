@@ -87,7 +87,7 @@ We decided that our product should be a suite of accessibility tools that will a
 
 		Discussed Product details
 
-		What is our minimum viable prodcut (MVP)?
+		What is our minimum viable product (MVP)?
 			Custom keyboard UI
 			Gyroscope control
 			Spell checker
