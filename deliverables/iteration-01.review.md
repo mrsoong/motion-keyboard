@@ -14,38 +14,38 @@ As this was our last meeting before submitting the first deliverable, the main p
 #### Decisions that turned out well
  
 - #####Slack - Online Team Messaging
-	- We decided to use an online tool called "Slack" for daily communication. This turned out to be a very successful decision because it allowed the entire group to pass information to each other. Some key benifits it provided us with:
-		- Continued discussing possible product ideas over the weekend of February 4th, 2017
-		- Members were able to inform the group when they were unable to attend meetings
-		- Shared meeting summaries with group members who were unable to attend the meeting
+	- We decided to use an online tool called "Slack" for daily communication. This turned out to be a very successful decision because it allowed the entire group to pass information to each other. These are some of the benefits that using slack provided us with:
+		- Continued discussion of possible product ideas over the weekend of February 4th, 2017
+		- Ability for members to inform the group when they were unable to attend meetings
+		- Sharing of meeting summaries with group members who were unable to attend the meeting
 
 - #####More Time to Brainstorm
-	- Not settling on an idea too early on gave us time to bounce more ideas off one another and people we know outside of school. Interesting problems and insights with our product came about that led to considering changing the product altogether. Hearing different reasonings to keeping the product vs changing led us to consider pros and cons of the product functionality in much greater depth. Some key benifits it provided us with:
-		- Greater familiarity with each team members thinking process
-		- Much richer and broader ideas for potential projects
-		- We know early on what our product will be good and bad for at a greater level of depth than if we decided on the idea without putting much thought into it.
+	- Not settling on an idea too early on gave us time to bounce more ideas off of one another and people we know outside of school. Interesting problems and insights with our product came about that led to considering changing the product altogether. Hearing different reasonings for keeping the product vs changing it led us to consider the pros and cons of the product functionality in much greater depth, such as:
+		- Greater familiarity with each team-member's thinking process
+		- Richer and broader ideas for potential projects
+		- Knowing from the get-go what the product will be good and bad for at a greater level of depth than if little thought and discussion went into the early stages of development.
 
 <br />
 #### Decisions that did not turn out as well as we hoped
    
 - #####Designation of Tasks
-	- Although our last meeting ended with us creating roles that would be assigned to each member, designating on what they are responsible for, it would have helped to have these roles early on. Meeting minutes and discussions although written by a couple of members, were not explicitly tasked to anyone. Pre-planning of the meetings would have also helped us stay on track to a greater extent.
+	- Although our last meeting ended with us creating roles that would be assigned to each member, designating what they are responsible for, it would have helped to have these roles early on. Meeting notes and discussions, although written by a couple of members, were not explicitly tasked to anyone. Pre-planning of the meetings would have also helped us stay on track to a greater extent.
 		- Each member did not know exactly what they were responsible for or know what others were tasked with.
-		- Preparedness for tutorial sessions and meetings was not the best.
+		- Preparedness for tutorial sessions and meetings was not optimal.
    
 - #####In-Person Meetings
-	- In person meetings we scheduled apart from tutorial days were not planned as great as we liked. Although most members did show up and rest were available online through Slack, we were unable to find a good room to hold the meeting in. This led to a shorter meeting conducted in a hallway which wasn't as conductive to the team process.
+	- In person meetings that were scheduled apart from tutorial days were not planned as great as we liked. Although most members did show up and rest were available online through Slack, we were unable to find a good room to hold the meeting in. This led to a shorter meeting conducted in a hallway which hampered the discussion process.
 		- Due to unforeseeable circumstances, group members getting sick, our in-person meetings were not as productive as they could be.
-		- Needed to arrange times when most members were able to meet which was difficult to do due to each members scheduling conflicts.
+		- Needed to arrange times when most members were able to meet which was difficult to do due to each members' scheduling conflicts.
 
 <br />
 #### Planned changes
  
 - ##### Assigning Roles to Each Member
-	- In the coming weeks we will create new roles for each team member. Examples of possible roles could be those more managerial in nature: Meeting Minutes Taker, Meeting Leader, and Meetings Scheduler. Engineering related roles would include: UI Design, Android Development, and Sensor Translation. 
+	- In the coming weeks, we will create new roles for each team member. Examples of possible roles could be those which are more managerial in nature: Meeting Notetaker, Meeting Leader, and Meeting Scheduler. Engineering related roles would include: UI Designer, Android Developer, Sensor Specialist and Tester.
 
 - ##### Git Branch Modeling
-	- Another change we are planning on making is with regards to Git branch modeling. As of this review we have not reached a consensus as to how to model our branching. Our current thoughts are to split the initial development into three branches: UI, Gyroscope control, and Language Input Processing.
+	- Another change we are planning on making is with regard to Git branch modeling. As of this review we have not reached a consensus as to how to model our branching. Our current thoughts are to split the initial development into three branches: UI, Gyroscope control, and Language Input Processing.
 
 <br />
 ## Product - Review
@@ -67,7 +67,7 @@ Going into the next iteration, our main insights are:
 
 - ##### Start modifying a basic android keyboard
 	- Experimenting with our custom UI. Using online tutorials such as [this tutplus guide](https://code.tutsplus.com/tutorials/create-a-custom-keyboard-on-android--cms-22615 "this tutplus guide") and [this video tutorial](https://www.youtube.com/watch?v=7nsa7BuoWhU "this video tutorial")
- 	We plan to get a custom keyboard up and running and branch from our basic custom keyboard.
+ 	We plan to get a custom keyboard up and running and branch from our basic custom keyboard which is open source code that was found on the internet.
 
 - #####Decide on a Git Branching model
 	- As previously discussed we have not reached a consensus on our git branching model. At the end of the next iteration we plan to decide and implement out a branching model that allows more productivity and ease of working with.
