@@ -53,6 +53,8 @@ As this was our last meeting before submitting the first deliverable, the main p
 #### Goals and/or tasks that were met/completed:
 
 - ##### Decided on Product and Name
+
+- ##### Started learning the basics of Android Development
  
 
 #### Goals and/or tasks that were planned but not met/completed:
@@ -71,3 +73,39 @@ Going into the next iteration, our main insights are:
 
 - #####Decide on a Git Branching model
 	- As previously discussed we have not reached a consensus on our git branching model. At the end of the next iteration we plan to decide and implement out a branching model that allows more productivity and ease of working with.
+
+
+Rough Meeting notes
+
+	Meeting Notes - Thursday February 2nd, 2017
+
+	Discussed Product details
+
+		What is our minimum viable prodcut (MVP)?
+			Custom keyboard UI
+			Gyroscope control
+			Spell checker
+
+		What features belong to the backlog?
+			Bluetooth control
+			more gyroscope (tilting to scroll, etc.)
+			autocomplete
+
+		Where to start?
+			Should start learning the basic of Android development
+				Install Android Studio
+			Work on being able to follow and understand creation of a basic custom keyboard
+
+	Discussed process details
+
+		What artifacts will we create?
+			UI mock ups
+			To do list
+
+		What possible Git branching model will we implement?
+			Divide the features into branches, one for the UI, one for the gyroscope, one for the spell checker?
+
+	Discussed details of the deliverables
+
+		Split the team into two groups to work on product.md and iteration-01.plan.md
+		Meet near February 11th, 2017 to work on iteration-01.review.md
