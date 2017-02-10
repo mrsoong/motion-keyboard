@@ -1,44 +1,50 @@
-# YOUR PRODUCT/TEAM NAME
+# MOTIONKEY ANDROID KEYBOARD
 
- > _Note:_ This document is meant to be written during (or shortly after) your review meeting, which should happen fairly close to the due date.
- >
- > _Suggestion:_ Have your review meeting a day or two before the due date. This way you will have some time to go over (and edit) this document, and all team members should have a chance to make their contribution.
+## Iteration 01 - Review & Retrospect
 
-
-## Iteration XX - Review & Retrospect
-
- * When: FILL IN THE DATE WHEN YOU ACTUALLY HAD YOUR REVIEW MEETING
- * Where: PHYSICAL LOCATION AND/OR ONLINE
+ * When: Feb.6.2017
+ * Where: BA2165 & Online Via Slack
 
 ## Process - Reflection
 
-(Optional) Short introduction
+As this was our last meeting before submitting the first deliverable, the main purpose of it was to finalize our product idea. During the meeting, new ideas came about that were interesting such as a programming IDE with screen reader for the blind, but ultimately the majority voted in favour of going ahead with MotionKey as it seemed like a unique project that was manageable to do.
+
+###meeting notes link here????
+
+
+
 
 #### Decisions that turned out well
-
-List process-related (i.e. team organization) decisions that, in retrospect, turned out to be successful.
-
 
  [comment]: <> (* 2 - 4 decisions.)
  [comment]: <> ( * Ordered from most to least important.)
  [comment]: <> (* Explain why (i.e. give a supporting argument) you consider a decision to be successful.)
  [comment]: <> (* Feel free to refer/link to process artifact(s).)
  
-We decided to use a program called "Slack" for daily communication. This turned out to be a very successful decision because it allowed the entire group to pass information to each other. <br>
-Reasoning for this can be seen with <br>
-- Continued discussing possible product ideas over the weekend of February 4th, 2017
-- Members were able to inform the group when they were unable to attend meetings
-- Shared meeting summaries with group members who were unable to attend the meeting
+- #####Slack - Online Team Messaging
+	- We decided to use an online tool called "Slack" for daily communication. This turned out to be a very successful decision because it allowed the entire group to pass information to each other. Some key benifits it provided us with:
+		- Continued discussing possible product ideas over the weekend of February 4th, 2017
+		- Members were able to inform the group when they were unable to attend meetings
+		- Shared meeting summaries with group members who were unable to attend the meeting
+
+- #####More Time To Brainstorm
+	- Not settling on an idea too early on gave us time to bounce more ideas off one another and people we know outside of school. Interesting problems and insights with our product came about that led to considering changing the product altogether. Hearing different reasonings to keeping the product vs changing led us to consider pros and cons of the product functionality in much greater depth. Some key benifits it provided us with:
+		- Greater familiarity with each team members thinking process
+		- Much richer and broader ideas for potential projects
+		- We know early on what our product will be good and bad for at a greater level of depth than if we decided on the idea without putting much thought into it.
 
 #### Decisions that did not turn out as well as we hoped
-
-List process-related (i.e. team organization) decisions that, in retrospect, were not as successful as you thought they would be.
 
  [comment]: <> (* 2 - 4 decisions.)
  [comment]: <> (* Ordered from most to least important.)
  [comment]: <> (* Feel free to refer/link to process artifact(s).)
    
-Due to unforeseeable circumstances, group members getting sick, our in-person meetings were not as productive as they could be. 
+- #####In-Person Meetings
+	- In person meetings we scheduled apart from tutorial days were not planned as great as we liked. Although most members did show up and rest were available online through Slack, we were unable to find a good room to hold the meeting in. This led to a shorter meeting conducted in a hallway which wasn't as conductive to the team process.
+		- Due to unforeseeable circumstances, group members getting sick, our in-person meetings were not as productive as they could be.
+		- Needed to arrange times when most members were able to meet which was difficult to do due to each members scheduling conflicts.
+
+- 
 
 #### Planned changes
 
