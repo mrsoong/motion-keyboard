@@ -6,8 +6,9 @@ Motionkey is an Android keyboard application that lets users type by tilting the
 
 >![Round QWERTY](./artifacts/deliverable_1/images/mockup2.jpg  "Keyboard UI") ![Circular Keyboard](./artifacts/deliverable_1/images/mockup.png  "Keyboard UI")<br />
 >Two examples of the Android UI with regular keyboard replaced with Motionkey. The left UI features a QWERTY style while the right features a rotary style.<br />
-Modified image by our team, original source:
-https://android.gadgethacks.com/news/android-keyboard-showdown-swiftkey-vs-swype-vs-google-vs-touchpal-vs-fleksy-0169977/ 
+Modified image by our team, original sources:
+https://android.gadgethacks.com/news/android-keyboard-showdown-swiftkey-vs-swype-vs-google-vs-touchpal-vs-fleksy-0169977/
+http://androidspin.com/2010/07/22/googles-secret-keyboard-hidden-in-your-keyboard/
 
 Motionkey serves users who have trouble using a keyboard with touch input or don't simply want to use a touch-based keyboard while typing. It also serves as an alternative to text-to-speech for enviroments or situations where speech input isn't ideal or possible.
 
