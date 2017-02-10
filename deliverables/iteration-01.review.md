@@ -2,16 +2,13 @@
 <br />
 ## Iteration 01 - Review & Retrospect
 
- * When: Feb.6.2017
+ * When: Feb.6.2017 - 8PM - 9:20PM (During and After Tutorial Hour)
  * Where: BA2165 & Online Via Slack
 
+<br />
 ## Process - Reflection
 
 As this was our last meeting before submitting the first deliverable, the main purpose of it was to finalize our product idea. During the meeting, new ideas came about that were interesting such as a programming IDE with screen reader for the blind, but ultimately the majority voted in favour of going ahead with MotionKey as it seemed like a unique project that was manageable to do.
-
-###meeting notes link here????
-
-
 
 <br />
 #### Decisions that turned out well
@@ -62,6 +59,7 @@ As this was our last meeting before submitting the first deliverable, the main p
 - ##### Git Branch Modeling
 	- Another change we are planning on making is with regards to Git branch modeling. As of this review we have not reached a consensus as to how to model our branching. Our current thoughts are to split the initial development into three branches: UI, Gyroscope control, and Language Input Processing.
 
+<br />
 ## Product - Review
 
 #### Goals and/or tasks that were met/completed:
@@ -69,8 +67,9 @@ As this was our last meeting before submitting the first deliverable, the main p
   [comment]: <> (* * From most to least important.)
   [comment]: <> (* * Refer/link to artifact(s) that show that a goal/task was met/completed.)
   [comment]: <> (* * If a goal/task was not part of the original iteration plan, please mention it.)
-  
 
+- ##### Decided on Product and Name
+ 
 
 #### Goals and/or tasks that were planned but not met/completed:
 
