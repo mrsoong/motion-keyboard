@@ -74,16 +74,13 @@ We decided that our product should be a suite of accessibility tools that will a
 
 ![Rough Sketch](./artifacts/deliverable_1/images/RoughSketch.jpg "Keyboard UI") 
 
-- We will use prototyping software to construct images of how we expect the keyboard UI to look - which will
-   make more tangible the current abstract and possibility differing ideas that each person may have on what the end
-   product actually is.
-   -This is useful for our team because this will help everyone better understand what exactly we are building.
+- We will use prototyping software to construct images of how we expect the keyboard UI to look - which will make more tangible the current abstract and possibility differing ideas that each person may have on what the end product actually is.
+	-This is useful for our team because this will help everyone better understand what exactly we are building.
 
 ![Round QWERTY](./artifacts/deliverable_1/images/mockup2.jpg  "Keyboard UI") ![Circular Keyboard](./artifacts/deliverable_1/images/mockup.png  "Keyboard UI")
         
-- We will construct a short animation to show how the voice controlled UI may work, showing a person talking
-   and how exactly this modifies the current state of the UI on an Android phone.
-   - This too will help everyone understand how exactly the mechanism for the voice control will work and allow people to do precise research on what exactly they will need to know and need to do once we start the actual development process.
+- We will construct a short animation to show how the voice controlled UI may work, showing a person talking and how exactly this modifies the current state of the UI on an Android phone.
+	- This too will help everyone understand how exactly the mechanism for the voice control will work and allow people to do precise research on what exactly they will need to know and need to do once we start the actual development process.
  
 - Meeting notes
 
