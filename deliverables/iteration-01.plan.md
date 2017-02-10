@@ -83,7 +83,7 @@ We decided that our product should be a suite of accessibility tools that will a
  
 - Meeting notes
 
- 	Meeting Notes - Thursday February 2nd, 2017
+ 	Thursday February 2nd, 2017
 
 		Discussed Product details
 
