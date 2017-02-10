@@ -85,7 +85,7 @@ Rough Meeting notes
 
 	Discussed Product details
 
-		What is our minimum viable prodcut (MVP)?
+		What is our minimum viable product (MVP)?
 			Custom keyboard UI
 			Gyroscope control
 			Spell checker
