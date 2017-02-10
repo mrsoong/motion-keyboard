@@ -18,6 +18,20 @@ User Interface Designers: Since our product is meant to augment the UI for disab
 
 Android Developers: Our product is initially going to be developed for Android devices. Our team will require software engineers to develop out application on the Android platform. 
 
+| Role | Description | Name |
+| --- | --- | --- |
+| Android Developer | Responsible for developing the Android Keyboard | Mark |
+| Android Developer | Responsible for developing the Android Keyboard | Fredrik |
+| Android Developer | Responsible for developing the Android Keyboard | Mansoor |
+| Android Developer | Responsible for developing the Android Keyboard | Tanzin |
+| Android Developer | Responsible for developing the Android Keyboard | Steven |
+| Android Developer | Responsible for developing the Android Keyboard | Jun |
+| Meeting Leader | Prepares meeting topics and ensures everyone stays on topic | Mansoor |
+| Minute Taker | Records important information discussed at the meeting | Steven |
+| Android Researcher | Researchers for resources related to Android development | Mark |
+| Sensor Researcher | Researchers for resources related to Android development | Fredrik |
+| UI Researcher | Researchers for resources related to Android development | Tanzin |
+| Issue Manager | Will allocate group resources to solving issues | Jun |
 
 <br />
 #### Events
