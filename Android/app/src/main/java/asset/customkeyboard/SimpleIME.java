@@ -10,6 +10,9 @@ import android.view.inputmethod.InputConnection;
 
 /**
  * Created by Mark on 2017-02-08.
+ * Created using https://code.tutsplus.com/tutorials/create-a-custom-keyboard-on-android--cms-22615 and 
+ * https://www.youtube.com/watch?v=7nsa7BuoWhU
+ *
  */
 
 public class SimpleIME extends InputMethodService implements KeyboardView.OnKeyboardActionListener {
