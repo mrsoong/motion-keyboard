@@ -7,9 +7,9 @@ Motionkey is an Android keyboard application that lets users type by tilting the
 >![Phone Tilt](./artifacts/deliverable_1/images/mockup.png  "Keyboard UI")<br />
 >An Example of the Android UI with regular keyboard replaced with Motionkey.<br />
 
-Motionkey serves users who have trouble using a keyboard with touch input or don't simply want to use a touch-based keyboard while typing. It also serves as an alternative to text-to-speech for enviroments or situations where speech input isn't ideal or possible.
+Motionkey serves users who have trouble using a keyboard with touch input or don't simply want to use a touch-based keyboard while typing. It also serves as an alternative to text-to-speech for environments or situations where speech input isn't ideal or possible.
 
-An example that illustrates its use as an assitive technology is as follows: Amy is a student without the use of her fingers. Currently she uses voice recognition but during meetings or class, it's not ideal. Motionkey allows Amy to type her messages with the same speed and precision as with a touch keyboard all while providing privacy and ease of use.
+An example that illustrates its use as an assistive technology is as follows: Amy is a student without the use of her fingers. Currently she uses voice recognition but during meetings or class, it's not ideal. Motionkey allows Amy to type her messages with the same speed and precision as with a touch keyboard all while providing privacy and ease of use.
 
 >![Phone Tilt](./artifacts/deliverable_1/images/phone_tilt_animation.gif  "Phone Tilt")<br />
 >Tilting the phone in the direction of keyboard text to type a message.<br />
