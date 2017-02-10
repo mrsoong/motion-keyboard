@@ -53,16 +53,15 @@ As this was our last meeting before submitting the first deliverable, the main p
 <br />
 ## Product - Review
 
-#### Goals and/or tasks that were met/completed:
+#### Goals and/or tasks that were met/completed
 
-- ##### Decided on Product and Name
+- Decided on Product and Name
 
-- ##### Started learning the basics of Android Development
- 
+- Some members started learning the basics of Android Development
 
-#### Goals and/or tasks that were planned but not met/completed:
+#### Goals and/or tasks that were planned but not met/completed
 
-- ##### Not everyone has installed the Android Development Kit and familiarized themselves with Android
+- Not everyone has installed the Android Development Kit and familiarized themselves with Android
 
 ## Meeting Highlights
 
