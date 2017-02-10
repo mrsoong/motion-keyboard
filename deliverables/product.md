@@ -4,8 +4,10 @@
 
 Motionkey is an Android keyboard application that lets users type by tilting their phone and using motion gestures. It can be used in any phone application where the default keyboard would pop up for text input.
 
->![Phone Tilt](./artifacts/deliverable_1/images/mockup.png  "Keyboard UI")<br />
->An Example of the Android UI with regular keyboard replaced with Motionkey.<br />
+>![Round QWERTY](./artifacts/deliverable_1/images/mockup2.jpg  "Keyboard UI") ![Circular Keyboard](./artifacts/deliverable_1/images/mockup.png  "Keyboard UI")<br />
+>Two examples of the Android UI with regular keyboard replaced with Motionkey. The left UI features a QWERTY style while the right features a rotary style.<br />
+Modified image by our team, original source:
+https://android.gadgethacks.com/news/android-keyboard-showdown-swiftkey-vs-swype-vs-google-vs-touchpal-vs-fleksy-0169977/ 
 
 Motionkey serves users who have trouble using a keyboard with touch input or don't simply want to use a touch-based keyboard while typing. It also serves as an alternative to text-to-speech for enviroments or situations where speech input isn't ideal or possible.
 
@@ -20,7 +22,7 @@ An example that illustrates its use as an assitive technology is as follows: Amy
 
 Our target users include those who are unable to use touch based input, whether it be from a disability or medical issue, and those who simply choose not to use it. Disabilities may include loss of hand digits or limbs, nerve damage, and cases where it is hard to use voice recognition as an alternative.
 
->![Phone Tilt](./artifacts/deliverable_1/images/web-worksafe-cut_frame_2.jpg  "Amputee")<br />
+>![Phone Tilt](./artifacts/deliverable_1/images/target_user.jpg  "Amputee")<br />
 >An Example of the Target User for this product.<br />
 >Image courtesy of http://www.cbc.ca/news/canada/british-columbia/worksafebc-reviews-home-care-after-double-amputee-s-aid-scaled-back-1.3186595
 
