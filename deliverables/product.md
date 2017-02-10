@@ -4,8 +4,11 @@
 
 Motionkey is an Android keyboard application that lets users type by tilting their phone and using motion gestures. It can be used in any phone application where the default keyboard would pop up for text input.
 
->![Phone Tilt](./artifacts/deliverable_1/images/mockup.png  "Keyboard UI")<br />
->An Example of the Android UI with regular keyboard replaced with Motionkey.<br />
+>![Round QWERTY](./artifacts/deliverable_1/images/mockup2.jpg  "Keyboard UI") ![Circular Keyboard](./artifacts/deliverable_1/images/mockup.png  "Keyboard UI")<br />
+>Two examples of the Android UI with regular keyboard replaced with Motionkey. The left UI features a QWERTY style while the right features a rotary style.<br />
+Modified image by our team, original sources:
+https://android.gadgethacks.com/news/android-keyboard-showdown-swiftkey-vs-swype-vs-google-vs-touchpal-vs-fleksy-0169977/
+http://androidspin.com/2010/07/22/googles-secret-keyboard-hidden-in-your-keyboard/
 
 Motionkey serves users who have trouble using a keyboard with touch input or don't simply want to use a touch-based keyboard while typing. It also serves as an alternative to text-to-speech for environments or situations where speech input isn't ideal or possible.
 
@@ -20,7 +23,7 @@ An example that illustrates its use as an assistive technology is as follows: Am
 
 Our target users include those who are unable to use touch based input, whether it be from a disability or medical issue, and those who simply choose not to use it. Disabilities may include loss of hand digits or limbs, nerve damage, and cases where it is hard to use voice recognition as an alternative.
 
->![Phone Tilt](./artifacts/deliverable_1/images/web-worksafe-cut_frame_2.jpg  "Amputee")<br />
+>![Phone Tilt](./artifacts/deliverable_1/images/target_user.jpg  "Amputee")<br />
 >An Example of the Target User for this product.<br />
 >Image courtesy of http://www.cbc.ca/news/canada/british-columbia/worksafebc-reviews-home-care-after-double-amputee-s-aid-scaled-back-1.3186595
 
@@ -38,14 +41,6 @@ A detailed example using personas is provided here:
 
 Our product would help our target group to become more independent in their everyday use of their mobile phones. Today they might refrain from typing longer texts on their phones due to the difficulty of getting it correct.
 They may also use other options, such as text-to-speech, and our product would work as complement to this. While text-to-speech is very developed and efficient today, there are many enviroments where it cannot be used. For example in public or open office spaces.
-
- >* Short (1 - 2 min' read max)
- >* We want you to "connect the dots" for us - Why does your product (as described in your answer to Q1) fits the needs of your users (as described in your answer to Q2)?
- >* Explain the benefits of your product explicitly & clearly. For example:
- >   * Save users time (how much?)
- >   * Allow users to discover new information (which information? And, why couldn't they discover it before?)
- >   * Provide users with more accurate and/or informative data (what kind of data? Why is it useful to them?)
-
 
 ----
 
@@ -65,13 +60,3 @@ On the other hand, the Android keyboard operated with the phone's sensors would 
 
 While discussing our options for a product, we also decided that it would be best to avoid getting too much into details early on.  As the project was still in the planning phase, we felt that the product was likely going to evolve over the course of the project. 
 We therefore decided on a Minimum Viable Product (an Android keyboard controlled with a phone's gyroscope), and began thinking about various features (e.g voice recognition) that could be added once the MVP was complete.
-
->Specify 3 - 5 key decisions and/or insights that came up during your meetings
->and/or collaborative process.
->
-> * Short (5 min' read max)
-> * Decisions can be related to the product and/or the team process.
->    * Mention which alternatives you were considering.
->    * Present the arguments for each alternative.
->    * Explain why the option you decided on makes the most sense for your team/product/users.
-> * Essentially, we want to understand how (and why) you ended up with your current product plan.
