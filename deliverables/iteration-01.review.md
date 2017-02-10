@@ -59,6 +59,8 @@ As this was our last meeting before submitting the first deliverable, the main p
 
 #### Goals and/or tasks that were planned but not met/completed:
 
+- ##### Not everyone has installed the Android Development Kit and familiarized themselves with Android
+
 ## Meeting Highlights
 
 Going into the next iteration, our main insights are:
