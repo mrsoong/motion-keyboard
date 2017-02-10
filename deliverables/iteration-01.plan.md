@@ -128,21 +128,21 @@ We decided that our product should be a suite of accessibility tools that will a
 		TO DO:
 
 		General:
-		- [x]  Decide on Team name
+		- Decide on Team name
 
 		Product.md
-		- [x] Add personas
-		- [x] Diagrams and Mockups
+		- Add personas
+		- Diagrams and Mockups
 
 		iteration-01.plan.md
 
 		iteration-01.review.md
-		- [x] Review when/where
-		- [x] Process Reflection
-			- [x] Decisions that turned out well
-			- [x] did not turn out well
-			- [x] planned changes
-		- [x] Product Review
-			- [x] Goals completed
-			- [x] not completed
-		- [x] Meeting highlights
+		- Review when/where
+		- Process Reflection
+			- Decisions that turned out well
+			- did not turn out well
+			- planned changes
+		- Product Review
+			- Goals completed
+			- not completed
+		- Meeting highlights

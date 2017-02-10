@@ -113,3 +113,26 @@ Rough Meeting notes
 
 		Split the team into two groups to work on product.md and iteration-01.plan.md
 		Meet near February 11th, 2017 to work on iteration-01.review.md
+
+
+##TO DO:
+
+	General:
+	- [x]  Decide on Team name
+
+	Product.md
+	- [x] Add personas
+	- [x] Diagrams and Mock-ups
+
+	iteration-01.plan.md
+
+	iteration-01.review.md
+	- [x] Review when/where
+	- [x] Process Reflection
+		- [x] Decisions that turned out well
+		- [x] did not turn out well
+		- [x] planned changes
+	- [x] Product Review
+		- [x] Goals completed
+		- [x] not completed
+	- [x] Meeting highlights
