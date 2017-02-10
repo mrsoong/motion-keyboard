@@ -19,7 +19,6 @@ User Interface Designers: Since our product is meant to augment the UI for disab
 <br />
 #### Events
 
-Describe meetings (and other events) you are planning to have:
 We are using the software "Slack" to conduct daily informal meetings. We expect each member to check this software daily to update themselves on the current status of the project and to notify other team members of any issues they may be facing.
 
 We are also conducting a weekly formal meeting on Mondays from 9:00 pm to 9:30 pm in order to do code reviews, to ensure that everyone is committed to the agile process and to bring everyone up to speed on what has been accomplished in the past week.
