@@ -6,7 +6,7 @@
 - [x]  Decide on Team name
 
 ###Product.md
-- [ ] Add personas
+- [x] Add personas
 - [x] Diagrams and Mockups
 
 ###iteration-01.plan.md
@@ -17,7 +17,7 @@
 	- [x] Decisions that turned out well
 	- [x] did not turn out well
 	- [x] planned changes
-- [ ] Product Review
-	- [ ] Goals completed
-	- [ ] not completed
+- [x] Product Review
+	- [x] Goals completed
+	- [x] not completed
 - [x] Meeting highlights
