@@ -16,10 +16,15 @@ The team conducted a meeting to go over potential ideas that anyone may have had
 
 User Interface Designers: Since our product is meant to augment the UI for disabled individuals, we require software designers who have an understanding of how UI works, what paradigms are useful for UI design and some understanding of current trends in HCI so that our product can be visually pleasing and functional for the end user.
 
+Android Developers: Our product is initially going to be developed for Android devices. Our team will require software engineers to develop out application on the Android platform. 
+
+
 <br />
 #### Events
 
-We are using the software "Slack" to conduct daily informal meetings. We expect each member to check this software daily to update themselves on the current status of the project and to notify other team members of any issues they may be facing.
+We are using the software ["Slack"](https://slack.com/ "slack") to conduct daily informal meetings. We expect each member to check this software daily to update themselves on the current status of the project and to notify other team members of any issues they may be facing.
+
+>![Slack room](./artifacts/deliverable_1/images/slack.jpg  "slack")
 
 We are also conducting a weekly formal meeting on Mondays from 9:00 pm to 9:30 pm in order to do code reviews, to ensure that everyone is committed to the agile process and to bring everyone up to speed on what has been accomplished in the past week.
 
@@ -54,13 +59,56 @@ We decided that our product should be a suite of accessibility tools that will a
 
 <br />
 #### Artifacts
+
+ -We created rough sketches when discussing possible keyboard UI designs
+
+![Rough Sketch](./artifacts/deliverable_1/images/RoughSketch.jpg "Keyboard UI") 
+
  - We will use prototyping software to construct images of how we expect the keyboard UI to look - which will
    make more tangible the current abstract and possibility differing ideas that each person may have on what the end
    product actually is.
         This is useful for our team because this will help everyone better understand what exactly we are building.
+
+![Round QWERTY](./artifacts/deliverable_1/images/mockup2.jpg  "Keyboard UI") ![Circular Keyboard](./artifacts/deliverable_1/images/mockup.png  "Keyboard UI")
         
  - We will construct a short animation to show how the voice controlled UI may work, showing a person talking
    and how exactly this modifies the current state of the UI on an Android phone.
+        
         This too will help everyone understand how exactly the mechanism for the voice control will work and allow
         people to do precise research on what exactly they will need to know and need to do once we start the actual
         development process.
+ 
+ - Meeting notes
+
+ 	Meeting Notes - Thursday February 2nd, 2017
+
+		Discussed Product details
+
+		What is our minimum viable prodcut (MVP)?
+			Custom keyboard UI
+			Gyroscope control
+			Spell checker
+
+		What features belong to the backlog?
+			Bluetooth control
+			more gyroscope (tilting to scroll, etc.)
+			autocomplete
+
+		Where to start?
+			Should start learning the basic of Android development
+				Install Android Studio
+			Work on being able to follow and understand creation of a basic custom keyboard
+
+		Discussed process details
+
+			What artifacts will we create?
+				UI mock ups
+				To do list
+
+			What possible Git branching model will we implement?
+				Divide the features into branches, one for the UI, one for the gyroscope, one for the spell checker?
+
+		Discussed details of the deliverables
+
+			Split the team into two groups to work on product.md and iteration-01.plan.md
+			Meet near February 11th, 2017 to work on iteration-01.review.md 
