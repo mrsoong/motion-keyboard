@@ -1,4 +1,4 @@
-# Team Name : ASSET : Acessibility Software Solutions (that) Enhance Technology  
+# Team Name : ASSET : Accessibility Software Solutions (that) Enhance Technology  
 # Product: Suite of Accessibility Tools to Enhance Android UI for Disabled People
 
 ## Iteration 01
@@ -8,7 +8,7 @@
 
 ## Process
 
-The team conducted a meeting to go over potential ideas that anyone may have had before finalising our project. We are all passionate about accessibility, but we wanted to ensure that we create a product that is both meaningful to us and functional to the end user, so we conducted research on our own before the meeting on what areas of accessibility are potentially lacking in useful software and discussed this during the meeting.
+The team conducted a meeting to go over potential ideas that anyone may have had before finalizing our project. We are all passionate about accessibility, but we wanted to ensure that we create a product that is both meaningful to us and functional to the end user, so we conducted research on our own before the meeting on what areas of accessibility are potentially lacking in useful software and discussed this during the meeting.
 
 #### Roles & responsibilities
 
@@ -23,17 +23,17 @@ We are also conducting a weekly formal meeting on Mondays from 9:00 pm to 9:30 p
 
 #### Artifacts
 
-We are currently in the process of constructing a schedule and a task-board to precisely formalise how we will go about developing our application. We will modularise the project into well-defined parts that we can divide up amongst our team and specify a high-level schedule by which tasks should be completed. We are allowing team members to choose which part of the project they want to work on i/e. UI design, back-end coding, testing etc. We will use this schedule to identify during our weekly team meeting whether or not we are on track and whether there are any pressing issues that need to be addressed.
+We are currently in the process of constructing a schedule and a task-board to precisely formalize how we will go about developing our application. We will modularize the project into well-defined parts that we can divide up amongst our team and specify a high-level schedule by which tasks should be completed. We are allowing team members to choose which part of the project they want to work on i/e. UI design, back-end coding, testing etc. We will use this schedule to identify during our weekly team meeting whether or not we are on track and whether there are any pressing issues that need to be addressed.
 
-We are prioritising the task of developing the software first and putting less emphasis on testing for the time being, because we haven't yet decided on function prototypes that will allow testers to follow a test-driven development approach.
+We are prioritizing the task of developing the software first and putting less emphasis on testing for the time being, because we haven't yet decided on function prototypes that will allow testers to follow a test-driven development approach.
 
 ## Product
 
-We decided that our product should be a suite of accessibility tools that will allow people with disabilties to more effective use android phones. Our MVP is a keyboard with keys laid out in a circle that functions with the gyroscope, thus allowing anyone who is missing fingers to type on android. Our stretch goal is to add more tools to the suite, such as a way to control the UI with voice.
+We decided that our product should be a suite of accessibility tools that will allow people with disabilities to more effective use android phones. Our MVP is a keyboard with keys laid out in a circle that functions with the gyroscope, thus allowing anyone who is missing fingers to type on android. Our stretch goal is to add more tools to the suite, such as a way to control the UI with voice.
 
 #### Goals and tasks
  Goals
-- Our goal for this iteration is for everyone to install the Android development kit, to familiarise themselves with the Android Development Environment and to inspect existing code on how a simple keyboard application works. This will allow them to understand what needs to be done in order to take the idea of a keyboard and build upon it to create something new and useful to a different segment of the population.
+- Our goal for this iteration is for everyone to install the Android development kit, to familiarize themselves with the Android Development Environment and to inspect existing code on how a simple keyboard application works. This will allow them to understand what needs to be done in order to take the idea of a keyboard and build upon it to create something new and useful to a different segment of the population.
 
 Tasks
  - Do research on how exactly Android Development works
@@ -42,7 +42,7 @@ Tasks
 
 Goals Ordered by Importance
  - Install Android
- - Get familiarised with android development environment and android design principles
+ - Get familiarized with android development environment and android design principles
  - Understand how basic keyboard application works
 
 #### Artifacts
@@ -55,4 +55,4 @@ Goals Ordered by Importance
    and how exactly this modifies the current state of the UI on an Android phone.
         This too will help everyone understand how exactly the mechanism for the voice control will work and allow
         people to do precise research on what exactly they will need to know and need to do once we start the actual
-        devlopment process.
+        development process.
