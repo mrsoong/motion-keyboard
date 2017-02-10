@@ -18,7 +18,10 @@ An example that illustrates its use as an assistive technology is as follows: Am
 >Tilting the phone in the direction of keyboard text to type a message.<br />
 >Image courtesy of http://droidfreak1.blogspot.ca/2015/01/best-option-to-samsung-smart-scroll.html
 
+### Minimum Viable Product
+Our MVP is a gyroscope-controlled keyboard that can be used by a variety of user segments, some of who may have neurological or physical conditions that hamper their ability to use the regular touch-based android keyboard. Our stretch goals are to add more accessibility features in order to create a 'suite' of tools, all of which can help various segments of the population who may have difficulty using the standard Android Interface. 
 <br />
+
 #### Q2: Who are your target users?
 
 Our target users include those who are unable to use touch based input, whether it be from a disability or medical issue, and those who simply choose not to use it. Disabilities may include loss of hand digits or limbs, nerve damage, and cases where it is hard to use voice recognition as an alternative.
