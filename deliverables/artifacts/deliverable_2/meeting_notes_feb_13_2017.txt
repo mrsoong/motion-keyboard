@@ -59,5 +59,6 @@ TA Advice (Substitute TA for Adam):
 - never assign one task to two different people. Two people can work on one task, but one person will be responsible for it.
 - make mockups with Balsamiq
 - another idea could be to use this gyroscope hand eye coordination as a game to train people that are recovering from nerve damage or used as a training exercise for jobs requring extremely good precision. Like those games where you have to move the ring through the metal loops without touching the loop, or like a ball in a maze game.
+- think about the specific group of users, need to make the application that fit the users.
 
 
