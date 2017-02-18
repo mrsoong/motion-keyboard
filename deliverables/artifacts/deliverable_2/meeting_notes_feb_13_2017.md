@@ -1,48 +1,48 @@
-Meeting Notes - Feb.13.2017 - 8pm-9pm
+## Meeting Notes - Feb.13.2017 - 8pm-9pm
 
-Members Present:
-In Person:
-Jun
-Mansoor
-Steven
-Online via Slack:
-Fredrik
-Mark
-Tanzin
+### Members Present:
+* In Person:
+    * Jun
+    * Mansoor
+    * Steven
+* Online via Slack:
+    * Fredrik
+    * Mark
+    * Tanzin
 
 
 
-Highlights:
+### Highlights:
 - 5 minute presentation in front of tutorial group
-    -questions asked to us:
-        -what is your target audience?
-        -who are your competitors
-        -how is your product different from competitors?
-        -what problem does this solve that competitors don't? What is the problem exactly?
-        -[student] why are you building in android instead of ios?
+    - questions asked to us:
+        - what is your target audience?
+        - who are your competitors
+        - how is your product different from competitors?
+        - what problem does this solve that competitors don't? What is the problem exactly?
+        - [student] why are you building in android instead of ios?
 
 
 
-Discussion:
+### Discussion:
 - figure out git branching modeling
 - in the Android Development Environment, will the simulator be able to test gyroscope functions?
 
 
 
-Tasks that need to be completed:
+### Tasks that need to be completed:
 - all members must read and get familiar with the Android Development Kit and Documentation
 - do the simple keyboard tutorial and learn the basics of android
 - assign group roles:
-    -group leader
-    -android tester
-    -ui design
-    -android documentation
-    -meeting note taker
-    -who will merge pull requests (pair members so each merges the other's)
+    - group leader
+    - android tester
+    - ui design
+    - android documentation
+    - meeting note taker
+    - who will merge pull requests (pair members so each merges the other's)
 
 
 
-Things we need to solidify:
+### Things we need to solidify:
 - pain points
 - target user / core user
 - what niche are trying to fill
@@ -51,13 +51,13 @@ Things we need to solidify:
 
 
 
-Before Next Meeting:
+### Before Next Meeting:
 - plan things to discuss during meeting beforehand so we don't waste time
 - discuss member attendance during meetings
 
 
 
-TA Advice (Substitute TA for Adam):
+### TA Advice (Substitute TA for Adam):
 - find a good issue tracking system to add things that need to be done
     - github issues
     - esena
