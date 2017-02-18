@@ -44,7 +44,7 @@
         - makes it so that no one is depending on each other so pull requests doesn't start to pile up
 
     - branch modeling
-        - minimum is master brand, then perhaps a development branch
+        - minimum is master branch, then perhaps a development branch
         - maybe a feature branch, keep working in development or feature branch and merge upwards to master
         - never commit directly to master
         - figure out the ideal modeling scheme that will be used
