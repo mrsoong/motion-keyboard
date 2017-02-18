@@ -1,4 +1,5 @@
-# TEAM PROJECT
+<img src="./deliverables/artifacts/deliverable_2/logo/logo_letter_m_angle.jpg" alt="m_logo" align="middle">
+# MOTIONKEY ANDROID KEYBOARD
 
 ##TO DO:
 
