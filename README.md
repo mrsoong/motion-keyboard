@@ -1,5 +1,5 @@
-<img src="./deliverables/artifacts/deliverable_2/logo/logo_letter_m_angle.jpg" alt="m_logo" align="middle">
-# MOTIONKEY ANDROID KEYBOARD
+<p align="center"><img src="./deliverables/artifacts/deliverable_2/logo/logo_letter_m_angle.jpg" alt="m_logo"></p>
+<h1 align="center">MOTIONKEY ANDROID KEYBOARD</h1>
 
 ##TO DO:
 
