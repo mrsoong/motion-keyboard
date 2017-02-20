@@ -3,8 +3,8 @@
 <h3 align="center">A new way to communicate without touch input</h3>
 
 <p align="center">
-  <img src="./deliverables/artifacts/deliverable_2/badges/kanban board-online-brightgreen.jpg" alt="kanban_badge" style="float:left;">
-  <img src="./deliverables/artifacts/deliverable_2/badges/wiki-online-brightgreen.jpg" alt="wiki_badge" style="float:left;">
-  <img src="./deliverables/artifacts/deliverable_2/badges/milestone-mvp-blue.jpg" alt="milestone_badge" style="float:left;">
+  <a href="https://github.com/csc301-winter-2017/project-team-15/projects/1"><img src="./deliverables/artifacts/deliverable_2/badges/kanban board-online-brightgreen.jpg" alt="kanban_badge" style="float:left;"></a>
+  <a href="https://github.com/csc301-winter-2017/project-team-15/wiki"><img src="./deliverables/artifacts/deliverable_2/badges/wiki-online-brightgreen.jpg" alt="wiki_badge" style="float:left;"></a>
+  <a href="https://github.com/csc301-winter-2017/project-team-15/milestone/1"><img src="./deliverables/artifacts/deliverable_2/badges/milestone-mvp-blue.jpg" alt="milestone_badge" style="float:left;"></a>
 </p>
 
