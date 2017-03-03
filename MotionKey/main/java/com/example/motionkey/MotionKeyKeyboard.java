@@ -67,10 +67,10 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
 
         //begin listening to the sensors
         mSensorManager.registerListener(this, mSensorMagneticField,
-                mSensorManager.SENSOR_DELAY_NORMAL);
+                mSensorManager.SENSOR_DELAY_FASTEST);
         
         mSensorManager.registerListener(this, mSensorAccelerometer,
-                mSensorManager.SENSOR_DELAY_NORMAL);
+                mSensorManager.SENSOR_DELAY_FASTEST);
 
         return mMotionKeyView;
     }
