@@ -2,7 +2,9 @@
 
 ### Communication issues
  * Not communicating in slack or github
-
+ 
+### Things to show
+ * *working* keyboard
 ### Project Status
  * Whats been done
    * Keyboard layout
