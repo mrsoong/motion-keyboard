@@ -48,9 +48,14 @@ public class MotionKeyCursorObserver {
         }
     }
 
-    public void updateCursorPosition(int[] position) {
+    public String updateCursorPosition(int[] position) {
         for (MotionKeyInteractiveElement element : mAllInteractiveElements) {
-            element.checkCursorHover(position);
+            String tmp = element.checkCursorHover(position);
+            if(tmp != null){
+                return tmp;
+            }
         }
+        return null;
     }
 }
+
