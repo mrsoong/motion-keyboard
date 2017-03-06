@@ -7,18 +7,8 @@
 package com.example.motionkey;
 
 import android.content.Context;
-import android.hardware.Sensor;
-import android.hardware.SensorEvent;
-import android.hardware.SensorEventListener;
-import android.hardware.SensorManager;
 import android.util.AttributeSet;
-import android.view.View;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
-
-import java.util.Arrays;
-
-import static android.content.Context.SENSOR_SERVICE;
 
 
 /**
@@ -26,7 +16,28 @@ import static android.content.Context.SENSOR_SERVICE;
  */
 public class MotionKeyKeyboardView extends RelativeLayout {
 
+    private MotionKeyCursorObserver mMotionKeyCursorObserver;
+    private boolean mMotionKeyInteractiveElementsFound = false;
+
     public MotionKeyKeyboardView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
     }
+
+    @Override
+    protected void onLayout(boolean changed, int l, int t, int r, int b) {
+        super.onLayout(changed, l, t, r, b);
+        if (!mMotionKeyInteractiveElementsFound) {
+            mMotionKeyCursorObserver = new MotionKeyCursorObserver(this);
+            mMotionKeyInteractiveElementsFound = true;
+        }
+    }
+
+    public MotionKeyCursorObserver getMotionKeyElements() {
+        return mMotionKeyCursorObserver;
+    }
+
+    public boolean isMotionKeyKeyboardElementsFound() {
+        return mMotionKeyInteractiveElementsFound;
+    }
+
 }
