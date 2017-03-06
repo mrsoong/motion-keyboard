@@ -6,6 +6,7 @@
 
 package com.example.motionkey;
 
+import android.content.Context;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -13,9 +14,13 @@ import android.hardware.SensorManager;
 import android.inputmethodservice.InputMethodService;
 import android.util.Log;
 import android.view.View;
+import android.view.inputmethod.InputConnection;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 
 
 /**
@@ -46,6 +51,10 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
     float[] adjustmentAmount = new float[3];
 
     int mANGLE_LIMIT = 40;
+    HashMap<int[], Integer> keyLocation = new HashMap<int[], Integer>();
+    private String[] alphabet = new String[3];
+
+
 
 
     @Override
@@ -71,6 +80,10 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
         
         mSensorManager.registerListener(this, mSensorAccelerometer,
                 mSensorManager.SENSOR_DELAY_FASTEST);
+
+        alphabet[0] = "zxcvbnm";
+        alphabet[1] = "asdfghjkl";
+        alphabet[2] = "qwertyuiop";
 
         return mMotionKeyView;
     }
@@ -192,7 +205,12 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
                     int[] mCursorPosition = new int[2];
                     mCursorPosition[0] = (mMotionKeyView.getWidth())/2-curCursorPaddingRight/2+curCursorPaddingLeft/2;
                     mCursorPosition[1] = (mMotionKeyView.getHeight())/2-curCursorPaddingBottom/2+curCursorPaddingTop/2;
-                    mMotionKeyView.getMotionKeyElements().updateCursorPosition(mCursorPosition);
+                    String key = mMotionKeyView.getMotionKeyElements().updateCursorPosition(mCursorPosition);
+//                    getKeyID(, mCursorPosition);
+                    if (key != null){
+                        InputConnection ic = getCurrentInputConnection();
+                        ic.commitText(key,1);
+                    }
                 }
 
             }
@@ -249,4 +267,6 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
         //Do something if accuracy of sensor changes
         //Not needed at the moment
     }
+
+
 }
