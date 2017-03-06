@@ -13,6 +13,11 @@ import java.util.List;
  * Copyright (C) 2017 MotionKey
  */
 
+
+/**
+ * Relays the cursor position to all interactive elements
+ */
+
 public class MotionKeyCursorObserver {
 
     MotionKeyKeyboardView mMotionKeyView;

@@ -11,6 +11,11 @@ import android.view.View;
  * File Created on 3/4/17
  */
 
+
+/**
+ * A view affected by the cursor hovering over it
+ */
+
 public class MotionKeyInteractiveElement {
 
     private View mView;
