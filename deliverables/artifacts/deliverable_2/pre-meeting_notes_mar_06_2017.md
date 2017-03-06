@@ -5,6 +5,7 @@
  
 ### Things to show
  * *working* keyboard
+ 
 ### Project Status
  * Whats been done
    * Keyboard layout
