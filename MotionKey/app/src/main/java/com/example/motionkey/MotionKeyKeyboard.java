@@ -43,7 +43,15 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
     //this is the view that will be used as the cursor
     private TextView mCursor;
 
+    // Determines how sensitive the keyboard is
+    float sensitivity = 0.5f;
+
     //raw data from the sensors
+    int historyLength = 10;
+    int oldestHistoryIndex = 0;
+    float[] orientationHistoryAzimuth = new float[historyLength];
+    float[] orientationHistoryPitch = new float[historyLength];
+    float[] orientationHistoryRoll = new float[historyLength];
     float[] originalOrientation = new float[3];
 
     //reset orientation so the current orientation is the new 'default'
@@ -66,6 +74,11 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
 
         //initialize adjustment amount of orientation degrees to zero
         Arrays.fill(adjustmentAmount, 0);
+
+        // Initialize the orientation histories
+        Arrays.fill(orientationHistoryAzimuth, 0);
+        Arrays.fill(orientationHistoryPitch, 0);
+        Arrays.fill(orientationHistoryRoll, 0);
 
         //initialize xml layout of the keyboard
         mMotionKeyView = (MotionKeyKeyboardView) getLayoutInflater().inflate(R.layout.keyboard,
@@ -138,14 +151,53 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
                 originalOrientation[1] = (float) (Math.toDegrees(orientationMatrix[1]));
                 originalOrientation[2] = (float) (Math.toDegrees(orientationMatrix[2]));
 
+                // Check to see how much orientation has changed since the last time
+                // updateCursorPosition() was called
+                float[] orientationDelta = new float[3];
+                orientationDelta[0] = originalOrientation[0] - orientationHistoryAzimuth[oldestHistoryIndex];
+                orientationDelta[1] = originalOrientation[1] - orientationHistoryPitch[oldestHistoryIndex];
+                orientationDelta[2] = originalOrientation[2] - orientationHistoryRoll[oldestHistoryIndex];
+                if (Math.sqrt((Math.pow(orientationDelta[0], 2) + Math.pow(orientationDelta[1], 2) + Math.pow(orientationDelta[2], 2))) > 30.0) {
+                    // Update the history of orientations
+                    orientationHistoryAzimuth[oldestHistoryIndex] = originalOrientation[0];
+                    orientationHistoryPitch[oldestHistoryIndex] = originalOrientation[1];
+                    orientationHistoryRoll[oldestHistoryIndex] = originalOrientation[2];
+                }
+                else {
+                    // Nothing changes
+                }
+
+                // Update the history of orientations
+                orientationHistoryAzimuth[oldestHistoryIndex] = originalOrientation[0];
+                orientationHistoryPitch[oldestHistoryIndex] = originalOrientation[1];
+                orientationHistoryRoll[oldestHistoryIndex] = originalOrientation[2];
+
+                float[] smoothedOrientation = new float[3];
+                Arrays.fill(smoothedOrientation, 0);
+                for (int i = 0; i < historyLength; i++) {
+                    smoothedOrientation[0] += orientationHistoryAzimuth[i];
+                }
+                for (int i = 0; i < historyLength; i++) {
+                    smoothedOrientation[1] += orientationHistoryPitch[i];
+                }
+                for (int i = 0; i < historyLength; i++) {
+                    smoothedOrientation[2] += orientationHistoryRoll[i];
+                }
+                smoothedOrientation[0] /= (float) historyLength;
+                smoothedOrientation[1] /= (float) historyLength;
+                smoothedOrientation[2] /= (float) historyLength;
+                oldestHistoryIndex++;
+                oldestHistoryIndex = oldestHistoryIndex % historyLength;
+
+
                 //adjustedOrientation's index 2 is top bottom position. Positive is bottom.
                 //index 1 is left right position. Positive is right
-                adjustedOrientation[0] =
-                        (float) (Math.toDegrees(orientationMatrix[0]) + adjustmentAmount[0]);
-                adjustedOrientation[1] =
-                        (float) (Math.toDegrees(orientationMatrix[1]) + adjustmentAmount[1]);
-                adjustedOrientation[2] =
-                        (float) (Math.toDegrees(orientationMatrix[2]) + adjustmentAmount[2]);
+                adjustedOrientation[0] = (float) (smoothedOrientation[0] * sensitivity
+                        + adjustmentAmount[0]);
+                adjustedOrientation[1] = (float) (smoothedOrientation[1] * sensitivity * 1.5
+                        + adjustmentAmount[1]);
+                adjustedOrientation[2] = (float) (smoothedOrientation[2] * sensitivity
+                        + adjustmentAmount[2]);
 
                 //store current cursor information
                 int curCursorPaddingTop = mCursor.getPaddingTop();
