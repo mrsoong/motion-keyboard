@@ -167,13 +167,6 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
                     // Nothing changes
                 }
 
-                /*
-                // Update the history of orientations
-                orientationHistoryAzimuth[oldestHistoryIndex] = originalOrientation[0];
-                orientationHistoryPitch[oldestHistoryIndex] = originalOrientation[1];
-                orientationHistoryRoll[oldestHistoryIndex] = originalOrientation[2];
-                */
-
                 float[] smoothedOrientation = new float[3];
                 Arrays.fill(smoothedOrientation, 0);
                 for (int i = 0; i < historyLength; i++) {
