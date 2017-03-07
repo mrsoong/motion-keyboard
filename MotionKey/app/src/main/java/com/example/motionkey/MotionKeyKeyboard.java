@@ -47,7 +47,7 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
     float sensitivity = 0.5f;
 
     //raw data from the sensors
-    int historyLength = 10;
+    int historyLength = 20;
     int oldestHistoryIndex = 0;
     float[] orientationHistoryAzimuth = new float[historyLength];
     float[] orientationHistoryPitch = new float[historyLength];
@@ -157,7 +157,7 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
                 orientationDelta[0] = originalOrientation[0] - orientationHistoryAzimuth[oldestHistoryIndex];
                 orientationDelta[1] = originalOrientation[1] - orientationHistoryPitch[oldestHistoryIndex];
                 orientationDelta[2] = originalOrientation[2] - orientationHistoryRoll[oldestHistoryIndex];
-                if (Math.sqrt((Math.pow(orientationDelta[0], 2) + Math.pow(orientationDelta[1], 2) + Math.pow(orientationDelta[2], 2))) > 30.0) {
+                if (Math.sqrt((Math.pow(orientationDelta[0], 2) + Math.pow(orientationDelta[1], 2) + Math.pow(orientationDelta[2], 2))) > 5.0) {
                     // Update the history of orientations
                     orientationHistoryAzimuth[oldestHistoryIndex] = originalOrientation[0];
                     orientationHistoryPitch[oldestHistoryIndex] = originalOrientation[1];
@@ -167,10 +167,12 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
                     // Nothing changes
                 }
 
+                /*
                 // Update the history of orientations
                 orientationHistoryAzimuth[oldestHistoryIndex] = originalOrientation[0];
                 orientationHistoryPitch[oldestHistoryIndex] = originalOrientation[1];
                 orientationHistoryRoll[oldestHistoryIndex] = originalOrientation[2];
+                */
 
                 float[] smoothedOrientation = new float[3];
                 Arrays.fill(smoothedOrientation, 0);
@@ -194,9 +196,9 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
                 //index 1 is left right position. Positive is right
                 adjustedOrientation[0] = (float) (smoothedOrientation[0] * sensitivity
                         + adjustmentAmount[0]);
-                adjustedOrientation[1] = (float) (smoothedOrientation[1] * sensitivity * 1.5
+                adjustedOrientation[1] = (float) (smoothedOrientation[1] * sensitivity
                         + adjustmentAmount[1]);
-                adjustedOrientation[2] = (float) (smoothedOrientation[2] * sensitivity
+                adjustedOrientation[2] = (float) (smoothedOrientation[2] * sensitivity * 1.5
                         + adjustmentAmount[2]);
 
                 //store current cursor information
