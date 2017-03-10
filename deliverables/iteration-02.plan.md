@@ -133,9 +133,9 @@ As a team, we have decided on the following goals that we believe need to be com
  This is the third iteration of the keyboard logo. We revised the logo because the letter M fits with our teamname MotionKey and it helps for buidling team morale and we are looking forward to a complete product.
  >![logo_3](./artifacts/deliverable_2/logo/logo_letter_m_angle.jpg)
  
- ## Meeting Notes 
+## Meeting Notes 
 
-###Feb.13.2017 - 8pm-9pm
+### Feb.13.2017 - 8pm-9pm
 
 	Members Present:
 
