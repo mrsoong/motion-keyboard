@@ -1,18 +1,19 @@
-# YOUR PRODUCT/TEAM NAME
+# MotionKey
 
- > _Note:_ This document is meant to be written during (or shortly after) your review meeting, which should happen fairly close to the due date.      
- >      
- > _Suggestion:_ Have your review meeting a day or two before the due date. This way you will have some time to go over (and edit) this document, and all team members should have a chance to make their contribution.
+## Iteration 02 - Review & Retrospect
 
-
-## Iteration XX - Review & Retrospect
-
- * When: FILL IN THE DATE WHEN YOU ACTUALLY HAD YOUR REVIEW MEETING
- * Where: PHYSICAL LOCATION AND/OR ONLINE
+ * When: March 8, 2017
+ * Where: Bahen 4010
 
 ## Process - Reflection
 
-(Optional) Short introduction
+In the 3 weeks between when we first conceived and finalised our product and the day this iteration is due, there were many
+developments. We can concur with the assertion that Mr. Freund made early on during the semester when he said that the software
+development process has many pitfalls. We had to deal with mysteriously disappearing members, software bugs that took
+a large amount of research to understand and resolve and team members who varied widely in readiness to contribute to the
+project due to many of them being unfamiliar with the development process. We are pleased to say, however, that our MVP is complete
+and that we are currently in the process of adding the final touches to our product video and distributing back log tasks to
+each member.
 
 <br />
 #### Decisions that turned out well
@@ -44,11 +45,11 @@ using Github built-in issue ticket system.
 <br />
 #### Decisions that did not turn out as well as we hoped
 
-List process-related (i.e. team organization) decisions that, in retrospect, were not as successful as you thought they would be.
+- When we first finalised our team, we decided that we would have a weekly meeting which a person could potentially attend virtually. As the weeks went by, it became clear that this was not a great idea, since the level of interaction that such a person could have with the team and the team could have with that person was sorely underwhelming. It created an awkard environment having to electronically inform to members who were not present in real life about what was happening during the meeting. We decided to abandon this idea and instill a requirement that all team members attend meetings in-person unless they are sick and unable to attend.
 
- * 2 - 4 decisions.
- * Ordered from most to least important.
- * Feel free to refer/link to process artifact(s).
+- We decided before the start of reading week that the responsibility to learn Android Development would fall upon each person. It was their personal responsibility to catch up on the readings. However, this turned out to be a bad idea since different people have different work habits and different responsibilities outside of CSC301. Certain members did not complete the 'required readings' until a couple of days before our self-imposed deadline to complete the MVP. In retrospect, it may have been a better idea to have a meeting during the start of this iteration where one of the Android Experts of the team would have given a lecture to the Android Novices of the team.
+
+- One of our team members has gone absent without leave. We anticipate he may not be contacting us going forwards. This has somewhat hampered our project, because we conceived of it in terms of what a 6 person team could do. Now, having only 5 members has added some more responsibilities upon each person.
 
 
 #### Planned changes
