@@ -123,3 +123,12 @@ As a team, we have decided on the following goals that we believe need to be com
 
 #### Artifacts
  We made a demo video to better illustrate the functionality of our Android gyroscope keyboard. The video consists of two parts. The first part of the video introduces the use and target audience of the keyboard, the user can use the cursor on the screen to type characters by simply tilting the Android device to any direction to select a character and halt to type a character. The target audiences are people who lost their limbs or suffer from Carpal Tunnel Syndrome. The second part of the video shows our future plan for the Android gyroscope keyboard. We expect to make the key larger when the cursor hover over the key, a smoother feeling of the cursor, and a suite of apps that can help disables to interact with the computers. This video is useful for our team because it is a milestone of our project and it will help our target audience when we complete our future plan.
+
+ This is the first iteration of the keyboard logo.
+ >![logo_1](./artifacts/deliverable_2/logo/logo_keyboard_angle.jpg)
+
+ This is the second iteration of the keyboard logo.  
+ >![logo_2](./artifacts/deliverable_2/logo/logo_letter_a_angle.jpg)
+
+ This is the third iteration of the keyboard logo. We revised the logo because the letter M fits with our teamname MotionKey and it helps for buidling team morale and we are looking forward to a complete product.
+ >![logo_3](./artifacts/deliverable_2/logo/logo_letter_m_angle.jpg)
