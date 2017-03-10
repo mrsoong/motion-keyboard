@@ -77,7 +77,7 @@ which is something we will continue to follow going forward.
 
 
  >![kanban](./artifacts/deliverable_2/kanban.PNG)
- We use a kanban board to keep track of which task needs to get done. For each task, team members can create a Git issue with priority lable (i.e. high, medium or low priority), assign themselves to that Git issue and add it to the To Do column. They should move the Git issue to In Progress column when they are working on the task. Once they complete the task, they need to move it to the Review column so every team member can inspect what has changed. The Review column can also contain bug report, team members who spot a bug in the program should immediately create a Git issue with bug and high priority lables, then include an instruction to reproduce the bug. After team members approve the changes, one of the members can close the Git issue and move it to the Done Dolumn.
+ We use a kanban board to keep track of which task needs to get done. For each task, team members can create a Git issue with priority label (i.e. high, medium or low priority) and milestone, and assign themselves to that Git issue and add it to the To Do column. They should move the Git issue to In Progress column when they are working on the task. Once they complete the task, they need to move it to the Review column so every team member can inspect what has changed. The Review column can also contain bug report, team members who spot a bug in the program should immediately create a Git issue with bug and high priority lables, then include an instruction to reproduce the bug. After team members approve the changes, one of the members can close the Git issue and move it to the Done Dolumn.
 
 #### Git / GitHub workflow
 
