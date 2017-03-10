@@ -7,11 +7,11 @@
 
 ## Process
 
-For this phase, we are planning on implementing our minimum viable product - we will produce a functional
+For this phase, we are planning on implementing our minimum viable product: we will produce a functional
 motion controlled keyboard that will at the very least allow gyroscope-controlled input with no use for
 any form of touch interaction. In order for us to complete this task, we anticipate that over the next
 couple of weeks, all team members must familiarize themselves with the android development environment.
-We spent the majority of the last iteration conceiving our product - because of this, little time was
+We spent the majority of the last iteration conceiving our product. Because of this, little time was
 actually spent learning the skills and researching the specific algorithms and libraries we would need
 in order to actually implement the keyboard.
 
