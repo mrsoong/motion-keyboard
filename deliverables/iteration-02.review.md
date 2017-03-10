@@ -45,11 +45,18 @@ using Github built-in issue ticket system.
 <br />
 #### Decisions that did not turn out as well as we hoped
 
-- When we first finalized our team, we decided that we would have a weekly meeting which a person could potentially attend virtually. As the weeks went by, it became clear that this was not a great idea, since the level of interaction that such a person could have with the team and the team could have with that person was sorely underwhelming. It created an awkard environment having to electronically inform to members who were not present in real life about what was happening during the meeting. We decided to abandon this idea and instill a requirement that all team members attend meetings in-person unless they are sick and unable to attend.
+- ##### Online Attendance for Meetings
+	- When we first finalized our team, we decided that we would have a weekly meeting which a person could potentially attend virtually. As the weeks went by, it became clear that this was not a great idea, since the level of interaction that such a person could have with the team and the team could have with that person was sorely underwhelming.
+	- It created an awkard environment having to electronically inform to members who were not present in real life about what was happening during the meeting.
+	- We decided to abandon this idea and instill a requirement that all team members attend meetings in-person unless they are sick and unable to attend.
 
-- We decided before the start of reading week that the responsibility to learn Android Development would fall upon each person. It was their personal responsibility to catch up on the readings. However, this turned out to be a bad idea since different people have different work habits and different responsibilities outside of CSC301. Certain members did not complete the 'required readings' until a couple of days before our self-imposed deadline to complete the MVP. In retrospect, it may have been a better idea to have a meeting during the start of this iteration where one of the Android Experts of the team would have given a lecture to the Android Novices of the team.
+- ##### Self-Responsibility Given
+	- We decided before the start of reading week that the responsibility to learn Android Development would fall upon each person. It was their personal responsibility to catch up on the readings. However, this turned out to be a bad idea since different people have different work habits and different responsibilities outside of CSC301.
+	- Certain members did not complete the 'required readings' until a couple of days before our self-imposed deadline to complete the MVP. In retrospect, it may have been a better idea to have a meeting during the start of this iteration where one of the Android Experts of the team would have given a lecture to the Android Novices of the team.
 
-- One of our team members has gone absent without leave. We anticipate he may not be contacting us going forwards. This has somewhat hampered our project, because we conceived of it in terms of what a 6 person team could do. Now, having only 5 members has added some more responsibilities upon each person.
+- ##### Handed Out Too Many Responsibilities
+	- One of our team members has gone absent without leave. We anticipate he may not be contacting us going forwards. This has somewhat hampered our project, because we conceived of it in terms of what a 6 person team could do.
+	- Now, having only 5 members has added some more responsibilities upon each person.
 
 
 #### Planned changes
@@ -90,8 +97,6 @@ Going into the next iteration, our main insights are:
 
 We made the following iterative demos to show members during the iterative development and testing
 
-<div style="width: 100%; height: 0px; position: relative; padding-bottom: 177.778%;"><iframe src="//streamable.com/e/aeeh4?loop=0" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen scrolling="no" style="width: 100%; height: 100%; position: absolute;"></iframe><script async src="//v.embedcdn.com/v1/embed.js"></script></div>
-
->![First Demo](https://j.gifs.com/1jPxjj.gif "demo")
->![Second Demo](https://j.gifs.com/xGwOvJ.gif "demo")
->![Third Demo](https://j.gifs.com/WnXkLW.gif "demo")
+>![First Demo](./artifacts/deliverable_2/demo/firstDemo.mp4 "demo")
+>![Second Demo](./artifacts/deliverable_2/demo/secondDemo.mp4 "demo")
+>![Third Demo](./artifacts/deliverable_2/demo/thirdDemo.mp4 "demo")
