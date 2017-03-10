@@ -123,7 +123,7 @@ Our current iteration with keys registering as input:
 ### Feb.27.2017 - 8pm-9pm
 
 	- What is weighing us down
-	- Haven't done anythign concrete
+	- Haven't done anything concrete
 	- Hot air balloon - use this abstraction to reason about your team processes
 	- Realized that our biggest strong suit was good communication
 	- A challenge was polishing up the keyboard - storm ahead
