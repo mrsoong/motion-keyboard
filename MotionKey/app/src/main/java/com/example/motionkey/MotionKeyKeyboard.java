@@ -15,6 +15,7 @@ import android.inputmethodservice.InputMethodService;
 import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputConnection;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -99,6 +100,26 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
         alphabet[2] = "qwertyuiop";
 
         return mMotionKeyView;
+    }
+
+    @Override
+    public void onWindowHidden(){
+        super.onWindowHidden();
+
+        //stop listening to the sensors
+        mSensorManager.unregisterListener(this);
+
+    }
+
+    @Override
+    public void onWindowShown(){
+        super.onWindowShown();
+        //begin listening to the sensors
+        mSensorManager.registerListener(this, mSensorMagneticField,
+                mSensorManager.SENSOR_DELAY_FASTEST);
+
+        mSensorManager.registerListener(this, mSensorAccelerometer,
+                mSensorManager.SENSOR_DELAY_FASTEST);
     }
 
 
