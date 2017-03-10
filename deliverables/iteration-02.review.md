@@ -47,7 +47,7 @@ using Github built-in issue ticket system.
 
 - ##### Online Attendance for Meetings
 	- When we first finalized our team, we decided that we would have a weekly meeting which a person could potentially attend virtually. As the weeks went by, it became clear that this was not a great idea, since the level of interaction that such a person could have with the team and the team could have with that person was sorely underwhelming.
-	- It created an awkard environment having to electronically inform to members who were not present in real life about what was happening during the meeting.
+	- It created an awkward environment having to electronically inform to members who were not present in real life about what was happening during the meeting.
 	- We decided to abandon this idea and instill a requirement that all team members attend meetings in-person unless they are sick and unable to attend.
 
 - ##### Self-Responsibility Given
