@@ -97,6 +97,6 @@ Going into the next iteration, our main insights are:
 
 We made the following iterative demos to show members during the iterative development and testing
 
->![First Demo](./artifacts/deliverable_2/demo/firstDemo.mp4 "demo")
->![Second Demo](./artifacts/deliverable_2/demo/secondDemo.mp4 "demo")
->![Third Demo](./artifacts/deliverable_2/demo/thirdDemo.mp4 "demo")
+>![First Demo](https://j.gifs.com/1jPxjj.gif "demo")
+>![Second Demo](https://j.gifs.com/xGwOvJ.gif "demo")
+>![Third Demo](https://j.gifs.com/WnXkLW.gif "demo")
