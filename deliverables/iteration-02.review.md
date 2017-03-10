@@ -61,9 +61,13 @@ using Github built-in issue ticket system.
 
 #### Planned changes
 
-List any process-related changes you are planning to make (if there are any)
- * We are going to instill the requirement that all members attend meetings in real life from here on. This is so that all members are on the same page about what the team is working on currently and what are the pain points that need addressing. We also hope to create a cohesive team environment where people know each other and are more than just a face over a computer.
- * We are hoping to make greater use of the kanban board. Currently, it has not been used much or, to be more precise, it has not been a central part of our planning process. We believe that as we get into doing the backlog where the task distribution is more complex, we will need a precise and understandable method of tracking what exactly is being done and what isn't, which kanban is perfect for.
+- ##### Mandatory Attendance for In-Person Meetings
+ 	- We are going to instill the requirement that all members attend meetings in real life from here on. This is so that all members are on the same page about what the team is working on currently and what are the pain points that need addressing. 
+	- We also hope to create a cohesive team environment where people know each other and are more than just a face over a computer.
+ 
+- ##### More Kanban Activity
+ 	- We are hoping to make greater use of the kanban board. Currently, it has not been used much or, to be more precise, it has not been a central part of our planning process.
+	- We believe that as we get into doing the backlog where the task distribution is more complex, we will need a precise and understandable method of tracking what exactly is being done and what isn't, which kanban is perfect for.
 
 ## Product - Review
 
