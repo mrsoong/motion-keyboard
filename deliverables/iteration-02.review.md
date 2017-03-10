@@ -97,6 +97,11 @@ Going into the next iteration, our main insights are:
 
 We made the following iterative demos to show members during the iterative development and testing
 
+Our first android app showing sensor data:
 >![First Demo](https://j.gifs.com/1jPxjj.gif "demo")
+
+Second iteration with integrated cursor and mock keys:
 >![Second Demo](https://j.gifs.com/xGwOvJ.gif "demo")
+
+Our current iteration with keys registering as input:
 >![Third Demo](https://j.gifs.com/WnXkLW.gif "demo")
