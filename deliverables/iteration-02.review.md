@@ -9,7 +9,7 @@
 
 In the 3 weeks between when we first conceived and finalized our product and the day this iteration is due, there were many
 developments. We can concur with the assertion that Mr. Freund made early on during the semester when he said that the software
-development process has many pitfalls. We had to deal with mysteriously disappearing members, software bugs that took
+development process has many pitfalls. We had to deal with a mysteriously disappearing member, software bugs that took
 a large amount of research to understand and resolve and team members who varied widely in readiness to contribute to the
 project due to many of them being unfamiliar with the development process. We are pleased to say, however, that our MVP is complete
 and that we are currently in the process of adding the final touches to our product video and distributing back log tasks to
