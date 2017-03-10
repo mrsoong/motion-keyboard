@@ -14,16 +14,34 @@
 
 (Optional) Short introduction
 
+<br />
 #### Decisions that turned out well
 
-List process-related (i.e. team organization) decisions that, in retrospect, turned out to be successful.
+#####Self-imposed Deadline
+As a group we decided early on into this iteration to set an ambitious deadline for our MVP, 
+March 3rd. Our reasoning for this was to give us a week to work on the deliverable. This 
+deadline had other benefits, it would give us a week's buffer of the deliverable 2 deadline. As
+well as the ability to solve any problems with the MVP that came up during the buffer period.
 
+- This turned out to be a great idea
+	- We did not meet our self-imposed deadline
+	- We did not panic with the deliverable
+	- We had unexpected group problems, missing member, that we had to deal with.
 
- * 2 - 4 decisions.
- * Ordered from most to least important.
- * Explain why (i.e. give a supporting argument) you consider a decision to be successful.
- * Feel free to refer/link to process artifact(s).
+The ambitious deadline gave us a buffered window to deal with unexpected issues.
 
+#####Organizational Tools
+Our team made use of a couple organizational tools. We make great use of a kanban board as well as
+using Github built-in issue ticket system.
+
+- This was very useful
+	- Everyone in the group knows what each individual person is working on
+	- Reduces the chance of two people working on the same thing
+
+>![Kanban Board](./artifacts/deliverable_2/KanbanBoard.png "Kanban")
+>![Git Issues](./artifacts/deliverable_2/GitIssues.png "Issues")
+
+<br />
 #### Decisions that did not turn out as well as we hoped
 
 List process-related (i.e. team organization) decisions that, in retrospect, were not as successful as you thought they would be.
