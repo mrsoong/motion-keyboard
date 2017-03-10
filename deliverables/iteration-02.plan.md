@@ -75,13 +75,9 @@ which is something we will continue to follow going forward.
 
 #### Artifacts
 
-List/describe the artifacts you will produce in order to organize your team.       
 
- * Artifacts can be To-do lists, Task boards, schedule(s), etc.
- * We want to understand:
-   * How do you keep track of what needs to get done?
-   * How do you prioritize tasks?
-   * How do tasks get assigned to team members?
+ >![kanban](./artifacts/deliverable_2/kanban.PNG)
+ We use a kanban board to keep track of which task needs to get done. For each task, team members can create a Git issue with priority lable (i.e. high, medium or low priority), assign themselves to that Git issue and add it to the To Do column. They should move the Git issue to In Progress column when they are working on the task. Once they complete the task, they need to move it to the Review column so every team member can inspect what has changed. The Review column can also contain bug report, team members who spot a bug in the program should immediately create a Git issue with bug and high priority lables, then include an instruction to reproduce the bug. After team members approve the changes, one of the members can close the Git issue and move it to the Done Dolumn.
 
 #### Git / GitHub workflow
 
@@ -113,17 +109,11 @@ enables our team to work on multiple features in our backlog simultaneously whil
 
 ## Product
 
+
 #### Goals and tasks
 
- * Describe your goals for this iteration and the tasks that you will have to complete in order to achieve these goals.
- * Order the items from most to least important.
- * Feel free (but not obligated) to specify some/all tasks as user stories.
+ Our goal for this iteration is to produce a keyboard with gyroscope key selection via the the Android device sensor. In order to achieve this goal, we expect all team members to install Android Studio for developing the project, review the tutorials on building an Android application and Android keyboard. Team members are also expected to review all study materials such as coding style guidelines, creating custom shape keys in Android soft keyboards, detecting shakes with gyroscope and detecting when soft keyboard is opened posted on the Github Wiki. All team members are expected to show up weekly for the formal meeting on Monday from 9:00 pm to 9:30 pm, so we can discuss what has been accomplished in the previous week and what needs to get done in the current week. Lastly, all team members should continue to use the software Slack to conduct daily informal meeting about any progress they have made or challenges they are facing.
+
 
 #### Artifacts
-
-List/describe the artifacts you will produce in order to present your project idea.
-
- * Artifacts can be text, code, images, videos, interactive mock-ups and/or any other useful artifact you can think of.
- * Make sure to explain the purpose of each artifact (i.e. Why is it on your to-do list? Why is it useful for your team?)
- * Be concise, yet precise.         
-   For example: "Build the website" is not precise at all, but "Build a static home page and upload it somewhere, so that it is publicly accessible" is much clearer.
+ We made a demo video to better illustrate the functionality of our Android gyroscope keyboard. The video consists of two parts. The first part of the video introduces the use and target audience of the keyboard, the user can use the cursor on the screen to type characters by simply tilting the Android device to any direction to select a character and halt to type a character. The target audiences are people who lost their limbs or suffer from Carpal Tunnel Syndrome. The second part of the video shows our future plan for the Android gyroscope keyboard. We expect to make the key larger when the cursor hover over the key, a smoother feeling of the cursor, and a suite of apps that can help disables to interact with the computers. This video is useful for our team because it is a milestone of our project and it will help our target audience when we complete our future plan.
