@@ -44,7 +44,7 @@ in order to actually implement the keyboard.
 
 ## Events
 
-- Our first meeting for this iteration occurred on February 14. We chose this particular date because it was a couple of days before the start of reading week. This gave us ample opportunity to cover our bases, understand the requirements and expectations from each member over the next couple of weeks as well as the specific tasks that were ahead of us in order to implement the minimum viable product.
+- Our first meeting for this iteration occurred on February 14 2017. We chose this particular date because it was a couple of days before the start of reading week. This gave us ample opportunity to cover our bases, understand the requirements and expectations from each member over the next couple of weeks as well as the specific tasks that were ahead of us in order to implement the minimum viable product.
 
 - We anticipate that our next meeting will be on February 27, the day after reading week ends. On that day, we can reflect on what has been completed over the past week and what still needs to be done. We expect that every team member will have at the very least gone over the Android tutorial that one member found (and subsequently posted as a git issue for each member to complete) which explains the basic workflow of implementing an android app. We hope to spend the next week or two after that doing an agile programming style approach to implement the MVP itself because our time will be limited between February 27 and March 10 - the day the iteration is actually due. 
 
