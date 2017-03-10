@@ -38,7 +38,7 @@ using Github built-in issue ticket system.
 	- Everyone in the group knows what each individual person is working on
 	- Reduces the chance of two people working on the same thing
 
->![Kanban Board](./artifacts/deliverable_2/KanbanBoard.png "Kanban")
+>![Kanban Board](./artifacts/deliverable_2/kanbanBoard.png "Kanban")
 >![Git Issues](./artifacts/deliverable_2/GitIssues.png "Issues")
 
 <br />
