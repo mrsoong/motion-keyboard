@@ -88,9 +88,13 @@ using Github built-in issue ticket system.
 
 #### Goals and/or tasks that were planned but not met/completed:
 
- * Android keyboard still needs to be worked on
-    * Even though we have been able to create a working keyboard that selects keys on the keyboard (using information gathered from sensor data), the keyboard is still somewhat buggy in its current state (e.g the sensor controlled cursor that is used to press keys stays even after the keyboard is destroyed)
-    * Ultimately, we were unable to fix these bugs due to time constraints. Several members have already started working on the most severe issues, and we expect many of these bugs to be fixed over the course of the upcoming iteration.
+- ##### Android keyboard still needs to be worked on
+	- Even though we have been able to create a working keyboard that selects keys on the keyboard (using information gathered from sensor data), the keyboard is still somewhat buggy in its current state (e.g the sensor controlled cursor that is used to press keys stays even after the keyboard is destroyed)
+	- Ultimately, we were unable to fix these bugs due to time constraints. Several members have already started working on the most severe issues, and we expect many of these bugs to be fixed over the course of the upcoming iteration.
+	
+- ##### Frederik's Unfinished Goals
+	- One of the team members hasn't completed his tasks assigned to him and we're not sure if he is going to complete the class
+	- We kept the goals just in case he showed up or communicated with us but it hasn't happened so far. We are planning to just close those tasks if we don't hear back from him past the drop date. The course instructor was notified of this.
 
 ## Meeting Highlights
 
