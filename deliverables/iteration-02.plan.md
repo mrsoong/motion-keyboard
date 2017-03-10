@@ -1,10 +1,10 @@
-# YOUR PRODUCT/TEAM NAME
+# MotionKey
 
  > _Note:_ This document is meant to be written during (or shortly after) your initial planning meeting.     
  > It does not really make sense for you to edit this document much (if at all) while working on the project - Instead, at the end of the planning phase, you can refer back to this document and decide which parts of your plan you are happy with and which parts you would like to change.
 
 
-## Iteration XX
+## Iteration 02
 
  * Start date: FILL IN THE DATE WHEN YOU HAD YOUR FIRST TEAM PLANNING MEETING
  * End date: FILL IN THE DATE WHEN YOU ARE PLANNING TO HAVE YOUR REVIEW MEETING
@@ -26,16 +26,18 @@
 | Android Developer | Responsible for developing the Android Keyboard | Jun |
 | Meeting Leader | Prepares meeting topics and ensures everyone stays on topic | Mark |
 | Minute Taker | Records important information discussed at the meeting | Mansoor |
-| Android Researcher | Researchers for resources related to Android development | Mark |
-| Sensor Researcher | Researchers for resources related to Android development | Mansoor |
-| UI Researcher | Researchers for resources related to Android development | Steven |
-| Issue Manager | Will allocate group resources to solving issues | Jun |
+| Android Researcher | Researches resources related to Android development | Mark |
+| Sensor Researcher | Researches resources related to Android development | Mansoor |
+| Network Specialist  | Researches how to interface Android Phones to Windows PCs via Internet Protocols | Tanzin |
+| UI Researcher | Researches resources related to Android development | Steven |
+| Issue Manager | Allocates group resources to existing issues that need attention | Jun |
 | Video Editor  | Edits the demo video for deliverable 2 | Mansoor |
+| Lead Actor  | Played the starring role in the video | Tanzin |
 | Video Production Team  | Helped produce demo video | Mark |
 | Video Production Team  | Helped produce demo video | Tanzin |
 | Video Production Team  | Helped produce demo video | Mansoor |
 | Video Production Team  | Helped produce demo video | Jun |
-| Proof reader  | Proof reads all documents and documentation | Steven |
+| Proof reader  | Proofreads all documents and documentation | Steven |
 <br />
 
 #### Events
