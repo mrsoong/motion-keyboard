@@ -90,6 +90,8 @@ Going into the next iteration, our main insights are:
 
 We made the following iterative demos to show members during the iterative development and testing
 
->![First Demo](./artifacts/deliverable_2/demo/firstDemo.mp4 "demo")
->![Second Demo](./artifacts/deliverable_2/demo/secondDemo.mp4 "demo")
->![Third Demo](./artifacts/deliverable_2/demo/thirdDemo.mp4 "demo")
+<div style="width: 100%; height: 0px; position: relative; padding-bottom: 177.778%;"><iframe src="//streamable.com/e/aeeh4?loop=0" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen scrolling="no" style="width: 100%; height: 100%; position: absolute;"></iframe><script async src="//v.embedcdn.com/v1/embed.js"></script></div>
+
+>![First Demo](https://j.gifs.com/1jPxjj.gif "demo")
+>![Second Demo](https://j.gifs.com/xGwOvJ.gif "demo")
+>![Third Demo](https://j.gifs.com/WnXkLW.gif "demo")
