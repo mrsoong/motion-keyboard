@@ -6,12 +6,18 @@
 
 ## Iteration 02
 
- * Start date: FILL IN THE DATE WHEN YOU HAD YOUR FIRST TEAM PLANNING MEETING
- * End date: FILL IN THE DATE WHEN YOU ARE PLANNING TO HAVE YOUR REVIEW MEETING
+ * Start date: February 14, 2017
+ * End date: March 8, 2017
 
 ## Process
 
-(Optional:) Quick introduction
+For this phase, we are planning on implementing our minimun viable product - we will produce a functional
+motion controlled keyboard that will at the very least allow gyroscope-controlled input with no use for
+any form of touch interaction. In order for us to complete this task, we anticipate that over the next
+couple of weeks, all team members must familiarise themselves with the android development environment.
+We spent the majority of the last iteration conceiving our product - because of this, little time was
+actually spent learning the skills and researching the specific algorithms and libraries we would need
+in order to actually implement the keyboard.
 
 <br />
 #### Roles & responsibilities
@@ -32,7 +38,7 @@
 | UI Researcher | Researches resources related to Android development | Steven |
 | Issue Manager | Allocates group resources to existing issues that need attention | Jun |
 | Video Editor  | Edits the demo video for deliverable 2 | Mansoor |
-| Lead Actor  | Played the starring role in the video | Tanzin |
+| Lead Actor  | Plays the starring role in the video | Tanzin |
 | Video Production Team  | Helped produce demo video | Mark |
 | Video Production Team  | Helped produce demo video | Tanzin |
 | Video Production Team  | Helped produce demo video | Mansoor |
@@ -43,6 +49,26 @@
 #### Events
 
 Describe meetings (and other events) you are planning to have:
+
+Our first meeting for this iteration occured on February 14. We chose this particular date because it was a couple of days
+before the start of reading week. This gave us ample opportunity to cover our bases, understand the requirements and
+expectations from each member over the next couple of weeks as well as the specific tasks that were ahead of us in order
+to implement the minimum viable product.
+
+We anticipate that our next meeting will be on February 27, the day after reading week ends. On that day, we can reflect on what has
+been completed over the past week and what still needs to be done. We expect that every team member will have at the very least gone
+over the Android tutorial that one member found (and subsequently posted as a git issue for each member to complete) which explains
+the basic workflow of implementing an android app. We hope to spend the next week or two after that doing an agile programming
+style approach to implement the MVP itself because our time will be limited betweem February 27 and March 10 - the day the iteration
+is actually due. 
+
+Furthermore, we would need a functional product a couple of days before that which could be used during
+the video production process. We anticipate that we will meet somewhere around March 6 and March 8 in order to actually shoot the
+video. This particular rendezvous can also act as a pseudo-meeting which will allow us to reflect on what is yet to be done
+before the due date of the iteration.
+
+## Meeting Highlights
+
 
  * When and where? In-person or online?
  * What's the purpose of each meeting?
