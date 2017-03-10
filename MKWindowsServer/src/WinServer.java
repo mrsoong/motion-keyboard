@@ -40,12 +40,12 @@ public class WinServer {
 				System.out.println(receivedPacket);
 
 				if(receivedPacket.contains(" ")){
-					float deltaX=Float.parseFloat(receivedPacket.split(" ")[0]);//extract movement in x direction
-					float deltaY=Float.parseFloat(receivedPacket.split(" ")[1]);//extract movement in y direction
-					Point point = MouseInfo.getPointerInfo().getLocation(); //Get current mouse position
+					float deltaX=Float.parseFloat(receivedPacket.split(" ")[0]);
+					float deltaY=Float.parseFloat(receivedPacket.split(" ")[1]);
+					Point point = MouseInfo.getPointerInfo().getLocation();
 					float nowx=point.x;
 					float nowy=point.y;
-					robot.mouseMove((int)(nowx+deltaX),(int)(nowy+deltaY));//Move mouse pointer to new location
+					robot.mouseMove((int)(nowx+deltaX),(int)(nowy+deltaY));
 				}
 				else if(receivedPacket.contains("left_click")){
 					robot.mousePress(InputEvent.BUTTON1_DOWN_MASK);
