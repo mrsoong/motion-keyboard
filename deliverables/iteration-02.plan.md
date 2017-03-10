@@ -111,8 +111,14 @@ enables our team to work on multiple features in our backlog simultaneously whil
 
 
 #### Goals and tasks
+As a team, we have decided on the following goals that we believe need to be completed by the end of this iteration. These are ordered from most important to least, although we anticipate that all goals should be completed in order for the team to move on to the backlog for iteration 3.
 
- Our goal for this iteration is to produce a keyboard with gyroscope key selection via the the Android device sensor. In order to achieve this goal, we expect all team members to install Android Studio for developing the project, review the tutorials on building an Android application and Android keyboard. Team members are also expected to review all study materials such as coding style guidelines, creating custom shape keys in Android soft keyboards, detecting shakes with gyroscope and detecting when soft keyboard is opened posted on the Github Wiki. All team members are expected to show up weekly for the formal meeting on Monday from 9:00 pm to 9:30 pm, so we can discuss what has been accomplished in the previous week and what needs to get done in the current week. Lastly, all team members should continue to use the software Slack to conduct daily informal meeting about any progress they have made or challenges they are facing.
+* We expect all team members to install Android Studio for developing the project, review the tutorials on building an Android application and the tutorials on constructing a simple Android keyboard.
+* Team members are also expected to review all study materials such as coding style guidelines, creating custom shape keys in Android soft keyboards, detecting shakes with gyroscope and detecting when soft keyboard is opened which were all posted on the Github Wiki.
+* Once the previous two goals are complete, all members will be in a position to contribute meaningful code to the development of MotionKey. We expect to utilise the last 10 days of the iteration doing an agile style programming exercise during which the MVP will be produced
+* All team members are expected to show up weekly for the formal meeting on Monday from 9:00 pm to 9:30 pm, so we can discuss what has been accomplished in the previous week and what needs to get done in the current week
+* Lastly, all team members should continue to use the software Slack to conduct daily informal meeting about any progress they have made or challenges they are facing.
+
  >![milestones](./artifacts/deliverable_2/milestones.jpg)
 
 #### Artifacts
