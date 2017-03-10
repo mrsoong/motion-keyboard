@@ -42,7 +42,7 @@ in order to actually implement the keyboard.
 | Proof reader  | Proofreads all documents and documentation | Steven |
 <br />
 
-#### Events
+## Events
 
 Our first meeting for this iteration occured on February 14. We chose this particular date because it was a couple of days
 before the start of reading week. This gave us ample opportunity to cover our bases, understand the requirements and
@@ -61,7 +61,7 @@ the video production process. We anticipate that we will meet somewhere around M
 video. This particular rendezvous can also act as a pseudo-meeting which will allow us to reflect on what is yet to be done
 before the due date of the iteration.
 
-## Meeting Highlights
+#### Meeting Highlights
 This was our last in-person meeting before reading week. We conducted thorough discussion on all the todo items that we
 believe should be completed by this iteration. Mark printed out both the highlights from the last meeting as well as a
 list of todo items which allowed us to approach the meeting in a more formal and controller manner. We discussed what
