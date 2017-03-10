@@ -76,6 +76,7 @@ using Github built-in issue ticket system.
 - ##### Familiarized ourselves with the Android Development Kit
 	- One of our earliest goals was to learn more about Android app development, since many members of our team has had little to no experience developing practical Android applications. In order to familiarize ourselves with Android development, each member of group spent a good amount of time completing [an Android tutorial](https://developer.android.com/training/basics/firstapp/index.html "an Android tutorial"). Completing the tutorial also allowed us to become accustomed to working with Android Studio, which is the Android development environment that we will be using for this project. 
 	- Our group also created a [wiki](https://github.com/csc301-winter-2017/project-team-15/wiki "wiki") containing coding style guidelines.
+	- >![Wiki](https://github.com/csc301-winter-2017/project-team-15/blob/master/deliverables/artifacts/deliverable_2/wiki.PNG)
 	
 - ##### Developed a basic Android keyboard.
 	- Our group had already decided that a basic custom keyboard would act as a Minimum Viable Product (MVP) for our project.
