@@ -52,16 +52,16 @@ in order to actually implement the keyboard.
 
 #### Meeting Highlights
 
-- During the in-person meeting on February 14, we conducted thorough discussion on all the to-do items that we believe should be completed by this iteration.
-- Mark printed out both the highlights from the last meeting as well as a list of to-do items which allowed us to approach the meeting in a more formal and controller manner.
-- We discussed what would be our exact target user base, by what date each member must have completed the tutorial (which must be done for each member to be a useful resource during the coding phase of the project), what would be our git branching model (we decided to do a model that branches development from functional base product as described below), how we would make use of git issues, how we would track member attendance, what coding style and conventions we will follow, and what are the specifics of our minimum viable product.
+- During the in-person meeting on February 14, we conducted a thorough discussion on all the to-do items that we believe should be completed by this iteration.
+- Mark printed out both the highlights from the last meeting as well as a list of to-do items which allowed us to approach the meeting in a more formal and controlled manner.
+- We discussed what would be our exact target user base, by what date each member must have completed the tutorial (which must be done for each member to be a useful resource during the coding phase of the project), what would be our git branching model (we decided to do a model that branches development from the functional base product as described below), how we would make use of git issues, how we would track member attendance, what coding style and conventions we will follow, and what are the specifics of our minimum viable product.
 - We decided that our product MVP is simply a bare bones keyboard that can be controlled by motion with no extraneous features. This meeting was very productive due to every little detail having been planned beforehand, which is something we will continue to follow going forward.
 
 #### Artifacts
 
 
  >![kanban](./artifacts/deliverable_2/kanban.PNG)
- We use a kanban board to keep track of which task needs to get done. For each task, team members can create a Git issue with priority label (i.e. high, medium or low priority) and milestone, and assign themselves to that Git issue and add it to the To Do column. They should move the Git issue to In Progress column when they are working on the task. Once they complete the task, they need to move it to the Review column so every team member can inspect what has changed. The Review column can also contain bug report, team members who spot a bug in the program should immediately create a Git issue with bug and high priority lables, then include an instruction to reproduce the bug. After team members approve the changes, one of the members can close the Git issue and move it to the Done Dolumn.
+ We use a kanban board to keep track of which task needs to get done. For each task, team members can create a Git issue with priority label (i.e. high, medium or low priority) and milestone, and assign themselves to that Git issue and add it to the To Do column. They should move the Git issue to In Progress column when they are working on the task. Once they complete the task, they need to move it to the Review column so every team member can inspect what has changed. The Review column can also contain bug reports, team members who spot a bug in the program should immediately create a Git issue with bug and high priority labels, then include an instruction to reproduce the bug. After team members approve the changes, one of the members can close the Git issue and move it to the Done column.
 
 #### Git / GitHub workflow
 
@@ -99,7 +99,7 @@ As a team, we have decided on the following goals that we believe need to be com
 
 * We expect all team members to install Android Studio for developing the project, review the tutorials on building an Android application and the tutorials on constructing a simple Android keyboard.
 * Team members are also expected to review all study materials such as coding style guidelines, creating custom shape keys in Android soft keyboards, detecting shakes with gyroscope and detecting when soft keyboard is opened which were all posted on the Github Wiki.
-* Once the previous two goals are complete, all members will be in a position to contribute meaningful code to the development of MotionKey. We expect to utilise the last 10 days of the iteration doing an agile style programming exercise during which the MVP will be produced
+* Once the previous two goals are complete, all members will be in a position to contribute meaningful code to the development of MotionKey. We expect to utilize the last 10 days of the iteration doing an agile style programming exercise during which the MVP will be produced
 * All team members are expected to show up weekly for the formal meeting on Monday from 9:00 pm to 9:30 pm, so we can discuss what has been accomplished in the previous week and what needs to get done in the current week
 * Lastly, all team members should continue to use the software Slack to conduct daily informal meeting about any progress they have made or challenges they are facing.
 
