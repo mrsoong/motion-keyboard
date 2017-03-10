@@ -73,15 +73,18 @@ using Github built-in issue ticket system.
 
 #### Goals and/or tasks that were met/completed:
  
- * Familiarized ourselves with the Android Development Kit
-    * One of our earliest goals was to learn more about Android app development, since many members of our team has had little to no experience developing practical Android applications. In order to familiarize ourselves with Android development, each member of group spent a good amount of time completing [an Android tutorial](https://developer.android.com/training/basics/firstapp/index.html "an Android tutorial"). Completing the tutorial also allowed us to become accustomed to working with Android Studio, which is the Android development environment that we will be using for this project. 
-    * Our group also created a [wiki](https://github.com/csc301-winter-2017/project-team-15/wiki "wiki") containing coding style guidelines.
- * Developed a basic Android keyboard.
-    * Our group had already decided that a basic custom keyboard would act as a Minimum Viable Product (MVP) for our project.
-    * Over the course of the previous iteration, we were able to develop an Android keyboard that could collect data from a phone's sensors and use the data to move a cursor on the phone's screen. 
- * Decided on a Git Branching model
-    * Although this particular goal was not mentioned in the last iteration plan, the pros and cons of common Git Branching models was nevertheless an issue that was often brought up during our group meetings. In the end, we decided on a Branching model where our main repository would be split into 3 branches: master, Features and Development. 
-    * The master branch contains stable code that had been thoroughly tested by several members of the group. The development branch is used for developing new and critical parts of our Android, while the Features branch is used by some members of the group to develop experimental features that are not critical to our application. 
+- ##### Familiarized ourselves with the Android Development Kit
+	- One of our earliest goals was to learn more about Android app development, since many members of our team has had little to no experience developing practical Android applications. In order to familiarize ourselves with Android development, each member of group spent a good amount of time completing [an Android tutorial](https://developer.android.com/training/basics/firstapp/index.html "an Android tutorial"). Completing the tutorial also allowed us to become accustomed to working with Android Studio, which is the Android development environment that we will be using for this project. 
+	- Our group also created a [wiki](https://github.com/csc301-winter-2017/project-team-15/wiki "wiki") containing coding style guidelines.
+	
+- ##### Developed a basic Android keyboard.
+	- Our group had already decided that a basic custom keyboard would act as a Minimum Viable Product (MVP) for our project.
+	- Over the course of the previous iteration, we were able to develop an Android keyboard that could collect data from a phone's sensors and use the data to move a cursor on the phone's screen. 
+	- >![Third Demo](https://j.gifs.com/WnXkLW.gif "demo")
+	
+- ##### Decided on a Git Branching model
+	- Although this particular goal was not mentioned in the last iteration plan, the pros and cons of common Git Branching models was nevertheless an issue that was often brought up during our group meetings. In the end, we decided on a Branching model where our main repository would be split into 3 branches: master, Features and Development. 
+	- The master branch contains stable code that had been thoroughly tested by several members of the group. The development branch is used for developing new and critical parts of our Android, while the Features branch is used by some members of the group to develop experimental features that are not critical to our application. 
 
 #### Goals and/or tasks that were planned but not met/completed:
 
