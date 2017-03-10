@@ -7,7 +7,7 @@
 
 ## Process - Reflection
 
-In the 3 weeks between when we first conceived and finalised our product and the day this iteration is due, there were many
+In the 3 weeks between when we first conceived and finalized our product and the day this iteration is due, there were many
 developments. We can concur with the assertion that Mr. Freund made early on during the semester when he said that the software
 development process has many pitfalls. We had to deal with mysteriously disappearing members, software bugs that took
 a large amount of research to understand and resolve and team members who varied widely in readiness to contribute to the
@@ -45,7 +45,7 @@ using Github built-in issue ticket system.
 <br />
 #### Decisions that did not turn out as well as we hoped
 
-- When we first finalised our team, we decided that we would have a weekly meeting which a person could potentially attend virtually. As the weeks went by, it became clear that this was not a great idea, since the level of interaction that such a person could have with the team and the team could have with that person was sorely underwhelming. It created an awkard environment having to electronically inform to members who were not present in real life about what was happening during the meeting. We decided to abandon this idea and instill a requirement that all team members attend meetings in-person unless they are sick and unable to attend.
+- When we first finalized our team, we decided that we would have a weekly meeting which a person could potentially attend virtually. As the weeks went by, it became clear that this was not a great idea, since the level of interaction that such a person could have with the team and the team could have with that person was sorely underwhelming. It created an awkard environment having to electronically inform to members who were not present in real life about what was happening during the meeting. We decided to abandon this idea and instill a requirement that all team members attend meetings in-person unless they are sick and unable to attend.
 
 - We decided before the start of reading week that the responsibility to learn Android Development would fall upon each person. It was their personal responsibility to catch up on the readings. However, this turned out to be a bad idea since different people have different work habits and different responsibilities outside of CSC301. Certain members did not complete the 'required readings' until a couple of days before our self-imposed deadline to complete the MVP. In retrospect, it may have been a better idea to have a meeting during the start of this iteration where one of the Android Experts of the team would have given a lecture to the Android Novices of the team.
 
@@ -55,7 +55,7 @@ using Github built-in issue ticket system.
 #### Planned changes
 
 List any process-related changes you are planning to make (if there are any)
- * We are going to instil the requirement that all members attend meetings in real life from here on. This is so that all members are on the same page about what the team is working on currently and what are the pain points that need addressing. We also hope to create a cohesive team environment where people know each other and are more than just a face over a computer.
+ * We are going to instill the requirement that all members attend meetings in real life from here on. This is so that all members are on the same page about what the team is working on currently and what are the pain points that need addressing. We also hope to create a cohesive team environment where people know each other and are more than just a face over a computer.
  * We are hoping to make greater use of the kanban board. Currently, it has not been used much or, to be more precise, it has not been a central part of our planning process. We believe that as we get into doing the backlog where the task distribution is more complex, we will need a precise and understandable method of tracking what exactly is being done and what isn't, which kanban is perfect for.
 
 ## Product - Review
@@ -81,8 +81,7 @@ List any process-related changes you are planning to make (if there are any)
 ## Meeting Highlights
 
 Going into the next iteration, our main insights are:
-* Now that all (remaning) team members are up-to-date on Android, we can effectively distribute backlog tasks to each member
+* Now that all (remaining) team members are up-to-date on Android, we can effectively distribute backlog tasks to each member
 * Now that we better understand each person's work habits, we will distribute tasks that we know a person can most likely complete
 * We understand the pitfalls of Android development thanks to working on the MVP over the past couple of weeks and will now be able to approach the Android development workflow with more confidence and alacrity. 
 * We have had over a month to understand our product, to attempt developing it, to understand each other and the strengths and weaknesses that each person brings to the table. We will now use this knowledge to attempt more of an agile style development process as we enter the last couple of weeks of the semester and we make an effort to get as many backlog tasks completed as possible.
-
