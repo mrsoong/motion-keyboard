@@ -55,11 +55,8 @@ using Github built-in issue ticket system.
 #### Planned changes
 
 List any process-related changes you are planning to make (if there are any)
-
- * Ordered from most to least important.
- * Explain why you are making a change.
- 
-
+ * We are going to instil the requirement that all members attend meetings in real life from here on. This is so that all members are on the same page about what the team is working on currently and what are the pain points that need addressing. We also hope to create a cohesive team environment where people know each other and are more than just a face over a computer.
+ * We are hoping to make greater use of the kanban board. Currently, it has not been used much or, to be more precise, it has not been a central part of our planning process. We believe that as we get into doing the backlog where the task distribution is more complex, we will need a precise and understandable method of tracking what exactly is being done and what isn't, which kanban is perfect for.
 
 ## Product - Review
 
@@ -84,9 +81,8 @@ List any process-related changes you are planning to make (if there are any)
 ## Meeting Highlights
 
 Going into the next iteration, our main insights are:
+* Now that all (remaning) team members are up-to-date on Android, we can effectively distribute backlog tasks to each member
+* Now that we better understand each person's work habits, we will distribute tasks that we know a person can most likely complete
+* We understand the pitfalls of Android development thanks to working on the MVP over the past couple of weeks and will now be able to approach the Android development workflow with more confidence and alacrity. 
+* We have had over a month to understand our product, to attempt developing it, to understand each other and the strengths and weaknesses that each person brings to the table. We will now use this knowledge to attempt more of an agile style development process as we enter the last couple of weeks of the semester and we make an effort to get as many backlog tasks completed as possible.
 
- * 2 - 4 items
- * Short (no more than one short paragraph per item)
- * High-level concepts that should guide your work for the next iteration.
- * These concepts should help you decide on where to focus your efforts.
- * Can be related to product and/or process.
