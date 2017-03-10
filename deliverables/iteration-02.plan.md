@@ -88,7 +88,7 @@ Our git repository has 3 branches. Master, development, and features.
 | Branch | Description |
 | --- | --- |
 | Master | Only that is fully tested, documented. Only the code that we're comfortable with our Professor/TA looking at. |
-| Development | Code that is part of the basic MVP, or not fully tested, documented, etc. features |
+| Development | Code that is part of the basic MVP, or not fully tested, documented, etc. |
 | Feature ... | A single branch for each modular feature |
 
 The process of working with the repository is 
