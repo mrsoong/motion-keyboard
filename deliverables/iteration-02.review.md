@@ -85,3 +85,11 @@ Going into the next iteration, our main insights are:
 * Now that we better understand each person's work habits, we will distribute tasks that we know a person can most likely complete
 * We understand the pitfalls of Android development thanks to working on the MVP over the past couple of weeks and will now be able to approach the Android development workflow with more confidence and alacrity. 
 * We have had over a month to understand our product, to attempt developing it, to understand each other and the strengths and weaknesses that each person brings to the table. We will now use this knowledge to attempt more of an agile style development process as we enter the last couple of weeks of the semester and we make an effort to get as many backlog tasks completed as possible.
+
+## Demos
+
+We made the following iterative demos to show members during the iterative development and testing
+
+>![First Demo](./artifacts/deliverable_2/demo/firstDemo.mp4 "demo")
+>![Second Demo](./artifacts/deliverable_2/demo/secondDemo.mp4 "demo")
+>![Third Demo](./artifacts/deliverable_2/demo/thirdDemo.mp4 "demo")
