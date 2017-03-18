@@ -18,6 +18,8 @@ import android.view.inputmethod.InputConnection;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.motionkey.utilities.NoiseFilter;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -43,15 +45,7 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
     //this is the view that will be used as the cursor
     private TextView mCursor;
 
-    // Determines how sensitive the keyboard is
-    float sensitivity = 0.5f;
-
     //raw data from the sensors
-    int historyLength = 20;
-    int oldestHistoryIndex = 0;
-    float[] orientationHistoryAzimuth = new float[historyLength];
-    float[] orientationHistoryPitch = new float[historyLength];
-    float[] orientationHistoryRoll = new float[historyLength];
     float[] originalOrientation = new float[3];
 
     //reset orientation so the current orientation is the new 'default'
@@ -62,7 +56,7 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
     HashMap<int[], Integer> keyLocation = new HashMap<int[], Integer>();
     private String[] alphabet = new String[3];
 
-
+    private NoiseFilter mNoiseFilter;
 
 
     @Override
@@ -75,10 +69,7 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
         //initialize adjustment amount of orientation degrees to zero
         Arrays.fill(adjustmentAmount, 0);
 
-        // Initialize the orientation histories
-        Arrays.fill(orientationHistoryAzimuth, 0);
-        Arrays.fill(orientationHistoryPitch, 0);
-        Arrays.fill(orientationHistoryRoll, 0);
+        this.mNoiseFilter = new NoiseFilter(20, 0.5f, 3);
 
         //initialize xml layout of the keyboard
         mMotionKeyView = (MotionKeyKeyboardView) getLayoutInflater().inflate(R.layout.keyboard,
@@ -174,44 +165,25 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
                 // Check to see how much orientation has changed since the last time
                 // updateCursorPosition() was called
                 float[] orientationDelta = new float[3];
-                orientationDelta[0] = originalOrientation[0] - orientationHistoryAzimuth[oldestHistoryIndex];
-                orientationDelta[1] = originalOrientation[1] - orientationHistoryPitch[oldestHistoryIndex];
-                orientationDelta[2] = originalOrientation[2] - orientationHistoryRoll[oldestHistoryIndex];
+                orientationDelta[0] = originalOrientation[0] - this.mNoiseFilter.getOldestMeasurement()[0];
+                orientationDelta[1] = originalOrientation[1] - this.mNoiseFilter.getOldestMeasurement()[1];
+                orientationDelta[2] = originalOrientation[2] - this.mNoiseFilter.getOldestMeasurement()[2];
                 if (Math.sqrt((Math.pow(orientationDelta[0], 2) + Math.pow(orientationDelta[1], 2) + Math.pow(orientationDelta[2], 2))) > 5.0) {
                     // Update the history of orientations
-                    orientationHistoryAzimuth[oldestHistoryIndex] = originalOrientation[0];
-                    orientationHistoryPitch[oldestHistoryIndex] = originalOrientation[1];
-                    orientationHistoryRoll[oldestHistoryIndex] = originalOrientation[2];
+                    this.mNoiseFilter.setOldestMeasurement(originalOrientation);
                 }
                 else {
                     // Nothing changes
                 }
-
-                float[] smoothedOrientation = new float[3];
-                Arrays.fill(smoothedOrientation, 0);
-                for (int i = 0; i < historyLength; i++) {
-                    smoothedOrientation[0] += orientationHistoryAzimuth[i];
-                }
-                for (int i = 0; i < historyLength; i++) {
-                    smoothedOrientation[1] += orientationHistoryPitch[i];
-                }
-                for (int i = 0; i < historyLength; i++) {
-                    smoothedOrientation[2] += orientationHistoryRoll[i];
-                }
-                smoothedOrientation[0] /= (float) historyLength;
-                smoothedOrientation[1] /= (float) historyLength;
-                smoothedOrientation[2] /= (float) historyLength;
-                oldestHistoryIndex++;
-                oldestHistoryIndex = oldestHistoryIndex % historyLength;
-
-
+                
                 //adjustedOrientation's index 2 is top bottom position. Positive is bottom.
                 //index 1 is left right position. Positive is right
-                adjustedOrientation[0] = (float) (smoothedOrientation[0] * sensitivity
+                float[] smoothedOrientation = this.mNoiseFilter.getFilteredMeasurement();
+                adjustedOrientation[0] = (float) (smoothedOrientation[0]
                         + adjustmentAmount[0]);
-                adjustedOrientation[1] = (float) (smoothedOrientation[1] * sensitivity
+                adjustedOrientation[1] = (float) (smoothedOrientation[1]
                         + adjustmentAmount[1]);
-                adjustedOrientation[2] = (float) (smoothedOrientation[2] * sensitivity * 1.5
+                adjustedOrientation[2] = (float) (smoothedOrientation[2] * 1.5
                         + adjustmentAmount[2]);
 
                 //store current cursor information
