@@ -90,7 +90,7 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
         //begin listening to the sensors
         mSensorManager.registerListener(this, mSensorMagneticField,
                 mSensorManager.SENSOR_DELAY_FASTEST);
-        
+
         mSensorManager.registerListener(this, mSensorAccelerometer,
                 mSensorManager.SENSOR_DELAY_FASTEST);
 
@@ -138,7 +138,7 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
         if (event.sensor.getType() == Sensor.TYPE_ACCELEROMETER) {
             mGravityData = event.values;
 
-        //Get the Geomagnetic data via the magnetic field sensor;
+            //Get the Geomagnetic data via the magnetic field sensor;
         } else if (event.sensor.getType() == Sensor.TYPE_MAGNETIC_FIELD) {
             mGeomagneticData = event.values;
         }
@@ -159,7 +159,7 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
 
             //rotation matrix generated
             if (mSensorManager.getRotationMatrix(rMatrix, null, mGravityData, mGeomagneticData)) {
-                
+
                 //remap to device's own coordinate system
                 mSensorManager.remapCoordinateSystem(rMatrix, mSensorManager.AXIS_Y,
                         mSensorManager.AXIS_MINUS_X, remapMatrix);
@@ -232,7 +232,7 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
                                 (Math.abs(Math.round((adjustedOrientation[2] / mANGLE_LIMIT) * curCursorHeight))),
                                 curCursorPaddingRight,
                                 curCursorPaddingBottom);
-                    //device tilting left horizontally
+                        //device tilting left horizontally
                     } else {
                         mCursor.setPadding(
                                 curCursorPaddingLeft,
@@ -241,7 +241,7 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
                                 curCursorPaddingBottom);
                     }
 
-                //device tilting top vertically
+                    //device tilting top vertically
                 } else if (adjustedOrientation[2] <= 0) {
                     //device tilting right horizontally
                     if (adjustedOrientation[1] > 0) {
@@ -250,7 +250,7 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
                                 curCursorPaddingTop,
                                 curCursorPaddingRight,
                                 (Math.abs(Math.round((adjustedOrientation[2] / mANGLE_LIMIT) * curCursorHeight))));
-                    //device tilting left horizontally
+                        //device tilting left horizontally
                     } else {
                         mCursor.setPadding(
                                 curCursorPaddingLeft,

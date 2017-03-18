@@ -25,7 +25,7 @@ public class MotionKeyInteractiveElement {
 
     private View mView;
     private int mId;
-//    private int mLastColour;
+    //    private int mLastColour;
     private boolean mCursorHovering = false;
     private int mHeight;
     private int mWidth;
@@ -55,7 +55,7 @@ public class MotionKeyInteractiveElement {
                 }
                 if (keyHover && (System.currentTimeMillis() - lastKeySelect) >= 1000)  {
                     Button v = (Button)mView;
-                    Log.d("keyboardMark", (v.getText().toString() + ""));
+                    //Log.d("keyboardMark", (v.getText().toString() + ""));
                     keyHover = false;
                     return v.getText().toString();
                 }
