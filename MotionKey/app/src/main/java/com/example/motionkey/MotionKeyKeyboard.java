@@ -64,6 +64,8 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
 
     InputConnection ic;
 
+    boolean isCap;
+
     @Override
     public View onCreateInputView() {
 
@@ -228,7 +230,7 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
                                 (Math.abs(Math.round((adjustedOrientation[2] / mANGLE_LIMIT) * curCursorHeight))),
                                 curCursorPaddingRight,
                                 curCursorPaddingBottom);
-                        //device tilting left horizontally
+                    //device tilting left horizontally
                     } else {
                         mCursor.setPadding(
                                 curCursorPaddingLeft,
@@ -304,13 +306,19 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
             View v = view.getChildAt(i);
 
             if (v instanceof Button) {
-                ((Button) v).setAllCaps(true);
-
+                if (isCap) {
+                    ((Button) v).setAllCaps(false);
+                    isCap = false;
+                } else {
+                    ((Button) v).setAllCaps(true);
+                    isCap = true;
+                }
             } else if (v instanceof ViewGroup) {
 
                 this.loopViews((ViewGroup) v);
             }
         }
+
     }
     //Reset the cursor position to the center of the keyboard
     public void resetOrientation(View view) {
