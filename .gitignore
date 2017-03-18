@@ -3,3 +3,11 @@ MotionKey/build/
 MotionKey/app/build
 MotionKey/.gradle/
 MotionKey/.idea/
+MotionKey/settings.gradle
+MotionKey/gradlew.bat
+MotionKey/gradlew
+MotionKey/gradle.properties
+MotionKey/build.gradle
+MotionKey/gradle
+MotionKey/app/build.gradle
+MotionKey/proguard-rules.pro
