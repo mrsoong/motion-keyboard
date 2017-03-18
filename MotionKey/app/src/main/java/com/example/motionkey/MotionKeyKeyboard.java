@@ -14,7 +14,9 @@ import android.hardware.SensorManager;
 import android.inputmethodservice.InputMethodService;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.inputmethod.InputConnection;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -44,7 +46,7 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
     private TextView mCursor;
 
     // Determines how sensitive the keyboard is
-    float sensitivity = 0.5f;
+    float sensitivity = 0.75f;
 
     //raw data from the sensors
     int historyLength = 20;
@@ -59,11 +61,8 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
     float[] adjustmentAmount = new float[3];
 
     int mANGLE_LIMIT = 40;
-    HashMap<int[], Integer> keyLocation = new HashMap<int[], Integer>();
-    private String[] alphabet = new String[3];
 
-
-
+    InputConnection ic;
 
     @Override
     public View onCreateInputView() {
@@ -90,13 +89,9 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
         //begin listening to the sensors
         mSensorManager.registerListener(this, mSensorMagneticField,
                 mSensorManager.SENSOR_DELAY_FASTEST);
-        
+
         mSensorManager.registerListener(this, mSensorAccelerometer,
                 mSensorManager.SENSOR_DELAY_FASTEST);
-
-        alphabet[0] = "zxcvbnm";
-        alphabet[1] = "asdfghjkl";
-        alphabet[2] = "qwertyuiop";
 
         return mMotionKeyView;
     }
@@ -107,7 +102,6 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
 
         //stop listening to the sensors
         mSensorManager.unregisterListener(this);
-
     }
 
     @Override
@@ -119,6 +113,8 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
 
         mSensorManager.registerListener(this, mSensorAccelerometer,
                 mSensorManager.SENSOR_DELAY_FASTEST);
+
+        ic = getCurrentInputConnection();
     }
 
 
@@ -138,7 +134,7 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
         if (event.sensor.getType() == Sensor.TYPE_ACCELEROMETER) {
             mGravityData = event.values;
 
-        //Get the Geomagnetic data via the magnetic field sensor;
+            //Get the Geomagnetic data via the magnetic field sensor;
         } else if (event.sensor.getType() == Sensor.TYPE_MAGNETIC_FIELD) {
             mGeomagneticData = event.values;
         }
@@ -159,7 +155,7 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
 
             //rotation matrix generated
             if (mSensorManager.getRotationMatrix(rMatrix, null, mGravityData, mGeomagneticData)) {
-                
+
                 //remap to device's own coordinate system
                 mSensorManager.remapCoordinateSystem(rMatrix, mSensorManager.AXIS_Y,
                         mSensorManager.AXIS_MINUS_X, remapMatrix);
@@ -232,7 +228,7 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
                                 (Math.abs(Math.round((adjustedOrientation[2] / mANGLE_LIMIT) * curCursorHeight))),
                                 curCursorPaddingRight,
                                 curCursorPaddingBottom);
-                    //device tilting left horizontally
+                        //device tilting left horizontally
                     } else {
                         mCursor.setPadding(
                                 curCursorPaddingLeft,
@@ -241,7 +237,7 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
                                 curCursorPaddingBottom);
                     }
 
-                //device tilting top vertically
+                    //device tilting top vertically
                 } else if (adjustedOrientation[2] <= 0) {
                     //device tilting right horizontally
                     if (adjustedOrientation[1] > 0) {
@@ -250,7 +246,7 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
                                 curCursorPaddingTop,
                                 curCursorPaddingRight,
                                 (Math.abs(Math.round((adjustedOrientation[2] / mANGLE_LIMIT) * curCursorHeight))));
-                    //device tilting left horizontally
+                        //device tilting left horizontally
                     } else {
                         mCursor.setPadding(
                                 curCursorPaddingLeft,
@@ -274,16 +270,48 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
                     mCursorPosition[1] = (mMotionKeyView.getHeight())/2-curCursorPaddingBottom/2+curCursorPaddingTop/2;
                     String key = mMotionKeyView.getMotionKeyElements().updateCursorPosition(mCursorPosition);
 //                    getKeyID(, mCursorPosition);
+                    String output;
+
                     if (key != null){
-                        InputConnection ic = getCurrentInputConnection();
-                        ic.commitText(key,1);
+                        switch (key) {
+                            case "space" :
+                                output = " ";
+                                ic.commitText(output,1);
+                                break;
+                            case "DEL":
+                                ic.deleteSurroundingText(1, 0);
+                                break;
+                            case "Reset" :
+                                ic.deleteSurroundingText(ic.getTextBeforeCursor(10000, 0).length(), 0);
+                                break;
+                            case "CAP" :
+                                loopViews(mMotionKeyView);
+                                break;
+                            default:
+                                output = key;
+                                ic.commitText(output,1);
+                        }
+
+
                     }
                 }
 
             }
         }
     }
+    private void loopViews(ViewGroup view) {
+        for (int i = 0; i < view.getChildCount(); i++) {
+            View v = view.getChildAt(i);
 
+            if (v instanceof Button) {
+                ((Button) v).setAllCaps(true);
+
+            } else if (v instanceof ViewGroup) {
+
+                this.loopViews((ViewGroup) v);
+            }
+        }
+    }
     //Reset the cursor position to the center of the keyboard
     public void resetOrientation(View view) {
 
@@ -334,6 +362,5 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
         //Do something if accuracy of sensor changes
         //Not needed at the moment
     }
-
 
 }
