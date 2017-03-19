@@ -698,6 +698,10 @@
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:text="o"
-        android:gravity="center" />
+        android:gravity="center"
+        android:layout_alignTop="@id/row1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBottom="@id/row5" />
 
 </com.example.motionkey.MotionKeyKeyboardView>
