@@ -40,4 +40,8 @@ public class MotionKeyKeyboardView extends RelativeLayout {
         return mMotionKeyInteractiveElementsFound;
     }
 
+//    public void resetMotionKeyKeyboardElementsFound() {
+//        this.mMotionKeyInteractiveElementsFound = false;
+//    }
+
 }
