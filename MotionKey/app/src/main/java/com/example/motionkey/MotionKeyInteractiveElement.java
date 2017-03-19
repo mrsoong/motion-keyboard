@@ -41,7 +41,7 @@ public class MotionKeyInteractiveElement {
         mHeight = view.getHeight();
         mWidth = view.getWidth();
         view.getLocationInWindow(mPosition);
-        Log.d("keyboard", ((Button) view).getText().toString() +": "+" x: "+Integer.toString(mPosition[0]) + " y: " + Integer.toString(mPosition[1]));
+        //Log.d("keyboard", ((Button) view).getText().toString() +": "+" x: "+Integer.toString(mPosition[0]) + " y: " + Integer.toString(mPosition[1]));
         mColour = ((ColorDrawable)view.getBackground()).getColor();
 //        Log.d("keyboard", "color: "+mColour);
     }

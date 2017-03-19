@@ -13,7 +13,9 @@ import android.hardware.SensorManager;
 import android.inputmethodservice.InputMethodService;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.inputmethod.InputConnection;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.motionkey.utilities.NoiseFilter;
@@ -55,6 +57,9 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
     int curCursorWidth;
     int curCursorHeight;
 
+    InputConnection ic;
+    boolean isCap;
+
     @Override
     public View onCreateInputView() {
 
@@ -64,7 +69,7 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
         //initialize adjustment amount of orientation degrees to zero
         Arrays.fill(adjustmentAmount, 0);
         //noise filter to smooth cursor movement
-        this.mNoiseFilter = new NoiseFilter(20, 0.5f, 3);
+        this.mNoiseFilter = new NoiseFilter(20, 0.75f, 3);
         //initialize xml layout of the keyboard
         mMotionKeyView = (MotionKeyKeyboardView) getLayoutInflater().inflate(R.layout.keyboard, null);
         //initialize cursor by finding it in the initialized xml above
@@ -94,6 +99,8 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
         //begin listening to the sensors
         mSensorManager.registerListener(this, mSensorMagneticField, mSensorManager.SENSOR_DELAY_FASTEST);
         mSensorManager.registerListener(this, mSensorAccelerometer, mSensorManager.SENSOR_DELAY_FASTEST);
+
+        ic = getCurrentInputConnection();
     }
 
     @Override
@@ -217,9 +224,29 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
                     mCursorPosition[1] = (mMotionKeyView.getHeight())/2-curCursorPaddingBottom/2+curCursorPaddingTop/2;
                     String key = mMotionKeyView.getMotionKeyElements().updateCursorPosition(mCursorPosition);
 //                    getKeyID(, mCursorPosition);
+                    String output;
+
                     if (key != null){
-                        InputConnection ic = getCurrentInputConnection();
-                        ic.commitText(key,1);
+                        switch (key) {
+                            case "space" :
+                                output = " ";
+                                ic.commitText(output,1);
+                                break;
+                            case "DEL":
+                                ic.deleteSurroundingText(1, 0);
+                                break;
+                            case "Reset" :
+                                ic.deleteSurroundingText(ic.getTextBeforeCursor(10000, 0).length(), 0);
+                                break;
+                            case "CAP" :
+                                loopViews(mMotionKeyView);
+                                break;
+                            default:
+                                output = key;
+                                ic.commitText(output,1);
+                        }
+
+
                     }
                 }
 
@@ -227,6 +254,25 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
         }
     }
 
+    private void loopViews(ViewGroup view) {
+        for (int i = 0; i < view.getChildCount(); i++) {
+            View v = view.getChildAt(i);
+
+            if (v instanceof Button) {
+                if (isCap) {
+                    ((Button) v).setAllCaps(false);
+                    isCap = false;
+                } else {
+                    ((Button) v).setAllCaps(true);
+                    isCap = true;
+                }
+            } else if (v instanceof ViewGroup) {
+
+                this.loopViews((ViewGroup) v);
+            }
+        }
+
+    }
     //Reset the cursor position to the center of the keyboard
     public void resetOrientation(View view) {
         //calculate the adjustment amount for the first time
