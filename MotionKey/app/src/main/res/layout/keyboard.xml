@@ -669,7 +669,8 @@
             android:padding="0dp"
             android:layout_margin="0dp"
             android:textAllCaps="false"
-            android:background="@color/colorKeyboardSecondary"/>
+            android:background="@color/colorKeyboardSecondary"
+            android:onClick="logCursor"/>
 
         <Button
             android:id="@+id/row5button5"

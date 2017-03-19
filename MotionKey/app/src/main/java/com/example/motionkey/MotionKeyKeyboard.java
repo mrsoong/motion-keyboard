@@ -11,6 +11,7 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.inputmethodservice.InputMethodService;
+import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputConnection;
 import android.widget.TextView;
@@ -46,6 +47,13 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
     private HashMap<int[], Integer> keyLocation = new HashMap<int[], Integer>();
     private String[] alphabet = new String[3];
     private NoiseFilter mNoiseFilter;
+
+    int curCursorPaddingTop;
+    int curCursorPaddingRight;
+    int curCursorPaddingBottom;
+    int curCursorPaddingLeft;
+    int curCursorWidth;
+    int curCursorHeight;
 
     @Override
     public View onCreateInputView() {
@@ -157,12 +165,12 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
                         + adjustmentAmount[2]);
 
                 //store current cursor information
-                int curCursorPaddingTop = mCursor.getPaddingTop();
-                int curCursorPaddingRight = mCursor.getPaddingRight();
-                int curCursorPaddingBottom = mCursor.getPaddingBottom();
-                int curCursorPaddingLeft = mCursor.getPaddingLeft();
-                int curCursorWidth = mCursor.getWidth();
-                int curCursorHeight = mCursor.getHeight();
+                curCursorPaddingTop = mCursor.getPaddingTop();
+                curCursorPaddingRight = mCursor.getPaddingRight();
+                curCursorPaddingBottom = mCursor.getPaddingBottom();
+                curCursorPaddingLeft = mCursor.getPaddingLeft();
+                curCursorWidth = mCursor.getWidth();
+                curCursorHeight = mCursor.getHeight();
 
 
                 //device tilting bottom vertically
@@ -228,6 +236,15 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
             adjustmentAmount[2] = 0 - originalOrientation[2];
         }
         mCursor.setPadding(0,0,0,0);
+    }
+
+    public void logCursor(View view) {
+        Log.d("keyboard", "cursor: "+"padding left: "+curCursorPaddingLeft);
+        Log.d("keyboard", "cursor: "+"padding right: "+curCursorPaddingRight);
+        Log.d("keyboard", "cursor: "+"padding top: "+curCursorPaddingTop);
+        Log.d("keyboard", "cursor: "+"padding bottom: "+curCursorPaddingBottom);
+        Log.d("keyboard", "view: "+"height: "+mMotionKeyView.getHeight());
+        Log.d("keyboard", "view: "+"width: "+mMotionKeyView.getWidth());
     }
 
     @Override
