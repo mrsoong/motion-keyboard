@@ -58,6 +58,7 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
     int curCursorHeight;
 
     InputConnection ic;
+
     boolean isCap;
 
     @Override
@@ -79,10 +80,6 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
         mSensorManager.registerListener(this, mSensorMagneticField, mSensorManager.SENSOR_DELAY_FASTEST);
         mSensorManager.registerListener(this, mSensorAccelerometer, mSensorManager.SENSOR_DELAY_FASTEST);
 
-        alphabet[0] = "zxcvbnm";
-        alphabet[1] = "asdfghjkl";
-        alphabet[2] = "qwertyuiop";
-
         return mMotionKeyView;
     }
 
@@ -99,7 +96,7 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
         //begin listening to the sensors
         mSensorManager.registerListener(this, mSensorMagneticField, mSensorManager.SENSOR_DELAY_FASTEST);
         mSensorManager.registerListener(this, mSensorAccelerometer, mSensorManager.SENSOR_DELAY_FASTEST);
-
+      
         ic = getCurrentInputConnection();
     }
 
@@ -253,7 +250,6 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
             }
         }
     }
-
     private void loopViews(ViewGroup view) {
         for (int i = 0; i < view.getChildCount(); i++) {
             View v = view.getChildAt(i);
@@ -272,7 +268,26 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
             }
         }
 
+
+    private void loopViews(ViewGroup view) {
+        for (int i = 0; i < view.getChildCount(); i++) {
+            View v = view.getChildAt(i);
+
+            if (v instanceof Button) {
+                if (isCap) {
+                    ((Button) v).setAllCaps(false);
+                    isCap = false;
+                } else {
+                    ((Button) v).setAllCaps(true);
+                    isCap = true;
+                }
+            } else if (v instanceof ViewGroup) {
+
+                this.loopViews((ViewGroup) v);
+            }
+        }
     }
+      
     //Reset the cursor position to the center of the keyboard
     public void resetOrientation(View view) {
         //calculate the adjustment amount for the first time
@@ -298,4 +313,6 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
         //Do something if accuracy of sensor changes
         //Not needed at the moment
     }
+      
 }
+
