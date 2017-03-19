@@ -36,7 +36,7 @@
     <string name="key_k">k</string>
     <string name="key_l">l</string>
     <!--Row 4-->
-    <string name="key_caps">CAP</string>
+    <string name="key_caps">caps</string>
     <string name="key_z">z</string>
     <string name="key_x">x</string>
     <string name="key_c">c</string>
@@ -44,11 +44,11 @@
     <string name="key_b">b</string>
     <string name="key_n">n</string>
     <string name="key_m">m</string>
-    <string name="key_del">DEL</string>
+    <string name="key_del">del</string>
     <!--Row 5-->
     <string name="key_bottom_1"></string>
-    <string name="key_bottom_2"></string>
+    <string name="key_bottom_2">switch</string>
     <string name="key_space">space</string>
-    <string name="key_bottom_3"></string>
-    <string name="key_bottom_4">Reset</string>
+    <string name="key_bottom_3">cpos</string>
+    <string name="key_bottom_4">reset</string>
 </resources>

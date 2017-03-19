@@ -71,7 +71,13 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
         //noise filter to smooth cursor movement
         this.mNoiseFilter = new NoiseFilter(20, 0.75f, 3);
         //initialize xml layout of the keyboard
-        mMotionKeyView = (MotionKeyKeyboardView) getLayoutInflater().inflate(R.layout.keyboard, null);
+
+
+        //SWITCH THIS FROM circle_keyboard TO keyboard TO CHANGE BACK TO DEFAULT
+        mMotionKeyView = (MotionKeyKeyboardView) getLayoutInflater().inflate(R.layout.circle_keyboard, null);
+
+
+
         //initialize cursor by finding it in the initialized xml above
         mCursor = (TextView) mMotionKeyView.findViewById(R.id.cursor);
 
@@ -292,6 +298,12 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
         Log.d("keyboard", "view: "+"height: "+mMotionKeyView.getHeight());
         Log.d("keyboard", "view: "+"width: "+mMotionKeyView.getWidth());
     }
+
+//    public void switchKeyboardView(View view) {
+//        mMotionKeyView = (MotionKeyKeyboardView) getLayoutInflater().inflate(R.layout.circle_keyboard, null);
+//        mCursor = (TextView) mMotionKeyView.findViewById(R.id.cursorCircle);
+////        mMotionKeyView.resetMotionKeyKeyboardElementsFound();
+//    }
 
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
