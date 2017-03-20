@@ -75,7 +75,7 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
 
 
         //SWITCH THIS FROM circle_keyboard TO keyboard TO CHANGE BACK TO DEFAULT
-        mMotionKeyView = (MotionKeyKeyboardView) getLayoutInflater().inflate(R.layout.circle_keyboard, null);
+        mMotionKeyView = (MotionKeyKeyboardView) getLayoutInflater().inflate(R.layout.keyboard, null);
 
 
 
@@ -256,25 +256,6 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
             }
         }
     }
-    private void loopViews(ViewGroup view) {
-        for (int i = 0; i < view.getChildCount(); i++) {
-            View v = view.getChildAt(i);
-
-            if (v instanceof Button) {
-                if (isCap) {
-                    ((Button) v).setAllCaps(false);
-                    isCap = false;
-                } else {
-                    ((Button) v).setAllCaps(true);
-                    isCap = true;
-                }
-            } else if (v instanceof ViewGroup) {
-
-                this.loopViews((ViewGroup) v);
-            }
-        }
-
-
     private void loopViews(ViewGroup view) {
         for (int i = 0; i < view.getChildCount(); i++) {
             View v = view.getChildAt(i);

@@ -697,6 +697,7 @@
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:text="o"
+        android:textColor="@color/colorKeyboardCursor"
         android:gravity="center"
         android:layout_alignTop="@id/row1"
         android:layout_alignParentRight="true"
