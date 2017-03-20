@@ -1,5 +1,7 @@
 package com.example.motionkey;
 
+import android.animation.ArgbEvaluator;
+import android.animation.ValueAnimator;
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -25,7 +27,7 @@ public class MotionKeyInteractiveElement {
 
     private View mView;
     private int mId;
-//    private int mLastColour;
+    //    private int mLastColour;
     private boolean mCursorHovering = false;
     private int mHeight;
     private int mWidth;
@@ -33,6 +35,8 @@ public class MotionKeyInteractiveElement {
     private int mColour;
     private long lastKeySelect = 0;
     private boolean keyHover = false;
+    private int mCurColour;
+    ValueAnimator mColourTransition;
 
     public MotionKeyInteractiveElement(View view) {
         mView = view;
@@ -41,8 +45,21 @@ public class MotionKeyInteractiveElement {
         mHeight = view.getHeight();
         mWidth = view.getWidth();
         view.getLocationInWindow(mPosition);
+        //Log.d("keyboard", ((Button) view).getText().toString() +": "+" x: "+Integer.toString(mPosition[0]) + " y: " + Integer.toString(mPosition[1]));
         mColour = ((ColorDrawable)view.getBackground()).getColor();
 //        Log.d("keyboard", "color: "+mColour);
+
+        //Create a transition animator for the key color when hovering
+        mColourTransition = ValueAnimator.ofObject(new ArgbEvaluator(), this.mColour, Color.parseColor("#80ddff"));
+        //transition duration in milliseconds
+        mColourTransition.setDuration(900);
+        //animation listener
+        mColourTransition.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator animation) {
+                mView.setBackgroundColor((int) animation.getAnimatedValue());
+            }
+        });
     }
 
     public String checkCursorHover(int[] position) {
@@ -52,15 +69,37 @@ public class MotionKeyInteractiveElement {
                 if (!keyHover) {
                     lastKeySelect = System.currentTimeMillis();
                     keyHover = true;
+                    this.mCurColour = this.mColour;
+                    //start color transition
+                    this.mColourTransition.start();
                 }
                 if (keyHover && (System.currentTimeMillis() - lastKeySelect) >= 1000)  {
                     Button v = (Button)mView;
-                    Log.d("keyboardMark", (v.getText().toString() + ""));
+                    //Log.d("keyboardMark", (v.getText().toString() + ""));
                     keyHover = false;
+                    //stop the color transition
+                    this.mColourTransition.cancel();
                     return v.getText().toString();
                 }
                 mCursorHovering = true;
-                mView.setBackgroundColor(Color.parseColor("#80ddff"));
+//                Log.d("KeyColorNormal", Integer.toString(this.mColour));
+//                Log.d("KeyColorHighlighted1", Integer.toString(Color.parseColor("#F0F9FD")));
+//                Log.d("KeyColorHighlighted2", Integer.toString(Color.parseColor("#E4F6FD")));
+//                Log.d("KeyColorHighlighted3", Integer.toString(Color.parseColor("#D7F3FD")));
+//                Log.d("KeyColorHighlighted4", Integer.toString(Color.parseColor("#CBF0FD")));
+//                Log.d("KeyColorHighlighted5", Integer.toString(Color.parseColor("#BEEDFE")));
+//                Log.d("KeyColorHighlighted6", Integer.toString(Color.parseColor("#B2E9FE")));
+//                Log.d("KeyColorHighlighted7", Integer.toString(Color.parseColor("#A5E6FE")));
+//                Log.d("KeyColorHighlighted8", Integer.toString(Color.parseColor("#99E3FE")));
+//                Log.d("KeyColorHighlighted9", Integer.toString(Color.parseColor("#8CE0FE")));
+//                Log.d("KeyColorHighlighted10", Integer.toString(Color.parseColor("#80ddff")));
+//                if (this.mCurColour > Color.parseColor("#80ddff")) {
+//                    this.mCurColour -= 78720;
+//                    mView.setBackgroundColor(this.mCurColour);
+//                } else {
+//                    mView.setBackgroundColor(Color.parseColor("#80ddff"));
+//                }
+
                 Button v = (Button)mView;
 //                Log.d("keyboardMark", (v.getText().toString() + ""));
 //                Log.d("keyboardMark", System.currentTimeMillis() + "");
@@ -74,6 +113,8 @@ public class MotionKeyInteractiveElement {
 //                Log.d("keyboard", "cursor: "+" x: "+position[0] + " y: "+position[1]);
 //            }
 //        }
+        //key is not being hovered over, stop the color transition if any started
+        this.mColourTransition.cancel();
         keyHover = false;
         mCursorHovering = false;
         mView.setBackgroundColor(mColour);

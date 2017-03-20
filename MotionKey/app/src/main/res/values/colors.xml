@@ -12,4 +12,5 @@
     <!--Keyboard cursor-->
     <color name="colorKeyboardCursorGradientInner">#eec41212</color>
     <color name="colorKeyboardCursorGradientOuter">#9ac12121</color>
+    <color name="colorKeyboardCursor">#ff4834</color>
 </resources>
