@@ -47,28 +47,31 @@ public class NoiseFilter {
         if (value.length != this.dimensions) {
             throw new InvalidParameterException();
         }
-        //set value
+        // Replace the oldest measurement with the newest mesasurement
         for (int i=0; i<this.dimensions; i++){
             this.measurementHistory[i][this.oldestHistoryIndex] = value[i];
         }
+
+        this.oldestHistoryIndex++;
+        this.oldestHistoryIndex = this.oldestHistoryIndex % this.historyLength;
     }
 
     public float[] getFilteredMeasurement() {
         float[] filteredMeasurement = new float[this.dimensions];
         Arrays.fill(filteredMeasurement, 0);
 
+        // Compute the sum of the measurements for each dimension
         for (int j=0; j<this.dimensions; j++) {
             for (int i=0; i<this.historyLength; i++) {
                 filteredMeasurement[j] += this.measurementHistory[j][i];
             }
         }
 
+        // Compute the average measurement (for every dimension) using the sums, and multiply them with the
+        // sensitivity to get the filtered measurement
         for (int i=0; i<this.dimensions; i++) {
             filteredMeasurement[i] = filteredMeasurement[i] / (float) this.historyLength * this.sensitivity;
         }
-
-        this.oldestHistoryIndex++;
-        this.oldestHistoryIndex = this.oldestHistoryIndex % this.historyLength;
 
         return filteredMeasurement;
     }
