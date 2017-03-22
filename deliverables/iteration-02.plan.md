@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # MotionKey
 
 ## Iteration 02
@@ -14,6 +15,22 @@ couple of weeks, all team members must familiarize themselves with the android d
 We spent the majority of the last iteration conceiving our product. Because of this, little time was
 actually spent learning the skills and researching the specific algorithms and libraries we would need
 in order to actually implement the keyboard.
+=======
+# YOUR PRODUCT/TEAM NAME
+
+ > _Note:_ This document is meant to be written during (or shortly after) your initial planning meeting.     
+ > It does not really make sense for you to edit this document much (if at all) while working on the project - Instead, at the end of the planning phase, you can refer back to this document and decide which parts of your plan you are happy with and which parts you would like to change.
+
+
+## Iteration XX
+
+ * Start date: FILL IN THE DATE WHEN YOU HAD YOUR FIRST TEAM PLANNING MEETING
+ * End date: FILL IN THE DATE WHEN YOU ARE PLANNING TO HAVE YOUR REVIEW MEETING
+
+## Process
+
+(Optional:) Quick introduction
+>>>>>>> origin
 
 <br />
 #### Roles & responsibilities
@@ -28,6 +45,7 @@ in order to actually implement the keyboard.
 | Android Developer | Responsible for developing the Android Keyboard | Jun |
 | Meeting Leader | Prepares meeting topics and ensures everyone stays on topic | Mark |
 | Minute Taker | Records important information discussed at the meeting | Mansoor |
+<<<<<<< HEAD
 | Android Researcher | Researches resources related to Android development | Mark |
 | Sensor Researcher | Researches resources related to Android development | Mansoor |
 | Network Specialist  | Researches how to interface Android Phones to Windows PCs via Internet Protocols | Tanzin |
@@ -35,10 +53,18 @@ in order to actually implement the keyboard.
 | Issue Manager | Allocates group resources to existing issues that need attention | Jun |
 | Video Editor  | Edits the demo video for deliverable 2 | Mansoor |
 | Lead Actor  | Plays the starring role in the video | Tanzin |
+=======
+| Android Researcher | Researchers for resources related to Android development | Mark |
+| Sensor Researcher | Researchers for resources related to Android development | Mansoor |
+| UI Researcher | Researchers for resources related to Android development | Steven |
+| Issue Manager | Will allocate group resources to solving issues | Jun |
+| Video Editor  | Edits the demo video for deliverable 2 | Mansoor |
+>>>>>>> origin
 | Video Production Team  | Helped produce demo video | Mark |
 | Video Production Team  | Helped produce demo video | Tanzin |
 | Video Production Team  | Helped produce demo video | Mansoor |
 | Video Production Team  | Helped produce demo video | Jun |
+<<<<<<< HEAD
 | Proof reader  | Proofreads all documents and documentation | Steven |
 <br />
 
@@ -62,6 +88,28 @@ in order to actually implement the keyboard.
 
  >![kanban](./artifacts/deliverable_2/kanban.PNG)
  We use a kanban board to keep track of which task needs to get done. For each task, team members can create a Git issue with priority label (i.e. high, medium or low priority) and milestone, and assign themselves to that Git issue and add it to the To Do column. They should move the Git issue to In Progress column when they are working on the task. Once they complete the task, they need to move it to the Review column so every team member can inspect what has changed. The Review column can also contain bug reports, team members who spot a bug in the program should immediately create a Git issue with bug and high priority labels, then include an instruction to reproduce the bug. After team members approve the changes, one of the members can close the Git issue and move it to the Done column.
+=======
+| Proof reader  | Proof reads all documents and documentation | Steven |
+<br />
+
+#### Events
+
+Describe meetings (and other events) you are planning to have:
+
+ * When and where? In-person or online?
+ * What's the purpose of each meeting?
+ * Other events could be coding sessions, code reviews, quick weekly sync' meeting online, etc.
+
+#### Artifacts
+
+List/describe the artifacts you will produce in order to organize your team.       
+
+ * Artifacts can be To-do lists, Task boards, schedule(s), etc.
+ * We want to understand:
+   * How do you keep track of what needs to get done?
+   * How do you prioritize tasks?
+   * How do tasks get assigned to team members?
+>>>>>>> origin
 
 #### Git / GitHub workflow
 
@@ -72,8 +120,13 @@ Our git repository has 3 branches. Master, development, and features.
 | Branch | Description |
 | --- | --- |
 | Master | Only that is fully tested, documented. Only the code that we're comfortable with our Professor/TA looking at. |
+<<<<<<< HEAD
 | Development | Code that is part of the basic MVP, or not fully tested, documented, etc. |
 | Feature ... | A single branch for each modular feature |
+=======
+| Development | Code that is part of the basic MVP, or not fully tested, documented, etc. features |
+| Feature | Branch for working on modular features |
+>>>>>>> origin
 
 The process of working with the repository is 
  * Fork the group repository. 
@@ -88,11 +141,16 @@ For this milestone we are aiming to work on completing the MVP, as a result we w
 
 We decided to use this workflow for multiple reasons. The master branch ensures that we meet our coding standards.
 The development branch allows members to commit code that may not be fully implemented, documented, tested, but still enable other team members who may 
+<<<<<<< HEAD
 rely on those features to use the latest implementation. The feature branch increases modularity of our design. Modularity is very important to us. It
+=======
+relay on those features to use the latest implementation. The feature branch increases modularity of our design. Modularity is very important to us. It
+>>>>>>> origin
 enables our team to work on multiple features in our backlog simultaneously while avoiding as many merge conflicts as possible.
 
 ## Product
 
+<<<<<<< HEAD
 
 #### Goals and tasks
 As a team, we have decided on the following goals that we believe need to be completed by the end of this iteration. These are ordered from most important to least, although we anticipate that all goals should be completed in order for the team to move on to the backlog for iteration 3.
@@ -183,3 +241,19 @@ As a team, we have decided on the following goals that we believe need to be com
 			make mockups with Balsamiq
 			another idea could be to use this gyroscope hand eye coordination as a game to train people that are recovering from nerve damage or used as a training exercise for jobs requring extremely good precision. Like those games where you have to move the ring through the metal loops without touching the loop, or like a ball in a maze game.
 			think about the specific group of users, need to make the application that fit the users.
+=======
+#### Goals and tasks
+
+ * Describe your goals for this iteration and the tasks that you will have to complete in order to achieve these goals.
+ * Order the items from most to least important.
+ * Feel free (but not obligated) to specify some/all tasks as user stories.
+
+#### Artifacts
+
+List/describe the artifacts you will produce in order to present your project idea.
+
+ * Artifacts can be text, code, images, videos, interactive mock-ups and/or any other useful artifact you can think of.
+ * Make sure to explain the purpose of each artifact (i.e. Why is it on your to-do list? Why is it useful for your team?)
+ * Be concise, yet precise.         
+   For example: "Build the website" is not precise at all, but "Build a static home page and upload it somewhere, so that it is publicly accessible" is much clearer.
+>>>>>>> origin
