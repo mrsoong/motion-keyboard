@@ -284,7 +284,11 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
                         predictions = suggestions.getTwoMostLikelyWords(output);
                         Log.d("Suggestion", predictions[0] + " " + predictions[1]);
                         this.mKeyboardSuggestions[0].setText(predictions[0]);
-                        this.mKeyboardSuggestions[1].setText(predictions[1]);
+                        if (predictions[0].equals(predictions[1])) {
+                            this.mKeyboardSuggestions[1].setText("");
+                        } else {
+                            this.mKeyboardSuggestions[1].setText(predictions[1]);
+                        }
                     }
                 }
 
