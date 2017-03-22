@@ -5,12 +5,13 @@
     <color name="colorAccent">#FF4081</color>
 
     <!--Keyboard color scheme-->
-    <color name="colorKeyboardPrimary">#fdfdfd</color>
-    <color name="colorKeyboardSecondary">#e4e4e4</color>
-    <color name="colorKeyboardAccent">#80ddff</color>
+    <color name="colorKeyboardPrimary">#f5f5f5</color>
+    <color name="colorKeyboardSecondary">#e0e0e0</color>
+    <color name="colorKeyboardSuggestion">#616161</color>
+    <color name="colorKeyboardAccent">#80d8ff</color>
 
     <!--Keyboard cursor-->
     <color name="colorKeyboardCursorGradientInner">#eec41212</color>
     <color name="colorKeyboardCursorGradientOuter">#9ac12121</color>
-    <color name="colorKeyboardCursor">#ff4834</color>
+    <color name="colorKeyboardCursor">#f44336</color>
 </resources>

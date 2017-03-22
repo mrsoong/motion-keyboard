@@ -75,7 +75,7 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
 
 
         //SWITCH THIS FROM circle_keyboard TO keyboard TO CHANGE BACK TO DEFAULT
-        mMotionKeyView = (MotionKeyKeyboardView) getLayoutInflater().inflate(R.layout.keyboard, null);
+        mMotionKeyView = (MotionKeyKeyboardView) getLayoutInflater().inflate(R.layout.circle_keyboard, null);
 
 
 
@@ -229,19 +229,21 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
 //                    getKeyID(, mCursorPosition);
                     String output;
 
+
                     if (key != null){
+                        Log.d("keyboard", key);
                         switch (key) {
-                            case "space" :
+                            case "______________" :
                                 output = " ";
                                 ic.commitText(output,1);
                                 break;
-                            case "DEL":
+                            case "◀":
                                 ic.deleteSurroundingText(1, 0);
                                 break;
                             case "Reset" :
                                 ic.deleteSurroundingText(ic.getTextBeforeCursor(10000, 0).length(), 0);
                                 break;
-                            case "CAP" :
+                            case "▲" :
                                 loopViews(mMotionKeyView);
                                 break;
                             default:
