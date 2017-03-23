@@ -75,7 +75,7 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
 
 
         //SWITCH THIS FROM circle_keyboard TO keyboard TO CHANGE BACK TO DEFAULT
-        mMotionKeyView = (MotionKeyKeyboardView) getLayoutInflater().inflate(R.layout.keyboard, null);
+        mMotionKeyView = (MotionKeyKeyboardView) getLayoutInflater().inflate(R.layout.circle_keyboard, null);
 
 
 
