@@ -7,6 +7,7 @@
 package com.example.motionkey;
 
 import android.content.res.AssetManager;
+import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
@@ -86,7 +87,7 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
 
 
         //SWITCH THIS FROM circle_keyboard TO keyboard TO CHANGE BACK TO DEFAULT
-        mMotionKeyView = (MotionKeyKeyboardView) getLayoutInflater().inflate(R.layout.circle_keyboard, null);
+        mMotionKeyView = (MotionKeyKeyboardView) getLayoutInflater().inflate(R.layout.keyboard, null);
 
         //initialize cursor by finding it in the initialized xml above
         mCursor = (TextView) mMotionKeyView.findViewById(R.id.cursor);
@@ -101,13 +102,25 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
         output = "";
         // Suggestions initialization
         suggestions = new WordPredict(this); //Creates DB
-        try {
-            AssetManager assetManager = getBaseContext().getAssets();
-            InputStream databaseInputStream = assetManager.open("en_freq.csv");
 
-            suggestions.importData(databaseInputStream);
-        } catch (IOException e){
-            e.printStackTrace();
+        try {
+
+            suggestions.createDataBase();
+
+        } catch (IOException ioe) {
+
+            throw new Error("Unable to create database");
+
+        }
+
+        try {
+
+            suggestions.openDataBase();
+
+        }catch(SQLException sqle){
+
+            throw sqle;
+
         }
         predictions = new String[2];
 
