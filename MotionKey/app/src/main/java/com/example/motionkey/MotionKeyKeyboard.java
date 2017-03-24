@@ -273,7 +273,6 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
                             case "______________" :
                                 output += " ";
                                 ic.commitText(" ",1);
-//                                ic.finishComposingText();
                                 output= "";
                                 break;
                             case "◀":
@@ -294,9 +293,7 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
                                 output += key;
                                 ic.commitText(key,1);
                         }
-                        Log.d("Text", output);
                         predictions = suggestions.getTwoMostLikelyWords(output);
-                        Log.d("Suggestion", predictions[0] + " " + predictions[1]);
                         this.mKeyboardSuggestions[0].setText(predictions[0]);
                         if (predictions[0].equals(predictions[1])) {
                             this.mKeyboardSuggestions[1].setText("");
