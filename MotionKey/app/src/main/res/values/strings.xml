@@ -59,4 +59,51 @@
     <string name="key_bottom_3">.</string>
     <!--return-->
     <string name="key_bottom_4">&#10149;</string>
+
+    <!--Row 1 Alternative-->
+    <string name="key_exclamation">!</string>
+    <string name="key_at">\@</string>
+    <string name="key_pound">#</string>
+    <string name="key_dollar">$</string>
+    <string name="key_percentage">%</string>
+    <string name="key_caret">^</string>
+    <string name="key_ampersand">&amp;</string>
+    <string name="key_asterisk">*</string>
+    <string name="key_open">(</string>
+    <string name="key_close">)</string>
+
+    <!--Row 2 Alternative-->
+    <string name="key_Q">Q</string>
+    <string name="key_W">W</string>
+    <string name="key_E">E</string>
+    <string name="key_R">R</string>
+    <string name="key_T">T</string>
+    <string name="key_Y">Y</string>
+    <string name="key_U">U</string>
+    <string name="key_I">I</string>
+    <string name="key_O">O</string>
+    <string name="key_P">P</string>
+
+    <!--Row 3 Alternative-->
+    <string name="key_A">A</string>
+    <string name="key_S">S</string>
+    <string name="key_D">D</string>
+    <string name="key_F">F</string>
+    <string name="key_G">G</string>
+    <string name="key_H">H</string>
+    <string name="key_J">J</string>
+    <string name="key_K">K</string>
+    <string name="key_L">L</string>
+
+    <!--Row 4 Alternative-->
+    <string name="key_Z">Z</string>
+    <string name="key_X">X</string>
+    <string name="key_C">C</string>
+    <string name="key_V">V</string>
+    <string name="key_B">B</string>
+    <string name="key_N">N</string>
+    <string name="key_M">M</string>
+
+
+
 </resources>
