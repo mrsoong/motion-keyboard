@@ -6,6 +6,8 @@
 
 package com.example.motionkey;
 
+import android.content.res.AssetManager;
+import android.database.sqlite.SQLiteDatabase;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -18,9 +20,13 @@ import android.view.ViewGroup;
 import android.view.inputmethod.InputConnection;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.motionkey.utilities.NoiseFilter;
+import com.example.motionkey.utilities.WordPredict;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.Arrays;
 import java.util.HashMap;
 
@@ -58,9 +64,14 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
     int curCursorWidth;
     int curCursorHeight;
 
+    String output;
     InputConnection ic;
 
     boolean isCap;
+
+    WordPredict suggestions;
+    String [] predictions;
+    private Button[] mKeyboardSuggestions;
 
     @Override
     public View onCreateInputView() {
@@ -84,14 +95,28 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
         //SWITCH THIS FROM circle_keyboard TO keyboard TO CHANGE BACK TO DEFAULT
         mMotionKeyView = (MotionKeyKeyboardView) getLayoutInflater().inflate(R.layout.keyboard, null);
 
-
-
         //initialize cursor by finding it in the initialized xml above
         mCursor = (TextView) mMotionKeyView.findViewById(R.id.cursor);
+        mKeyboardSuggestions = new Button[2];
+        mKeyboardSuggestions[0] = (Button) mMotionKeyView.findViewById(R.id.row0button1);
+        mKeyboardSuggestions[1] = (Button) mMotionKeyView.findViewById(R.id.row0button2);
 
         //begin listening to the sensors
         mSensorManager.registerListener(this, mSensorMagneticField, mSensorManager.SENSOR_DELAY_FASTEST);
         mSensorManager.registerListener(this, mSensorAccelerometer, mSensorManager.SENSOR_DELAY_FASTEST);
+
+        output = "";
+        // Suggestions initialization
+        suggestions = new WordPredict(this); //Creates DB
+        try {
+            AssetManager assetManager = getBaseContext().getAssets();
+            InputStream databaseInputStream = assetManager.open("en_freq.csv");
+
+            suggestions.importData(databaseInputStream);
+        } catch (IOException e){
+            e.printStackTrace();
+        }
+        predictions = new String[2];
 
         return mMotionKeyView;
     }
@@ -241,29 +266,40 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
                     mCursorPosition[1] = (mMotionKeyView.getHeight())/2-curCursorPaddingBottom/2+curCursorPaddingTop/2;
                     String key = mMotionKeyView.getMotionKeyElements().updateCursorPosition(mCursorPosition);
 //                    getKeyID(, mCursorPosition);
-                    String output;
+
 
                     if (key != null){
                         switch (key) {
-                            case "space" :
-                                output = " ";
-                                ic.commitText(output,1);
+                            case "______________" :
+                                output += " ";
+                                ic.commitText(" ",1);
+                                output= "";
                                 break;
-                            case "DEL":
+                            case "◀":
                                 ic.deleteSurroundingText(1, 0);
+                                if (output.length() > 0) {
+                                    output = output.substring(0, output.length()-1);
+                                }
                                 break;
-                            case "Reset" :
-                                ic.deleteSurroundingText(ic.getTextBeforeCursor(10000, 0).length(), 0);
+                            case "reset" :
+                                ic.deleteSurroundingText(ic.getTextBeforeCursor(1000000000, 0).length(), 0);
+                                output = "";
                                 break;
-                            case "CAP" :
+                            case "▲" :
                                 loopViews(mMotionKeyView);
+                                isCap=!isCap;
                                 break;
                             default:
-                                output = key;
-                                ic.commitText(output,1);
+                                output += key;
+                                ic.commitText(key,1);
                         }
-
-
+                        predictions = suggestions.getTwoMostLikelyWords(output);
+                        this.mKeyboardSuggestions[0].setText(predictions[0]);
+                        if (predictions[0].equals(predictions[1])) {
+                            this.mKeyboardSuggestions[1].setText("");
+                        } else {
+                            this.mKeyboardSuggestions[1].setText(predictions[1]);
+                        }
                     }
                 }
 
@@ -277,10 +313,9 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
             if (v instanceof Button) {
                 if (isCap) {
                     ((Button) v).setAllCaps(false);
-                    isCap = false;
+
                 } else {
                     ((Button) v).setAllCaps(true);
-                    isCap = true;
                 }
             } else if (v instanceof ViewGroup) {
 
