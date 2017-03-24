@@ -48,7 +48,6 @@ public class WordPredict extends SQLiteOpenHelper {
             while ((line = buffer.readLine()) != null && word_limit_counter < this.mWordLimit) {
                 String[] colums = line.split(",");
                 if (colums.length != 2) {
-//                    Log.d("MarkTest", "here??" + line);
                     continue;
                 }
                 ContentValues cv = new ContentValues();
@@ -57,15 +56,11 @@ public class WordPredict extends SQLiteOpenHelper {
                 db.insert("wordFrequency", null, cv);
                 test = colums[0] + " - " + colums[1];
                 word_limit_counter ++;
-//                Log.d("insert", test);
             }
         }
         catch (IOException e) {
             e.printStackTrace();
         }
-        Log.d("MARK", test);
-//        db.setTransactionSuccessful();
-//        db.endTransaction();
         db.close();
     }
 
@@ -88,7 +83,6 @@ public class WordPredict extends SQLiteOpenHelper {
                     if (resultSet.moveToNext()){
                         resultSet.moveToPosition(1);
                         result[1] = resultSet.getString(0);
-                        Log.d("Mark", result[1]);
                     }
                 }
             }
@@ -96,6 +90,5 @@ public class WordPredict extends SQLiteOpenHelper {
         resultSet.close();
         return result;
     }
-//InputStream is = getAssets().open("path/file.ext");
 
 }
