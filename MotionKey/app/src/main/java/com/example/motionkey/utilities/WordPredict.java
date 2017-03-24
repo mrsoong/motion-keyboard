@@ -17,12 +17,12 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 
 /**
+ * A word prediction class which utilizes a SQLite database to store a word frequency chart
+ * This class will be used to auto-complete the users word.
  * Created by Mark on 2017-03-21.
  */
 
 public class WordPredict extends SQLiteOpenHelper {
-//    private Context context;
-//    private SQLiteDatabase db;
 
     private static String DB_PATH = "/data/data/com.example.motionkey/databases/";
     private SQLiteDatabase myDataBase;
@@ -33,7 +33,6 @@ public class WordPredict extends SQLiteOpenHelper {
     public WordPredict (Context current){
         super(current, DATABASE_NAME, null, 1);
         this.myContext = current;
-
     }
 
     /**
@@ -75,24 +74,20 @@ public class WordPredict extends SQLiteOpenHelper {
         try{
             String myPath = DB_PATH + DATABASE_NAME;
             checkDB = SQLiteDatabase.openDatabase(myPath, null, SQLiteDatabase.OPEN_READONLY);
-
         }catch(SQLiteException e){
-
             //database does't exist yet.
 
         }
 
         if(checkDB != null){
-
             checkDB.close();
-
         }
 
         return checkDB != null ? true : false;
     }
 
     /**
-     * Copies your database from your local assets-folder to the just created empty database in the
+     * Copies your database from your assets folder to the just created empty database in the
      * system folder, from where it can be accessed and handled.
      * This is done by transfering bytestream.
      * */
@@ -121,6 +116,10 @@ public class WordPredict extends SQLiteOpenHelper {
 
     }
 
+    /**
+     * Opens database
+     * @throws SQLException
+     */
     public void openDataBase() throws SQLException {
 
         //Open the database
@@ -129,6 +128,9 @@ public class WordPredict extends SQLiteOpenHelper {
 
     }
 
+    /**
+     * Closes database
+     */
     @Override
     public synchronized void close() {
 
@@ -148,54 +150,22 @@ public class WordPredict extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 
     }
-//    public void onCreate(SQLiteDatabase db){
-//        String SQL_CREATE_TABLE = "CREATE TABLE wordFrequency " +
-//                "(word text priamry key, frequency integer)";
-//        db.execSQL(SQL_CREATE_TABLE);
-//    }
-//    @Override
-//    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-//        db.execSQL("DROP TABLE IF EXISTS wordFrequency");
-//        onCreate(db);
-//    }
-//    public void importData(InputStream databaseInputStream){
-//        db = this.getWritableDatabase();
-//        BufferedReader buffer = new BufferedReader(new InputStreamReader(databaseInputStream));
-//        String line = "";
-//        String test = "";
-//        try {
-//            while ((line = buffer.readLine()) != null) {
-//                String[] colums = line.split(",");
-//                if (colums.length != 2) {
-////                    Log.d("MarkTest", "here??" + line);
-//                    continue;
-//                }
-//                ContentValues cv = new ContentValues();
-//                cv.put("word", colums[0].trim());
-//                cv.put("frequency", colums[1].trim());
-//                db.insert("wordFrequency", null, cv);
-//                test = colums[0] + " - " + colums[1];
-////                Log.d("insert", test);
-//            }
-//        }
-//        catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//        Log.d("MARK", test);
-////        db.setTransactionSuccessful();
-////        db.endTransaction();
-//        db.close();
-//    }
 
+    /**
+     * A function which tries to predict the word give a substring. This function uses a word
+     * frequency database provided by Wikitonary and can be found here :
+     * https://en.wiktionary.org/wiki/Wiktionary:Frequency_lists#TV_and_movie_scripts
+     *
+     * @param search The beginning of the string you want to try to auto-complete
+     * @return The two most likely words
+     */
     public String[] getTwoMostLikelyWords(String search) {
-//        db = this.getReadableDatabase();
         String[] result = new String[2];
         result[0] = "";
         result[1] = "";
         String query = "SELECT * FROM en_freq"
                 + " WHERE  words LIKE \"%" + search + "%\" ORDER BY frequency DESC LIMIT 2";
-        Cursor resultSet;
-        resultSet = myDataBase.rawQuery(query, null);
+        Cursor resultSet = myDataBase.rawQuery(query, null);
         if (!resultSet.equals(null)) {
 
             if (resultSet.moveToFirst()) {
@@ -206,7 +176,6 @@ public class WordPredict extends SQLiteOpenHelper {
                     if (resultSet.moveToNext()){
                         resultSet.moveToPosition(1);
                         result[1] = resultSet.getString(0);
-                        Log.d("Mark", result[1]);
                     }
                 }
             }
@@ -214,6 +183,5 @@ public class WordPredict extends SQLiteOpenHelper {
         resultSet.close();
         return result;
     }
-//InputStream is = getAssets().open("path/file.ext");
 
 }

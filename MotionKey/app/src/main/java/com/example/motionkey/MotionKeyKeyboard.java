@@ -14,6 +14,7 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.inputmethodservice.InputMethodService;
+import android.provider.Settings;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
@@ -75,6 +76,12 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
 
     @Override
     public View onCreateInputView() {
+        // Disable Android's auto screen rotation
+        Settings.System.putInt(
+                getContentResolver(),
+                Settings.System.ACCELEROMETER_ROTATION,
+                0
+        );
 
         mSensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
         mSensorMagneticField = mSensorManager.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD);
@@ -132,6 +139,13 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
         super.onWindowHidden();
         //stop listening to the sensors
         mSensorManager.unregisterListener(this);
+
+        // Re-enable Android's auto screen rotation
+        Settings.System.putInt(
+                getContentResolver(),
+                Settings.System.ACCELEROMETER_ROTATION,
+                1
+        );
     }
 
     @Override
@@ -272,7 +286,6 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
                             case "______________" :
                                 output += " ";
                                 ic.commitText(" ",1);
-//                                ic.finishComposingText();
                                 output= "";
                                 break;
                             case "◀":
@@ -293,9 +306,7 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
                                 output += key;
                                 ic.commitText(key,1);
                         }
-                        Log.d("Text", output);
                         predictions = suggestions.getTwoMostLikelyWords(output);
-                        Log.d("Suggestion", predictions[0] + " " + predictions[1]);
                         this.mKeyboardSuggestions[0].setText(predictions[0]);
                         if (predictions[0].equals(predictions[1])) {
                             this.mKeyboardSuggestions[1].setText("");
