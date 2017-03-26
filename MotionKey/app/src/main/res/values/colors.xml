@@ -14,4 +14,8 @@
     <color name="colorKeyboardCursorGradientInner">#eec41212</color>
     <color name="colorKeyboardCursorGradientOuter">#9ac12121</color>
     <color name="colorKeyboardCursor">#f44336</color>
+
+    <!--Toggle buttons-->
+    <color name="light_grey">#D3D3D3</color>
+    <color name="grey">#808080</color>
 </resources>

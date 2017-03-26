@@ -7,6 +7,7 @@
 package com.example.motionkey;
 
 import android.content.res.AssetManager;
+import android.content.Intent;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.hardware.Sensor;
@@ -22,6 +23,7 @@ import android.view.inputmethod.InputConnection;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.ToggleButton;
 
 import com.example.motionkey.utilities.NoiseFilter;
 import com.example.motionkey.utilities.WordPredict;
@@ -367,6 +369,11 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
         //Do something if accuracy of sensor changes
         //Not needed at the moment
+    }
+
+    public void showSettings(View view) {
+        Intent intent = new Intent(MotionKeyKeyboard.this, SettingsActivity.class);
+        startActivity(intent);
     }
       
 }
