@@ -372,8 +372,9 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
     }
 
     public void showSettings(View view) {
-        Intent intent = new Intent(MotionKeyKeyboard.this, SettingsActivity.class);
-        startActivity(intent);
+        Intent dialogIntent = new Intent(getApplicationContext(), SettingsActivity.class);
+        dialogIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(dialogIntent);
     }
       
 }
