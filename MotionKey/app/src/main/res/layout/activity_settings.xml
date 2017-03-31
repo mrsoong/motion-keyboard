@@ -29,6 +29,10 @@
                 android:layout_weight="1"
                 android:ems="11"
                 android:inputType="none"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
                 android:text="Sensitivity" />
 
             <ToggleButton
