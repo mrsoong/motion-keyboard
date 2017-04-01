@@ -204,7 +204,7 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
                         loopViews(mMotionKeyView);
                         isCap=!isCap;
                         break;
-                    case "settings":
+                    case "Settings":
                         Intent dialogIntent = new Intent(getApplicationContext(), SettingsActivity.class);
                         dialogIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(dialogIntent);
@@ -271,6 +271,5 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
         Intent intent = new Intent(MotionKeyKeyboard.this, SettingsActivity.class);
         startActivity(intent);
     }
-
 }
 

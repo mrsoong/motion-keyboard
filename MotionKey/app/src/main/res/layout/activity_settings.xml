@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/settings_parent_layout"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
     android:layout_gravity="center"
-    android:alpha="0.7"
-    android:orientation="vertical">
+    android:alpha="0.7">
 
     <LinearLayout
         android:layout_width="315dp"
         android:layout_height="match_parent"
         android:layout_gravity="center"
         android:alpha="0.7"
-        android:baselineAligned="false"
-        android:orientation="vertical"
-        android:padding="10dp"
-        android:weightSum="1">
+        android:orientation="vertical">
 
         <RelativeLayout
             android:id="@+id/settings_sensitivity_layout"
@@ -84,40 +80,59 @@
             android:background="#00FFFFFF"
             android:orientation="horizontal">
 
-            <TextView
+            <ToggleButton
                 android:id="@+id/settings_ok"
                 android:layout_width="55dp"
-                android:layout_height="wrap_content"
+                android:layout_height="20dp"
                 android:background="#D3D3D3"
                 android:gravity="center"
+                android:fontFamily="@string/keyFont"
                 android:text="Ok"
+                android:textOff="Ok"
+                android:textOn="Ok"
                 android:textColor="#000"
-                android:textSize="18sp" />
+                android:textSize="12sp" />
 
-            <TextView
+            <ToggleButton
                 android:id="@+id/settings_cancel"
                 android:layout_width="55dp"
-                android:layout_height="wrap_content"
+                android:layout_height="20dp"
                 android:layout_marginLeft="10dp"
                 android:background="#D3D3D3"
                 android:gravity="center"
+                android:fontFamily="@string/keyFont"
                 android:text="Cancel"
+                android:textOff="Cancel"
+                android:textOn="Cancel"
                 android:textColor="#000"
-                android:textSize="18sp" />
+                android:textSize="12sp" />
 
-            <TextView
+            <ToggleButton
                 android:id="@+id/settings_default"
                 android:layout_width="70dp"
-                android:layout_height="wrap_content"
+                android:layout_height="20dp"
                 android:layout_marginLeft="10dp"
                 android:background="#D3D3D3"
                 android:gravity="center"
+                android:fontFamily="@string/keyFont"
                 android:text="Default"
+                android:textOff="Default"
+                android:textOn="Default"
                 android:textColor="#000"
-                android:textSize="18sp" />
+                android:textSize="12sp" />
 
         </LinearLayout>
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/settings_cursor"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/keyboard_height"
+        android:text="o"
+        android:textColor="@color/colorKeyboardCursor"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 </LinearLayout>

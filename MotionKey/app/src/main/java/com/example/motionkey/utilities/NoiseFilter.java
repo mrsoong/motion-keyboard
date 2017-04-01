@@ -14,20 +14,24 @@ public class NoiseFilter {
     private int oldestHistoryIndex;
     private float[][] measurementHistory;
     // Determines how sensitive the keyboard is
-    private float sensitivity;
+    public static float sensitivity;
 
     //0=Azimuth 1=Pitch 2=Roll
     private int dimensions;
 
-    public NoiseFilter(int historyLength, float sensitivity, int dimensions) {
+    public NoiseFilter(int historyLength, float sens, int dimensions) {
         this.historyLength = historyLength;
-        this.sensitivity = sensitivity;
+        sensitivity = sens;
         this.dimensions = dimensions;
         this.measurementHistory = new float[this.dimensions][this.historyLength];
         //initialize history arrays in all dimensions
         for (int i=0; i<this.dimensions; i++) {
             Arrays.fill(this.measurementHistory[i], 0);
         }
+    }
+
+    public static void setSensitivity(float sens) {
+        sensitivity = sensitivity;
     }
 
     public void addMeasurement(int axis, float value) {

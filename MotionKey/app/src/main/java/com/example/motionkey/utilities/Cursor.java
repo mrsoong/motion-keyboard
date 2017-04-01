@@ -1,12 +1,9 @@
 package com.example.motionkey.utilities;
 
-import android.content.Intent;
 import android.hardware.SensorManager;
 import android.util.Log;
-import android.view.View;
 import android.widget.TextView;
 
-import com.example.motionkey.SettingsActivity;
 
 /**
  * Created by Steven Song on 3/31/2017.
@@ -123,7 +120,7 @@ public class Cursor {
                 }
             }
         }
-
+        mCursor.bringToFront();
     }
 
     public void logCursor () {
