@@ -697,16 +697,15 @@
                 android:layout_width="30dp"
                 android:layout_height="@dimen/key_height"
                 android:layout_weight="1"
-                android:text="settings"
+                android:text="Settings"
                 android:layout_marginTop="0dp"
-                android:textSize="30dp"
+                android:textSize="10dp"
 				android:fontFamily="@string/keyFont"
                 android:textAlignment="center"
                 android:layout_gravity="center"
                 android:padding="0dp"
                 android:layout_margin="0dp"
                 android:textAllCaps="false"
-                android:onClick="showSettings"
                 android:background="@color/colorKeyboardPrimary"/>
 
             <Button
