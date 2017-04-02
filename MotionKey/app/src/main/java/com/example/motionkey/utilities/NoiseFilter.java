@@ -14,14 +14,13 @@ public class NoiseFilter {
     private int oldestHistoryIndex;
     private float[][] measurementHistory;
     // Determines how sensitive the keyboard is
-    public static float sensitivity;
+    public static float sensitivity = 0.50f;
 
     //0=Azimuth 1=Pitch 2=Roll
     private int dimensions;
 
-    public NoiseFilter(int historyLength, float sens, int dimensions) {
+    public NoiseFilter(int historyLength, int dimensions) {
         this.historyLength = historyLength;
-        sensitivity = sens;
         this.dimensions = dimensions;
         this.measurementHistory = new float[this.dimensions][this.historyLength];
         //initialize history arrays in all dimensions
@@ -31,7 +30,11 @@ public class NoiseFilter {
     }
 
     public static void setSensitivity(float sens) {
-        sensitivity = sensitivity;
+        sensitivity = sens;
+    }
+
+    public static float getSensitivity() {
+        return sensitivity;
     }
 
     public void addMeasurement(int axis, float value) {

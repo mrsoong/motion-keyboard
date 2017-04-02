@@ -120,6 +120,39 @@ public class MotionKeyInteractiveElement {
         mView.setBackgroundColor(mColour);
         return null;
     }
+
+    public Button checkCursorHoverButton(int[] position) {
+
+        if (position[0] > mPosition[0] && position[0] < (mPosition[0] + mWidth)) {
+            if (position[1] > mPosition[1] && position[1] < (mPosition[1] + mHeight)) {
+                if (!keyHover) {
+                    lastKeySelect = System.currentTimeMillis();
+                    keyHover = true;
+                    this.mCurColour = this.mColour;
+                    //start color transition
+                    this.mColourTransition.start();
+                }
+                if (keyHover && (System.currentTimeMillis() - lastKeySelect) >= 1000)  {
+                    Button v = (Button)mView;
+                    //Log.d("keyboardMark", (v.getText().toString() + ""));
+                    keyHover = false;
+                    //stop the color transition
+                    this.mColourTransition.cancel();
+                    return v;
+                }
+                mCursorHovering = true;
+                Button v = (Button)mView;
+                return null;
+            }
+        }
+        //key is not being hovered over, stop the color transition if any started
+        this.mColourTransition.cancel();
+        keyHover = false;
+        mCursorHovering = false;
+        mView.setBackgroundColor(mColour);
+        return null;
+    }
+
     public Integer getKeyID(HashMap<int[], Integer> coord, int[] cursor){
         Integer value;
         ArrayList<int[]> keyPositions = new ArrayList<int[]>();

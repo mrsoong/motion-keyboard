@@ -81,7 +81,7 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
         //initialize adjustment amount of orientation degrees to zero
         Arrays.fill(adjustmentAmount, 0);
         //noise filter to smooth cursor movement
-        this.mNoiseFilter = new NoiseFilter(20, 0.75f, 3);
+        this.mNoiseFilter = new NoiseFilter(20, 3);
         //initialize xml layout of the keyboard
 
 
@@ -205,9 +205,10 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
                         isCap=!isCap;
                         break;
                     case "Settings":
-                        Intent dialogIntent = new Intent(getApplicationContext(), SettingsActivity.class);
-                        dialogIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                        startActivity(dialogIntent);
+                        Intent intent = new Intent(getApplicationContext(), SettingsActivity.class);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        // intent.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+                        startActivity(intent);
                         break;
                     default:
                         output += key;

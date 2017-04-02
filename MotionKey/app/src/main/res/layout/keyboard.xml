@@ -699,7 +699,7 @@
                 android:layout_weight="1"
                 android:text="Settings"
                 android:layout_marginTop="0dp"
-                android:textSize="12dp"
+                android:textSize="10dp"
 				android:fontFamily="@string/keyFont"
                 android:textAlignment="center"
                 android:layout_gravity="center"

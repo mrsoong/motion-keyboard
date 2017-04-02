@@ -4,7 +4,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -19,17 +18,17 @@ import java.util.List;
  * Relays the cursor position to all interactive elements
  */
 
-public class MotionKeyCursorObserver {
+public class SettingsCursorObserver {
 
-    RelativeLayout mMotionKeyView;
+    SettingsView mSettingsView;
     List<MotionKeyInteractiveElement> mAllInteractiveElements = new ArrayList<MotionKeyInteractiveElement>();
     private boolean mAllElementsAdded = false;
     private int[] mCursorPosition;
 
 
-    public MotionKeyCursorObserver(RelativeLayout motionkeykeyboardview) {
-        mMotionKeyView = motionkeykeyboardview;
-        findElements(mMotionKeyView.findViewById(R.id.keyboard_parent_layout));
+    public SettingsCursorObserver(SettingsView settingsView) {
+        mSettingsView = settingsView;
+        findElements(mSettingsView.findViewById(R.id.keyboard_parent_layout));
         mAllElementsAdded = true;
     }
 
@@ -49,9 +48,9 @@ public class MotionKeyCursorObserver {
         }
     }
 
-    public String updateCursorPosition(int[] position) {
+    public Button updateCursorPosition(int[] position) {
         for (MotionKeyInteractiveElement element : mAllInteractiveElements) {
-            String tmp = element.checkCursorHover(position);
+            Button tmp = element.checkCursorHoverButton(position);
             if(tmp != null){
                 return tmp;
             }

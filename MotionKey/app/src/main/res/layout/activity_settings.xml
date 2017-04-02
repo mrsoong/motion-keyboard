@@ -7,8 +7,9 @@
     android:alpha="0.7">
 
     <LinearLayout
+        android:id="@+id/settings_area"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:alpha="0.7"
@@ -89,8 +90,6 @@
                 android:gravity="center"
                 android:fontFamily="@string/keyFont"
                 android:text="Ok"
-                android:textOff="Ok"
-                android:textOn="Ok"
                 android:textColor="#000"
                 android:textSize="12sp" />
 
@@ -103,8 +102,6 @@
                 android:gravity="center"
                 android:fontFamily="@string/keyFont"
                 android:text="Cancel"
-                android:textOff="Cancel"
-                android:textOn="Cancel"
                 android:textColor="#000"
                 android:textSize="12sp" />
 
@@ -117,8 +114,6 @@
                 android:gravity="center"
                 android:fontFamily="@string/keyFont"
                 android:text="Default"
-                android:textOff="Default"
-                android:textOn="Default"
                 android:textColor="#000"
                 android:textSize="12sp" />
 
@@ -128,12 +123,11 @@
     <TextView
         android:id="@+id/settings_cursor"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
         android:text="o"
         android:textColor="@color/colorKeyboardCursor"
-        android:gravity="center"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:gravity="center" />
 
 </RelativeLayout>
