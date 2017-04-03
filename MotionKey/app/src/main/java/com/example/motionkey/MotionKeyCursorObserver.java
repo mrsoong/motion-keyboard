@@ -21,13 +21,13 @@ import java.util.List;
 
 public class MotionKeyCursorObserver {
 
-    RelativeLayout mMotionKeyView;
+    MotionKeyKeyboardView mMotionKeyView;
     List<MotionKeyInteractiveElement> mAllInteractiveElements = new ArrayList<MotionKeyInteractiveElement>();
     private boolean mAllElementsAdded = false;
     private int[] mCursorPosition;
 
 
-    public MotionKeyCursorObserver(RelativeLayout motionkeykeyboardview) {
+    public MotionKeyCursorObserver(MotionKeyKeyboardView motionkeykeyboardview) {
         mMotionKeyView = motionkeykeyboardview;
         findElements(mMotionKeyView.findViewById(R.id.keyboard_parent_layout));
         mAllElementsAdded = true;
