@@ -229,27 +229,29 @@ public class SettingsActivity extends AppCompatActivity implements SensorEventLi
             mCursorPosition[1] = (mSettingsView.getHeight()) / 2 - cursor.getPaddingBottom() / 2 + cursor.getPaddingTop() / 2;
             String key = mSettingsView.getMotionKeyElements().updateCursorPosition(mCursorPosition);
             Log.d("Mark setting", key + "");
-            switch (key) {
-                case "Low":
-                    NoiseFilter.setSensitivity(low_sens);
-                    break;
-                case "Medium":
-                    NoiseFilter.setSensitivity(med_sens);
-                    break;
-                case "High":
-                    NoiseFilter.setSensitivity(med_sens);
-                    break;
-                case "ok":
-                    onBackPressed();
-                    break;
-                case "Cancel":
-                    mNoiseFilter.setSensitivity(startingSensitivity);
-                    onBackPressed();
-                    break;
-                case "Default":
-                    mNoiseFilter.setSensitivity(med_sens);
-                    onBackPressed();
-                    break;
+            if (key != null) {
+                switch (key) {
+                    case "Low":
+                        NoiseFilter.setSensitivity(low_sens);
+                        break;
+                    case "Medium":
+                        NoiseFilter.setSensitivity(med_sens);
+                        break;
+                    case "High":
+                        NoiseFilter.setSensitivity(med_sens);
+                        break;
+                    case "Ok":
+                        onBackPressed();
+                        break;
+                    case "Cancel":
+                        mNoiseFilter.setSensitivity(startingSensitivity);
+                        onBackPressed();
+                        break;
+                    case "Default":
+                        mNoiseFilter.setSensitivity(med_sens);
+                        onBackPressed();
+                        break;
+                }
             }
 
         }
