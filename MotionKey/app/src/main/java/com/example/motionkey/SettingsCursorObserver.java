@@ -1,9 +1,11 @@
 package com.example.motionkey;
 
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -20,15 +22,15 @@ import java.util.List;
 
 public class SettingsCursorObserver {
 
-    SettingsView mSettingsView;
+    RelativeLayout mSettingsView;
     List<MotionKeyInteractiveElement> mAllInteractiveElements = new ArrayList<MotionKeyInteractiveElement>();
     private boolean mAllElementsAdded = false;
     private int[] mCursorPosition;
 
 
-    public SettingsCursorObserver(SettingsView settingsView) {
+    public SettingsCursorObserver(RelativeLayout settingsView) {
         mSettingsView = settingsView;
-        findElements(mSettingsView.findViewById(R.id.keyboard_parent_layout));
+        findElements(mSettingsView.findViewById(R.id.settings_parent_layout));
         mAllElementsAdded = true;
     }
 
@@ -48,9 +50,9 @@ public class SettingsCursorObserver {
         }
     }
 
-    public Button updateCursorPosition(int[] position) {
+    public String updateCursorPosition(int[] position) {
         for (MotionKeyInteractiveElement element : mAllInteractiveElements) {
-            Button tmp = element.checkCursorHoverButton(position);
+            String tmp = element.checkCursorHover(position);
             if(tmp != null){
                 return tmp;
             }

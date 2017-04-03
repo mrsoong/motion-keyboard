@@ -2,6 +2,7 @@ package com.example.motionkey;
 
 import android.content.Context;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.widget.RelativeLayout;
 
 public class SettingsView extends RelativeLayout {
@@ -15,6 +16,7 @@ public class SettingsView extends RelativeLayout {
     @Override
     protected void onLayout(boolean changed, int l, int t, int r, int b) {
         super.onLayout(changed, l, t, r, b);
+//        Log.d("Mark1", !mElementFound + "");
         if (!mElementFound) {
             mSettingsObserver = new SettingsCursorObserver(this);
             mElementFound = true;

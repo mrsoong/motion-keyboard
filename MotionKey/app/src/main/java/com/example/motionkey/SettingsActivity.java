@@ -9,6 +9,8 @@ import android.os.SystemClock;
 import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
@@ -44,10 +46,11 @@ public class SettingsActivity extends AppCompatActivity implements SensorEventLi
     Cursor cursor;
 
     LinearLayout settingsArea;
+    View view;
 
-    ToggleButton low_btn;
-    ToggleButton medium_btn;
-    ToggleButton high_btn;
+    Button low_btn;
+    Button medium_btn;
+    Button high_btn;
     Button ok_btn;
     Button cancel_btn;
     Button default_btn;
@@ -61,13 +64,16 @@ public class SettingsActivity extends AppCompatActivity implements SensorEventLi
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
-
+//        LayoutInflater inflater = getLayoutInflater();
+//        mSettingsView = (SettingsView) getLayoutInflater().inflate(R.layout.activity_settings, null);
+        mSettingsView = (SettingsView) findViewById(R.id.settings_parent_layout);
+//        mSettingsView test = new SettingsView(inflater.getContext(),
         // Disable Android's auto screen rotation
-        Settings.System.putInt(
-                getContentResolver(),
-                Settings.System.ACCELEROMETER_ROTATION,
-                0
-        );
+//        Settings.System.putInt(
+//                getContentResolver(),
+//                Settings.System.ACCELEROMETER_ROTATION,
+//                0
+//        );
 
         mSensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
         mSensorMagneticField = mSensorManager.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD);
@@ -89,9 +95,9 @@ public class SettingsActivity extends AppCompatActivity implements SensorEventLi
         mSensorManager.registerListener(this, mSensorAccelerometer, mSensorManager.SENSOR_DELAY_FASTEST);
 
         // Attach listeners to buttons
-        low_btn = (ToggleButton) findViewById(R.id.settings_sensitivity_low);
-        medium_btn = (ToggleButton) findViewById(R.id.settings_sensitivity_medium);
-        high_btn = (ToggleButton) findViewById(R.id.settings_sensitivity_high);
+        low_btn = (Button) findViewById(R.id.settings_sensitivity_low);
+        medium_btn = (Button) findViewById(R.id.settings_sensitivity_medium);
+        high_btn = (Button) findViewById(R.id.settings_sensitivity_high);
         ok_btn = (Button) findViewById(R.id.settings_ok);
         cancel_btn = (Button) findViewById(R.id.settings_cancel);
         default_btn = (Button) findViewById(R.id.settings_default);
@@ -106,9 +112,9 @@ public class SettingsActivity extends AppCompatActivity implements SensorEventLi
             public void onClick(View v)
             {
                 NoiseFilter.setSensitivity(low_sens);
-                low_btn.setChecked(true);
-                medium_btn.setChecked(false);
-                high_btn.setChecked(false);
+//                low_btn.setChecked(true);
+//                medium_btn.setChecked(false);
+//                high_btn.setChecked(false);
             }
         });
         medium_btn.setOnClickListener(new View.OnClickListener()
@@ -117,9 +123,9 @@ public class SettingsActivity extends AppCompatActivity implements SensorEventLi
             public void onClick(View v)
             {
                 NoiseFilter.setSensitivity(med_sens);
-                low_btn.setChecked(false);
-                medium_btn.setChecked(true);
-                high_btn.setChecked(false);
+//                low_btn.setChecked(false);
+//                medium_btn.setChecked(true);
+//                high_btn.setChecked(false);
             }
         });
         high_btn.setOnClickListener(new View.OnClickListener()
@@ -128,9 +134,9 @@ public class SettingsActivity extends AppCompatActivity implements SensorEventLi
             public void onClick(View v)
             {
                 NoiseFilter.setSensitivity(high_sens);
-                low_btn.setChecked(false);
-                medium_btn.setChecked(false);
-                high_btn.setChecked(true);
+//                low_btn.setChecked(false);
+//                medium_btn.setChecked(false);
+//                high_btn.setChecked(true);
             }
         });
 
@@ -162,7 +168,8 @@ public class SettingsActivity extends AppCompatActivity implements SensorEventLi
                 onBackPressed();
             }
         });
-
+//        MotionKeyInteractiveElement mMotionKeyView = new MotionKeyInteractiveElement(view);
+//        String key = mMotionKeyView.getMotionKeyElements().updateCursorPosition(mCursorPosition);
     }
 
     @Override
@@ -188,13 +195,13 @@ public class SettingsActivity extends AppCompatActivity implements SensorEventLi
         default_btn.setText("Default");
 
         if (mNoiseFilter.getSensitivity() == low_sens) {
-            low_btn.setChecked(true);
+//            low_btn.setChecked(true);
         }
         else if (mNoiseFilter.getSensitivity() == med_sens) {
-            medium_btn.setChecked(true);
+//            medium_btn.setChecked(true);
         }
         else {
-            high_btn.setChecked(true);
+//            high_btn.setChecked(true);
         }
     }
 
@@ -214,17 +221,38 @@ public class SettingsActivity extends AppCompatActivity implements SensorEventLi
         cursor.updateCursorPosition(this.mSensorManager, this.mGravityData, this.mGeomagneticData,
                 this.originalOrientation, this.adjustedOrientation, this.adjustmentAmount,
                 this.mNoiseFilter, this.mAngleLimit);
-
         //notify observer
-        /*
-        Note: Still WIP
+        //Note: Still WIP
         if (mSettingsView.isMotionKeyKeyboardElementsFound()) {
             int[] mCursorPosition = new int[2];
             mCursorPosition[0] = (mSettingsView.getWidth()) / 2 - cursor.getPaddingRight() / 2 + cursor.getPaddingLeft() / 2;
             mCursorPosition[1] = (mSettingsView.getHeight()) / 2 - cursor.getPaddingBottom() / 2 + cursor.getPaddingTop() / 2;
-            Button key = mSettingsView.getMotionKeyElements().updateCursorPosition(mCursorPosition);
-            key.performClick();
+            String key = mSettingsView.getMotionKeyElements().updateCursorPosition(mCursorPosition);
+            Log.d("Mark setting", key + "");
+            switch (key) {
+                case "Low":
+                    NoiseFilter.setSensitivity(low_sens);
+                    break;
+                case "Medium":
+                    NoiseFilter.setSensitivity(med_sens);
+                    break;
+                case "High":
+                    NoiseFilter.setSensitivity(med_sens);
+                    break;
+                case "ok":
+                    onBackPressed();
+                    break;
+                case "Cancel":
+                    mNoiseFilter.setSensitivity(startingSensitivity);
+                    onBackPressed();
+                    break;
+                case "Default":
+                    mNoiseFilter.setSensitivity(med_sens);
+                    onBackPressed();
+                    break;
+            }
+
         }
-        */
+
     }
 }
