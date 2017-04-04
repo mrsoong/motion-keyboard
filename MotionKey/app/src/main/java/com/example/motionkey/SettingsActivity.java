@@ -69,11 +69,11 @@ public class SettingsActivity extends AppCompatActivity implements SensorEventLi
         mSettingsView = (SettingsView) findViewById(R.id.settings_parent_layout);
 //        mSettingsView test = new SettingsView(inflater.getContext(),
         // Disable Android's auto screen rotation
-//        Settings.System.putInt(
-//                getContentResolver(),
-//                Settings.System.ACCELEROMETER_ROTATION,
-//                0
-//        );
+        Settings.System.putInt(
+                getContentResolver(),
+                Settings.System.ACCELEROMETER_ROTATION,
+                0
+        );
 
         mSensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
         mSensorMagneticField = mSensorManager.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD);
@@ -225,8 +225,9 @@ public class SettingsActivity extends AppCompatActivity implements SensorEventLi
         //Note: Still WIP
         if (mSettingsView.isMotionKeyKeyboardElementsFound()) {
             int[] mCursorPosition = new int[2];
-            mCursorPosition[0] = (mSettingsView.getWidth()) / 2 - cursor.getPaddingRight() / 2 + cursor.getPaddingLeft() / 2;
-            mCursorPosition[1] = (mSettingsView.getHeight()) / 2 - cursor.getPaddingBottom() / 2 + cursor.getPaddingTop() / 2;
+
+            mCursorPosition[0] = (settingsArea.getWidth()) / 2 - cursor.getPaddingRight() / 2 + cursor.getPaddingLeft() / 2;
+            mCursorPosition[1] = (mSettingsView.getHeight()) + settingsArea.getHeight() / 2 + cursor.getPaddingTop() / 2;
             String key = mSettingsView.getMotionKeyElements().updateCursorPosition(mCursorPosition);
             Log.d("Mark setting", key + "");
             if (key != null) {

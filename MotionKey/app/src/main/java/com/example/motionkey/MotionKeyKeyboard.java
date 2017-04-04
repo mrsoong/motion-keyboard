@@ -68,11 +68,11 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
     @Override
     public View onCreateInputView() {
         // Disable Android's auto screen rotation
-//        Settings.System.putInt(
-//                getContentResolver(),
-//                Settings.System.ACCELEROMETER_ROTATION,
-//                0
-//        );
+        Settings.System.putInt(
+                getContentResolver(),
+                Settings.System.ACCELEROMETER_ROTATION,
+                0
+        );
 
         mSensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
         mSensorMagneticField = mSensorManager.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD);
@@ -132,11 +132,11 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
         mSensorManager.unregisterListener(this);
 
         // Re-enable Android's auto screen rotation
-//        Settings.System.putInt(
-//                getContentResolver(),
-//                Settings.System.ACCELEROMETER_ROTATION,
-//                1
-//        );
+        Settings.System.putInt(
+                getContentResolver(),
+                Settings.System.ACCELEROMETER_ROTATION,
+                1
+        );
     }
 
     @Override
@@ -147,6 +147,13 @@ public class MotionKeyKeyboard extends InputMethodService implements SensorEvent
         mSensorManager.registerListener(this, mSensorAccelerometer, mSensorManager.SENSOR_DELAY_FASTEST);
 
         ic = getCurrentInputConnection();
+
+        // Disable Android's auto screen rotation
+        Settings.System.putInt(
+                getContentResolver(),
+                Settings.System.ACCELEROMETER_ROTATION,
+                0
+        );
     }
 
     @Override
